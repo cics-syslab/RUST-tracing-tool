@@ -56,7 +56,7 @@ def main_assembly(inputFile):
         # Remove any comments
         line = re.sub(r'#.*$', '', line)
         # Extract the instruction mnemonic
-        match = re.match(r'^\s*\d+:\s+([a-z]+)', line, re.IGNORECASE)
+        match = re.match(r'^\s*[0-9a-f]+:\s+([a-zA-Z]+(\s+[a-zA-Z]+)?)', line, re.IGNORECASE)
         if match:
             instructions.append(match.group(1))
     # Initialize the register and memory state
@@ -64,10 +64,12 @@ def main_assembly(inputFile):
     memory = {}
     # Start executing instructions
     pc = 0
-    trace(instructions, registers, memory)
+    print(instructions)
+    #trace(instructions, registers, memory)
   
 def trace(instructions, registers, memory):
     pc = 0
+    stack = []
     while pc < len(instructions):
         # Get the current instruction
         instr = instructions[pc]
@@ -75,6 +77,7 @@ def trace(instructions, registers, memory):
         print(f"Instruction: {instr}")
         print(f"Registers: {registers}")
         print(f"Memory: {memory}")
+        print(f"Stack: {stack}")
         # Update the program counter
         pc += 1
         # Decode and execute the instruction
@@ -121,20 +124,21 @@ def trace(instructions, registers, memory):
             # Example: call func
             match = re.match(r'^\s*call\s+(.*)$', line, re.IGNORECASE)
             target = match.group(1)
-            # TODO: Implement call
-            pass
+            stack.append(pc)
+            pc = target
         elif instr == "ret":
             # Example: ret
-            # TODO: Implement ret
-            pass
+            pc = stack.pop()
         elif instr == "push":
             # Example: push eax
-            # TODO: Implement push
-            pass
+            match = re.match(r'^\s*push\s+([a-z]+)$', line, re.IGNORECASE)
+            reg = match.group(1)
+            stack.append(registers[reg])
         elif instr == "pop":
             # Example: pop eax
-            # TODO: Implement pop
-            pass
+            match = re.match(r'^\s*pop\s+([a-z]+)$', line, re.IGNORECASE)
+            reg = match.group(1)
+            registers[reg] = stack.pop()
         elif instr == "cmp":
             # Example: cmp eax, 0x10
             # TODO: Implement cmp
