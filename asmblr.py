@@ -34,6 +34,8 @@ def startCorCPP(inputFile):
   command = "mv " + splitFileName(inputFile)[0] + " " + splitFileName(inputFile)[0] + ".s"
   result = subprocess.run(command, stdout=subprocess.PIPE, shell=True)
   didItRun(result)
+  asmFile = splitFileName(inputFile)[0] + ".s"
+  simple_trace(asmFile)
 
 def figureLanguage(inputFile):
     if inputFile.endswith('.rs'):
@@ -47,7 +49,7 @@ def figureLanguage(inputFile):
         print("I think you want Python Bytecode")
     else:
         print("This is not the file you're looking for")
-    main_assembly(inputFile)
+    #main_assembly(inputFile)
 
 def main_assembly(inputFile):
     fileSplit = splitFileName(inputFile)
@@ -67,8 +69,9 @@ def main_assembly(inputFile):
     memory = {}
     # Start executing instructions
     pc = 0
-    print(instructions)
-    trace_for_cpp(instructions, registers, memory)
+    #print(instructions)
+    #trace_for_cpp(instructions, registers, memory)
+    #trace(instructions, registers, memory)
 
 def trace_for_cpp(instructions, registers, memory):
     pc = 0
@@ -251,6 +254,52 @@ def trace(instructions, registers, memory):
             # TODO
             pass
   
+def simple_trace(filename):
+    # Read the contents of the file
+    with open(filename, "r") as f:
+        contents = f.read()
+    
+    # Get the functions in the file
+    functions = re.findall(r'([a-zA-Z_]+\s+proc(?:\n|\r\n)(?:.*\n|\r\n)*?.*?ret(?:\n|\r\n))', contents, re.DOTALL)
+    print(f"Functions: {functions}\n")
+    
+    # Initialize the trace dictionary
+    trace = {}
+    for func in functions:
+        func_name = func.split()[0]
+        trace[func_name] = []
+    
+    # Start the trace from the init function
+    current_func = "init"
+    trace[current_func] = [functions[0].split()[0]]
+    
+    # Go through each function and trace the functions it goes to
+    for func in functions:
+        func_name = func.split()[0]
+        # Get the instructions in the function
+        instructions = re.findall(r'([a-zA-Z]+\s+.*)', func)
+        # Go through each instruction in the function
+        for instr in instructions:
+            if instr.startswith("call"):
+                # Example: call func
+                match = re.match(r'^\s*call\s+(.*)$', instr, re.IGNORECASE)
+                target = match.group(1)
+                trace[func_name].append(target)
+                # Add the called function to the trace if it doesn't exist
+                if target not in trace:
+                    trace[target] = []
+            elif instr.startswith("jmp"):
+                # Example: jmp 0x12345678
+                match = re.match(r'^\s*jmp\s+(.*)$', instr, re.IGNORECASE)
+                target = match.group(1)
+                trace[func_name].append(target)
+                # Add the jumped-to function to the trace if it doesn't exist
+                if target not in trace:
+                    trace[target] = []
+    
+    # Print the trace
+    for func, targets in trace.items():
+        print(f"{func}: {targets}")
 
 if __name__ == '__main__':
     argv_len = len(sys.argv)
