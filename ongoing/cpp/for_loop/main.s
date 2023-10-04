@@ -54,6 +54,7 @@ main:                                   # @main
 	popq	%rbp
 	.cfi_def_cfa %rsp, 8
 	retq
+# Segments to hold messages in temporary memory before it is put in a register
 .LBB0_4_message:
     .asciz  "jne .LBB0_4"
 .Lfunc_end0:
