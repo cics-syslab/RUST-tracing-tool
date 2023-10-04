@@ -25,6 +25,10 @@ main:                                   # @main
 	movl	$2, %ecx
 	cltd
 	idivl	%ecx
+	# Add user-code for printing jne
+    lea     .LBB0_4_message(%rip), %rdi
+    call    printf
+
 	cmpl	$0, %edx
 	jne	.LBB0_4
 # %bb.3:                                #   in Loop: Header=BB0_1 Depth=1
@@ -32,6 +36,8 @@ main:                                   # @main
 	subl	$1, %eax
 	movl	%eax, -4(%rbp)
 	jmp	.LBB0_5
+
+
 .LBB0_4:                                #   in Loop: Header=BB0_1 Depth=1
 	movl	-4(%rbp), %eax
 	addl	$1, %eax
@@ -48,6 +54,8 @@ main:                                   # @main
 	popq	%rbp
 	.cfi_def_cfa %rsp, 8
 	retq
+.LBB0_4_message:
+    .asciz  "jne .LBB0_4"
 .Lfunc_end0:
 	.size	main, .Lfunc_end0-main
 	.cfi_endproc
