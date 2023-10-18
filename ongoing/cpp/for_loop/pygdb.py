@@ -14,7 +14,7 @@ def log_jmp_event(event):
     if "jne" in instruction or "jge" in instruction:
         jmp_detected = True
         with open(log_file_path, "a") as log_file:
-            log_file.write(f"Jump instruction detected at address {hex(pc)}: {instruction}\n")
+            log_file.write(f"{hex(pc)}: {instruction}\n")
 
 # Connect the stop event to the log_jmp_event function
 gdb.events.stop.connect(log_jmp_event)
