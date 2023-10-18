@@ -16,7 +16,7 @@ main:                                   # @main
 	movl	$0, -8(%rbp)
 .LBB0_1:                                # =>This Inner Loop Header: Depth=1
 	# Add user-code for printing "jne .LBB0_4"
-	lea     .LBB0_7_message(%rip), %rdi
+	lea     .LBB0_1_message(%rip), %rdi
 	call    printf
 	cmpl	$10, -8(%rbp)
 	jge	.LBB0_7
