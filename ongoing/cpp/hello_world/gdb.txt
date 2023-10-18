@@ -1,0 +1,238 @@
+Jump instruction detected at address 0x4011f1: => 0x4011f1 <main+33>:	jge    0x40128b <main+187>
+
+Jump instruction detected at address 0x401202: => 0x401202 <main+50>:	jge    0x40127b <main+171>
+
+Jump instruction detected at address 0x40120f: => 0x40120f <main+63>:	jge    0x40126e <main+158>
+
+Jump instruction detected at address 0x40121c: => 0x40121c <main+76>:	jge    0x401261 <main+145>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x40121c: => 0x40121c <main+76>:	jge    0x401261 <main+145>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
+Jump instruction detected at address 0x401229: => 0x401229 <main+89>:	jge    0x401254 <main+132>
+
