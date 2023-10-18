@@ -1,6 +1,6 @@
 	.text
 	.file	"main.cpp"
-	.globl	main                            # -- Begin function main
+	.globl	main                    # -- Begin function main
 	.p2align	4, 0x90
 	.type	main,@function
 main:                                   # @main
@@ -15,9 +15,6 @@ main:                                   # @main
 	movl	$0, -4(%rbp)
 	movl	$0, -8(%rbp)
 .LBB0_1:                                # =>This Inner Loop Header: Depth=1
-	# Add user-code for printing "jne .LBB0_4"
-	lea     .LBB0_1_message(%rip), %rdi
-	call    printf
 	cmpl	$10, -8(%rbp)
 	jge	.LBB0_7
 # %bb.2:                                #   in Loop: Header=BB0_1 Depth=1
@@ -25,8 +22,8 @@ main:                                   # @main
 	addl	$100, %eax
 	movl	%eax, -4(%rbp)
 	movl	-8(%rbp), %eax
-	movl	$2, %ecx
 	cltd
+	movl	$2, %ecx
 	idivl	%ecx
 	cmpl	$0, %edx
 	jne	.LBB0_4
@@ -55,5 +52,5 @@ main:                                   # @main
 	.size	main, .Lfunc_end0-main
 	.cfi_endproc
                                         # -- End function
-	.ident	"Ubuntu clang version 14.0.0-1ubuntu1.1"
+	.ident	"clang version 10.0.0-4ubuntu1 "
 	.section	".note.GNU-stack","",@progbits
