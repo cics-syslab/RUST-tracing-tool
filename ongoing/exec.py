@@ -1,6 +1,7 @@
 # Essentially a makefile but in Python
 
 import subprocess   # Executes terminal commands
+import pygdb
 
 """
 Steps outlined for a C file
@@ -34,17 +35,18 @@ def execute_C(filename):
     except Exception as e:
         print(f"An error occurred: {str(e)}")
     # Call edit_C() and continue to step 2
-    return edit_C()
+    return compile_C()
 
 def edit_C():
     inputFile = "./main.s"
     with open(inputFile, 'r') as f:
         assembly_code = f.read()
     print(f)
+
 def compile_C():
     try:
         # Compile the edited assembly file into a native executable
-        result = subprocess.run("clang++ main.s -o main.native", stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
+        result = subprocess.run("clang++ -g main.s -o main.native", stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
 
         # Print the output
         print("Compile output: ")
@@ -61,6 +63,29 @@ def compile_C():
     except Exception as e:
         print(f"An error occurred: {str(e)}")  
     return 0
+
+def start_debugger():
+    program_path = "./main.native"
+    # Start GDB and your program
+    gdb_process = subprocess.Popen(['gdb', program_path], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+
+    # Send commands to GDB
+    gdb_process.stdin.write("break main\n")  # Set a breakpoint at the 'main' function
+    gdb_process.stdin.write("source ./pygdb.py\n")
+    gdb_process.stdin.write("run\n")         # Start execution
+    gdb_process.stdin.write("info registers\n")  # Print register values
+    gdb_process.stdin.write("continue\n")       # Continue execution
+    gdb_process.stdin.write("quit\n")           # Quit GDB
+
+    # Read GDB's output
+    output = gdb_process.communicate()[0]
+
+    print(output)
+
+    # Close the GDB process
+    gdb_process.stdin.close()
+    gdb_process.stdout.close()
+    gdb_process.stderr.close()
 
 def execute_R(filename):
     # Define the command you want to execute as a list of strings
