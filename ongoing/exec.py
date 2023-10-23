@@ -1,7 +1,7 @@
 # Essentially a makefile but in Python
 
 import subprocess   # Executes terminal commands
-import pygdb
+# import pygdb
 
 """
 Steps outlined for a C file
