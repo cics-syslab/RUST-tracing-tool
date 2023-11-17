@@ -1,0 +1,336 @@
+0x40120d: => 0x40120d <_main+71>:	jne    0x401219 <_main+83>
+
+0x40128b: => 0x40128b <list_directory+107>:	jne    0x40125b <list_directory+59>
+
+0x40128b: => 0x40128b <list_directory+107>:	jne    0x40125b <list_directory+59>
+
+0x7ffff7fdc895: => 0x7ffff7fdc895 <_dl_fixup+117>:	jne    0x7ffff7fdca9c <_dl_fixup+636>
+
+0x7ffff7fdc89f: => 0x7ffff7fdc89f <_dl_fixup+127>:	jne    0x7ffff7fdca70 <_dl_fixup+592>
+
+0x7ffff7fd612e: => 0x7ffff7fd612e <_dl_lookup_symbol_x+94>:	jne    0x7ffff7fd6118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fd612e: => 0x7ffff7fd612e <_dl_lookup_symbol_x+94>:	jne    0x7ffff7fd6118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fd612e: => 0x7ffff7fd612e <_dl_lookup_symbol_x+94>:	jne    0x7ffff7fd6118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fd612e: => 0x7ffff7fd612e <_dl_lookup_symbol_x+94>:	jne    0x7ffff7fd6118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fd612e: => 0x7ffff7fd612e <_dl_lookup_symbol_x+94>:	jne    0x7ffff7fd6118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fd612e: => 0x7ffff7fd612e <_dl_lookup_symbol_x+94>:	jne    0x7ffff7fd6118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fd612e: => 0x7ffff7fd612e <_dl_lookup_symbol_x+94>:	jne    0x7ffff7fd6118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fd6166: => 0x7ffff7fd6166 <_dl_lookup_symbol_x+150>:	jne    0x7ffff7fd6ddc <_dl_lookup_symbol_x+3340>
+
+0x7ffff7fd617d: => 0x7ffff7fd617d <_dl_lookup_symbol_x+173>:	jne    0x7ffff7fd63f0 <_dl_lookup_symbol_x+800>
+
+0x7ffff7fd625a: => 0x7ffff7fd625a <_dl_lookup_symbol_x+394>:	jne    0x7ffff7fd6440 <_dl_lookup_symbol_x+880>
+
+0x7ffff7fdc931: => 0x7ffff7fdc931 <_dl_fixup+273>:	jne    0x7ffff7fdc9b0 <_dl_fixup+400>
+
+0x7ffff7fdc99d: => 0x7ffff7fdc99d <_dl_fixup+381>:	jne    0x7ffff7fdc9a3 <_dl_fixup+387>
+
+0x7ffff7ec6370: => 0x7ffff7ec6370 <opendir_tail+64>:	jne    0x7ffff7ec63a8 <opendir_tail+120>
+
+0x7ffff7ec6394: => 0x7ffff7ec6394 <opendir_tail+100>:	jne    0x7ffff7ec63cc <opendir_tail+156>
+
+0x4012e5: => 0x4012e5 <list_directory+197>:	jne    0x401322 <list_directory+258>
+
+0x7ffff7ec665f: => 0x7ffff7ec665f <readdir64+47>:	jne    0x7ffff7ec6713 <readdir64+227>
+
+0x7ffff7ec668a: => 0x7ffff7ec668a <readdir64+90>:	jne    0x7ffff7ec66d0 <readdir64+160>
+
+0x401550: => 0x401550 <list_directory+816>:	jne    0x401356 <list_directory+310>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x4013c1: => 0x4013c1 <list_directory+417>:	jne    0x4013d2 <list_directory+434>
+
+0x4013e2: => 0x4013e2 <list_directory+450>:	jne    0x4013ee <list_directory+462>
+
+0x4014aa: => 0x4014aa <list_directory+650>:	jne    0x4014ce <list_directory+686>
+
+0x401514: => 0x401514 <list_directory+756>:	jne    0x401525 <list_directory+773>
+
+0x401535: => 0x401535 <list_directory+789>:	jne    0x40153b <list_directory+795>
+
+0x401550: => 0x401550 <list_directory+816>:	jne    0x401356 <list_directory+310>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x4013c1: => 0x4013c1 <list_directory+417>:	jne    0x4013d2 <list_directory+434>
+
+0x4013e2: => 0x4013e2 <list_directory+450>:	jne    0x4013ee <list_directory+462>
+
+0x4014aa: => 0x4014aa <list_directory+650>:	jne    0x4014ce <list_directory+686>
+
+0x401514: => 0x401514 <list_directory+756>:	jne    0x401525 <list_directory+773>
+
+0x401535: => 0x401535 <list_directory+789>:	jne    0x40153b <list_directory+795>
+
+0x401550: => 0x401550 <list_directory+816>:	jne    0x401356 <list_directory+310>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x4013c1: => 0x4013c1 <list_directory+417>:	jne    0x4013d2 <list_directory+434>
+
+0x4013e2: => 0x4013e2 <list_directory+450>:	jne    0x4013ee <list_directory+462>
+
+0x4013fe: => 0x4013fe <list_directory+478>:	jne    0x40140a <list_directory+490>
+
+0x4014aa: => 0x4014aa <list_directory+650>:	jne    0x4014ce <list_directory+686>
+
+0x401514: => 0x401514 <list_directory+756>:	jne    0x401525 <list_directory+773>
+
+0x401535: => 0x401535 <list_directory+789>:	jne    0x40153b <list_directory+795>
+
+0x401550: => 0x401550 <list_directory+816>:	jne    0x401356 <list_directory+310>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x4013c1: => 0x4013c1 <list_directory+417>:	jne    0x4013d2 <list_directory+434>
+
+0x4013e2: => 0x4013e2 <list_directory+450>:	jne    0x4013ee <list_directory+462>
+
+0x4014aa: => 0x4014aa <list_directory+650>:	jne    0x4014ce <list_directory+686>
+
+0x401514: => 0x401514 <list_directory+756>:	jne    0x401525 <list_directory+773>
+
+0x401535: => 0x401535 <list_directory+789>:	jne    0x40153b <list_directory+795>
+
+0x401550: => 0x401550 <list_directory+816>:	jne    0x401356 <list_directory+310>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x4013c1: => 0x4013c1 <list_directory+417>:	jne    0x4013d2 <list_directory+434>
+
+0x4013e2: => 0x4013e2 <list_directory+450>:	jne    0x4013ee <list_directory+462>
+
+0x4013fe: => 0x4013fe <list_directory+478>:	jne    0x40140a <list_directory+490>
+
+0x4014aa: => 0x4014aa <list_directory+650>:	jne    0x4014ce <list_directory+686>
+
+0x401514: => 0x401514 <list_directory+756>:	jne    0x401525 <list_directory+773>
+
+0x401535: => 0x401535 <list_directory+789>:	jne    0x40153b <list_directory+795>
+
+0x401550: => 0x401550 <list_directory+816>:	jne    0x401356 <list_directory+310>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x4013c1: => 0x4013c1 <list_directory+417>:	jne    0x4013d2 <list_directory+434>
+
+0x4013e2: => 0x4013e2 <list_directory+450>:	jne    0x4013ee <list_directory+462>
+
+0x4013fe: => 0x4013fe <list_directory+478>:	jne    0x40140a <list_directory+490>
+
+0x4014aa: => 0x4014aa <list_directory+650>:	jne    0x4014ce <list_directory+686>
+
+0x401514: => 0x401514 <list_directory+756>:	jne    0x401525 <list_directory+773>
+
+0x401535: => 0x401535 <list_directory+789>:	jne    0x40153b <list_directory+795>
+
+0x401550: => 0x401550 <list_directory+816>:	jne    0x401356 <list_directory+310>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x4013c1: => 0x4013c1 <list_directory+417>:	jne    0x4013d2 <list_directory+434>
+
+0x4013e2: => 0x4013e2 <list_directory+450>:	jne    0x4013ee <list_directory+462>
+
+0x4013fe: => 0x4013fe <list_directory+478>:	jne    0x40140a <list_directory+490>
+
+0x4014aa: => 0x4014aa <list_directory+650>:	jne    0x4014ce <list_directory+686>
+
+0x401514: => 0x401514 <list_directory+756>:	jne    0x401525 <list_directory+773>
+
+0x401535: => 0x401535 <list_directory+789>:	jne    0x40153b <list_directory+795>
+
+0x401550: => 0x401550 <list_directory+816>:	jne    0x401356 <list_directory+310>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x4013c1: => 0x4013c1 <list_directory+417>:	jne    0x4013d2 <list_directory+434>
+
+0x4013e2: => 0x4013e2 <list_directory+450>:	jne    0x4013ee <list_directory+462>
+
+0x4013fe: => 0x4013fe <list_directory+478>:	jne    0x40140a <list_directory+490>
+
+0x4014aa: => 0x4014aa <list_directory+650>:	jne    0x4014ce <list_directory+686>
+
+0x401514: => 0x401514 <list_directory+756>:	jne    0x401525 <list_directory+773>
+
+0x401535: => 0x401535 <list_directory+789>:	jne    0x40153b <list_directory+795>
+
+0x401550: => 0x401550 <list_directory+816>:	jne    0x401356 <list_directory+310>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x4013c1: => 0x4013c1 <list_directory+417>:	jne    0x4013d2 <list_directory+434>
+
+0x4013e2: => 0x4013e2 <list_directory+450>:	jne    0x4013ee <list_directory+462>
+
+0x4013fe: => 0x4013fe <list_directory+478>:	jne    0x40140a <list_directory+490>
+
+0x4014aa: => 0x4014aa <list_directory+650>:	jne    0x4014ce <list_directory+686>
+
+0x401514: => 0x401514 <list_directory+756>:	jne    0x401525 <list_directory+773>
+
+0x401535: => 0x401535 <list_directory+789>:	jne    0x40153b <list_directory+795>
+
+0x401550: => 0x401550 <list_directory+816>:	jne    0x401356 <list_directory+310>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x4013c1: => 0x4013c1 <list_directory+417>:	jne    0x4013d2 <list_directory+434>
+
+0x4013e2: => 0x4013e2 <list_directory+450>:	jne    0x4013ee <list_directory+462>
+
+0x4013fe: => 0x4013fe <list_directory+478>:	jne    0x40140a <list_directory+490>
+
+0x4014aa: => 0x4014aa <list_directory+650>:	jne    0x4014ce <list_directory+686>
+
+0x401514: => 0x401514 <list_directory+756>:	jne    0x401525 <list_directory+773>
+
+0x401535: => 0x401535 <list_directory+789>:	jne    0x40153b <list_directory+795>
+
+0x401550: => 0x401550 <list_directory+816>:	jne    0x401356 <list_directory+310>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x40139c: => 0x40139c <list_directory+380>:	jne    0x40136c <list_directory+332>
+
+0x4013c1: => 0x4013c1 <list_directory+417>:	jne    0x4013d2 <list_directory+434>
+
+0x4013e2: => 0x4013e2 <list_directory+450>:	jne    0x4013ee <list_directory+462>
+
+0x4014aa: => 0x4014aa <list_directory+650>:	jne    0x4014ce <list_directory+686>
+
+0x401514: => 0x401514 <list_directory+756>:	jne    0x401525 <list_directory+773>
+
+0x401535: => 0x401535 <list_directory+789>:	jne    0x40153b <list_directory+795>
+
+0x401550: => 0x401550 <list_directory+816>:	jne    0x401356 <list_directory+310>
+

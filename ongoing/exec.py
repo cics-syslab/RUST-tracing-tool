@@ -64,6 +64,7 @@ def compile_C():
         print(f"An error occurred: {str(e)}")  
     return 0
 
+# TODO: This is probably not going to work
 def start_debugger():
     program_path = "./main.native"
     # Start GDB and your program
