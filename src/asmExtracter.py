@@ -2,7 +2,6 @@
 
 import subprocess   # Executes terminal commands
 # import pygdb
-import tkinter
 
 """
 Steps outlined for a C file
@@ -11,32 +10,31 @@ Steps outlined for a C file
 2: Halt this at the Assembly, and make changes.             ```def edit_C()```
 3: Compile this assembly file to an Executable.             ```def compile_C()```
 """
-def execute_C(filename):
+def execute_C(app, filename):
     # Define the command you want to execute as a list of strings
-    rust_file = filename + ".cpp"
     # Assume name of file is main (for now)
-    command = ["clang++ -emit-llvm -S main.cpp", "llvm-as main.ll", "llc main.bc --o main.s"]
-    
+    command = ["clang++ -emit-llvm -S -o main.ll ", "llvm-as main.ll", "llc main.bc --o main.s"]
+    command[1] += filename
     try:
         # Run the command and capture the output
         result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
     
         # Print the standard output
-        print("Standard Output:")
-        print(result.stdout)
+        app.output("Standard Output:")
+        app.output(result.stdout)
     
         # Print the standard error, if any
         if result.stderr:
-            print("Standard Error:")
-            print(result.stderr)
+            app.output("Standard Error:")
+            app.output(result.stderr)
     except subprocess.CalledProcessError as e:
-        print(f"Command failed with return code {e.returncode}: {e.cmd}")
+        app.output(f"Command failed with return code {e.returncode}: {e.cmd}")
     except FileNotFoundError:
-        print("Command not found. Make sure it's installed and in your PATH.")
+        app.output("Command not found. Make sure it's installed and in your PATH.")
     except Exception as e:
-        print(f"An error occurred: {str(e)}")
+        app.output(f"An error occurred: {str(e)}")
     # Call edit_C() and continue to step 2
-    return compile_C()
+    # return compile_C()
 
 def edit_C():
     inputFile = "./main.s"
@@ -113,14 +111,3 @@ def execute_R(filename):
     except Exception as e:
         print(f"An error occurred: {str(e)}")
 
-
-if __name__=="__main__":
-    lang = input(f"R/C?: ")
-    filename = input(f"filename (without extension): ")
-    print("This script will create the .S in a way that it can be run inside GDB.")
-    if lang == "R":
-        execute_R(filename)
-    elif lang=="C":
-        execute_C(filename)
-    else:
-        print("Not supported")

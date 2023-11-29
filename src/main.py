@@ -1,8 +1,13 @@
 import tkinter as tk
 from tkinter import filedialog
+import asmExtracter
 
-def returnHello():
-    return "Hello"
+def returnHello(app_instance):
+    app_instance.output("Hello")
+
+def get_asm(app, file, language):
+    if language == "C++":
+       asmExtracter.execute_C(app, file) 
 
 class AssemblyTracerUI:
     def __init__(self, master):
@@ -57,19 +62,12 @@ class AssemblyTracerUI:
     def trace_assembly(self):
         file_path = self.file_entry.get()
         language = self.language_var.get()
-        self.output(returnHello())
+        
         # Check if the file path is provided
         if not file_path:
             self.output("Please provide a file path.")
             return
-
-        # Perform OS commands based on the file path and language
-        try:
-            # Add your OS commands here based on file_path and language
-            self.output("Successfully traced assembly.")
-        except Exception as e:
-            self.output(f"Error tracing assembly:\n{e}")
-
+        get_asm(self, file_path, language)
     def output(self, message):
         self.output_text.insert(tk.END, f"{message}\n")
         self.output_text.see(tk.END)  # Scroll to the end for the latest message
