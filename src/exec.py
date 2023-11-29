@@ -2,6 +2,7 @@
 
 import subprocess   # Executes terminal commands
 # import pygdb
+import tkinter
 
 """
 Steps outlined for a C file
