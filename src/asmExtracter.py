@@ -13,20 +13,21 @@ Steps outlined for a C file
 def execute_C(app, filename):
     # Define the command you want to execute as a list of strings
     # Assume name of file is main (for now)
-    command = ["clang++ -emit-llvm -S -o main.ll ", "llvm-as main.ll", "llc main.bc --o main.s"]
-    command[1] += filename
+    #command = ["clang++ -emit-llvm -S -o main.ll ", "llvm-as main.ll", "llc main.bc --o main.s"]
+    command = ["g++ -S -o main.s "] 
+    command[0] += filename
     try:
         # Run the command and capture the output
-        result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
-    
-        # Print the standard output
-        app.output("Standard Output:")
-        app.output(result.stdout)
-    
-        # Print the standard error, if any
-        if result.stderr:
-            app.output("Standard Error:")
-            app.output(result.stderr)
+        for com in command:
+            app.output(f"Running Command: {com}")
+            result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, check=True)
+            # Print the standard output
+            app.output("Standard Output:")
+            app.output(result.stdout)
+            # Print the standard error, if any
+            if result.stderr:
+                app.output("Standard Error:")
+                app.output(result.stderr)
     except subprocess.CalledProcessError as e:
         app.output(f"Command failed with return code {e.returncode}: {e.cmd}")
     except FileNotFoundError:
