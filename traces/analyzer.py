@@ -39,6 +39,7 @@ class clockCycles:
 			"adc": 1,
 			"sbb": 2,
 			"cmp": 2,
+			"no_jmp": 2, # No Jump is just a compare
 			"cmpq": 3,
 			"inc": 1,
 			"dec": 1,
@@ -126,7 +127,7 @@ class clockCycles:
 		}
 	def getCycle(self, command):
 		if command not in self.cycleHash.keys():
-			#print(f"Unknown Command {command}, big oopsie")
+			print(f"Unknown Command {command}, big oopsie")
 			return 0
 		return self.cycleHash[command]
 
@@ -138,13 +139,30 @@ class inst:
 		self.numOperations = 0
 		self.totalCycles = 0
 		self.totalLines = 0
+		self.jmpInQuestion = False
+		self.lastJmpLocation = 0
+		self.typeOfJmp = "jmp"
 	def add(self, line):
 		if line != '\n':
 			self.debugger.append(line)
 			lineParts = line.split()
 			if len(lineParts) >= 5:
 				if lineParts[4] not in self.instructions:
-					self.instructions[lineParts[4]] = 0
+						self.instructions[lineParts[4]] = 0
+				if lineParts[4] == "jg" or lineParts[4] == "jge" or lineParts[4] == "jg" or lineParts[4] == "jle" or lineParts[4] == "jne" or lineParts[4] == "jl":
+					self.jmpInQuestion = True
+					self.lastJmpLocation = lineParts[6]
+					self.typeOfJmp = lineParts[4]
+					return
+				if self.jmpInQuestion == True:
+					if ''.join([c for c in lineParts[3] if c != ':']) == self.lastJmpLocation:
+						self.instructions[self.typeOfJmp] += 1
+						self.jmpInQuestion = False
+					else:
+						if "no_jmp" not in self.instructions:
+							self.instructions["no_jmp"] = 0
+						self.instructions["no_jmp"] += 1
+						self.jmpInQuestion = False
 				self.instructions[lineParts[4]] += 1
 				self.numOperations += 1
 			else:
@@ -153,7 +171,7 @@ class inst:
 				self.instructions[lineParts[len(lineParts) - 1]] += 1
 	def printDebug(self):
 		print(f"Wow you printed {self.instructions}")
-	def analyzeTraces(self):
+	def analyzeTraces(self, trace_file):
 		hasher = clockCycles()
 		for oneInst in self.instructions.keys():
 			curCycle = hasher.getCycle(oneInst)
@@ -161,23 +179,28 @@ class inst:
 			self.cycleInstructions[oneInst] = curCycle * self.instructions[oneInst]
 			self.totalLines += self.instructions[oneInst]
 		print("*********************")
+		print(f"Statistics for {trace_file}")
 		print(f"Clock Cycles: {self.totalCycles}")
 		print(f"Number of lines exec: {self.totalLines}")
 		print(f"Number of different asm operations: {len(self.instructions.keys())}")
-		cpi = self.totalCycles / self.totalLines
+		cpi = self.totalCycles / self.totalLines if self.totalLines > 0 else 0
 		print(f"Cycles Per Instruction: {cpi}")
 		print(f"Breakdown of each instruction:")
 		print("Instruction | Number of times | Cycles")
 		for oneInst in self.instructions.keys():
 			print(f"{oneInst} | {self.instructions[oneInst]} | {self.cycleInstructions[oneInst]}")
 		print("*********************")
+		if "no_jmp" in self.instructions:
+			print("Note: In the above table, if a jmp with compare was made (e.g., jge), but that jmp did not occur, we denote it as no_jmp with 2 clock cycles (Source: Agner Fog)")
+			print("*********************")
 
 def main(curInst, trace_files):
 	for trace in trace_files:
 		with open(trace, 'r') as f:
 			for line in f:
 				curInst.add(line)
-	curInst.analyzeTraces()
+		curInst.analyzeTraces(trace)
+		curInst = inst()
 	
 
 if __name__ == "__main__":

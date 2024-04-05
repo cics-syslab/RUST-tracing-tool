@@ -1,0 +1,2540 @@
+0x4011a1: => 0x4011a1 <main+1>:	mov    %rsp,%rbp
+
+0x4011a4: => 0x4011a4 <main+4>:	sub    $0x10,%rsp
+
+0x4011a8: => 0x4011a8 <main+8>:	movl   $0x0,-0x4(%rbp)
+
+0x4011af: => 0x4011af <main+15>:	mov    %edi,-0x8(%rbp)
+
+0x4011b2: => 0x4011b2 <main+18>:	mov    %rsi,-0x10(%rbp)
+
+0x4011b6: => 0x4011b6 <main+22>:	mov    -0x8(%rbp),%edi
+
+0x4011b9: => 0x4011b9 <main+25>:	mov    -0x10(%rbp),%rsi
+
+0x4011bd: => 0x4011bd <main+29>:	callq  0x4011d0 <_main>
+
+0x4011d0: => 0x4011d0 <_main>:	push   %rbp
+
+0x4011d1: => 0x4011d1 <_main+1>:	mov    %rsp,%rbp
+
+0x4011d4: => 0x4011d4 <_main+4>:	sub    $0x20,%rsp
+
+0x4011d8: => 0x4011d8 <_main+8>:	mov    %edi,-0x4(%rbp)
+
+0x4011db: => 0x4011db <_main+11>:	mov    %rsi,-0x10(%rbp)
+
+0x4011df: => 0x4011df <_main+15>:	movl   $0x1,-0x14(%rbp)
+
+0x4011e6: => 0x4011e6 <_main+22>:	mov    -0x14(%rbp),%eax
+
+0x4011e9: => 0x4011e9 <_main+25>:	cmp    -0x4(%rbp),%eax
+
+0x4011ec: => 0x4011ec <_main+28>:	jge    0x40120a <_main+58>
+
+0x40120a: => 0x40120a <_main+58>:	cmpl   $0x1,-0x4(%rbp)
+
+0x40120e: => 0x40120e <_main+62>:	jne    0x40121f <_main+79>
+
+0x401210: => 0x401210 <_main+64>:	movabs $0x402004,%rdi
+
+0x40121a: => 0x40121a <_main+74>:	callq  0x401230 <list_directory>
+
+0x401230: => 0x401230 <list_directory>:	push   %rbp
+
+0x401231: => 0x401231 <list_directory+1>:	mov    %rsp,%rbp
+
+0x401234: => 0x401234 <list_directory+4>:	sub    $0x30,%rsp
+
+0x401238: => 0x401238 <list_directory+8>:	mov    %rdi,-0x8(%rbp)
+
+0x40123c: => 0x40123c <list_directory+12>:	mov    -0x8(%rbp),%rdi
+
+0x401240: => 0x401240 <list_directory+16>:	callq  0x401040 <opendir@plt>
+
+0x401040: => 0x401040 <opendir@plt>:	jmpq   *0x2fda(%rip)        # 0x404020 <opendir@got.plt>
+
+0x401046: => 0x401046 <opendir@plt+6>:	pushq  $0x1
+
+0x40104b: => 0x40104b <opendir@plt+11>:	jmpq   0x401020
+
+0x401020: => 0x401020:	pushq  0x2fe2(%rip)        # 0x404008
+
+0x401026: => 0x401026:	jmpq   *0x2fe4(%rip)        # 0x404010
+
+0x7ffff7fe7bc0: => 0x7ffff7fe7bc0 <_dl_runtime_resolve_xsavec>:	endbr64 
+
+0x7ffff7fe7bc4: => 0x7ffff7fe7bc4 <_dl_runtime_resolve_xsavec+4>:	push   %rbx
+
+0x7ffff7fe7bc5: => 0x7ffff7fe7bc5 <_dl_runtime_resolve_xsavec+5>:	mov    %rsp,%rbx
+
+0x7ffff7fe7bc8: => 0x7ffff7fe7bc8 <_dl_runtime_resolve_xsavec+8>:	and    $0xffffffffffffffc0,%rsp
+
+0x7ffff7fe7bcc: => 0x7ffff7fe7bcc <_dl_runtime_resolve_xsavec+12>:	sub    0x14b35(%rip),%rsp        # 0x7ffff7ffc708 <_rtld_global_ro+232>
+
+0x7ffff7fe7bd3: => 0x7ffff7fe7bd3 <_dl_runtime_resolve_xsavec+19>:	mov    %rax,(%rsp)
+
+0x7ffff7fe7bd7: => 0x7ffff7fe7bd7 <_dl_runtime_resolve_xsavec+23>:	mov    %rcx,0x8(%rsp)
+
+0x7ffff7fe7bdc: => 0x7ffff7fe7bdc <_dl_runtime_resolve_xsavec+28>:	mov    %rdx,0x10(%rsp)
+
+0x7ffff7fe7be1: => 0x7ffff7fe7be1 <_dl_runtime_resolve_xsavec+33>:	mov    %rsi,0x18(%rsp)
+
+0x7ffff7fe7be6: => 0x7ffff7fe7be6 <_dl_runtime_resolve_xsavec+38>:	mov    %rdi,0x20(%rsp)
+
+0x7ffff7fe7beb: => 0x7ffff7fe7beb <_dl_runtime_resolve_xsavec+43>:	mov    %r8,0x28(%rsp)
+
+0x7ffff7fe7bf0: => 0x7ffff7fe7bf0 <_dl_runtime_resolve_xsavec+48>:	mov    %r9,0x30(%rsp)
+
+0x7ffff7fe7bf5: => 0x7ffff7fe7bf5 <_dl_runtime_resolve_xsavec+53>:	mov    $0xee,%eax
+
+0x7ffff7fe7bfa: => 0x7ffff7fe7bfa <_dl_runtime_resolve_xsavec+58>:	xor    %edx,%edx
+
+0x7ffff7fe7bfc: => 0x7ffff7fe7bfc <_dl_runtime_resolve_xsavec+60>:	mov    %rdx,0x250(%rsp)
+
+0x7ffff7fe7c04: => 0x7ffff7fe7c04 <_dl_runtime_resolve_xsavec+68>:	mov    %rdx,0x258(%rsp)
+
+0x7ffff7fe7c0c: => 0x7ffff7fe7c0c <_dl_runtime_resolve_xsavec+76>:	mov    %rdx,0x260(%rsp)
+
+0x7ffff7fe7c14: => 0x7ffff7fe7c14 <_dl_runtime_resolve_xsavec+84>:	mov    %rdx,0x268(%rsp)
+
+0x7ffff7fe7c1c: => 0x7ffff7fe7c1c <_dl_runtime_resolve_xsavec+92>:	mov    %rdx,0x270(%rsp)
+
+0x7ffff7fe7c24: => 0x7ffff7fe7c24 <_dl_runtime_resolve_xsavec+100>:	mov    %rdx,0x278(%rsp)
+
+0x7ffff7fe7c2c: => 0x7ffff7fe7c2c <_dl_runtime_resolve_xsavec+108>:	xsavec 0x40(%rsp)
+
+0x7ffff7fe7c31: => 0x7ffff7fe7c31 <_dl_runtime_resolve_xsavec+113>:	mov    0x10(%rbx),%rsi
+
+0x7ffff7fe7c35: => 0x7ffff7fe7c35 <_dl_runtime_resolve_xsavec+117>:	mov    0x8(%rbx),%rdi
+
+0x7ffff7fe7c39: => 0x7ffff7fe7c39 <_dl_runtime_resolve_xsavec+121>:	callq  0x7ffff7fe00c0 <_dl_fixup>
+
+0x7ffff7fe00c0: => 0x7ffff7fe00c0 <_dl_fixup>:	endbr64 
+
+0x7ffff7fe00c4: => 0x7ffff7fe00c4 <_dl_fixup+4>:	push   %rbx
+
+0x7ffff7fe00c5: => 0x7ffff7fe00c5 <_dl_fixup+5>:	mov    %rdi,%r10
+
+0x7ffff7fe00c8: => 0x7ffff7fe00c8 <_dl_fixup+8>:	mov    %esi,%esi
+
+0x7ffff7fe00ca: => 0x7ffff7fe00ca <_dl_fixup+10>:	lea    (%rsi,%rsi,2),%rdx
+
+0x7ffff7fe00ce: => 0x7ffff7fe00ce <_dl_fixup+14>:	sub    $0x10,%rsp
+
+0x7ffff7fe00d2: => 0x7ffff7fe00d2 <_dl_fixup+18>:	mov    0x68(%rdi),%rax
+
+0x7ffff7fe00d6: => 0x7ffff7fe00d6 <_dl_fixup+22>:	mov    0x8(%rax),%rdi
+
+0x7ffff7fe00da: => 0x7ffff7fe00da <_dl_fixup+26>:	mov    0xf8(%r10),%rax
+
+0x7ffff7fe00e1: => 0x7ffff7fe00e1 <_dl_fixup+33>:	mov    0x8(%rax),%rax
+
+0x7ffff7fe00e5: => 0x7ffff7fe00e5 <_dl_fixup+37>:	lea    (%rax,%rdx,8),%r8
+
+0x7ffff7fe00e9: => 0x7ffff7fe00e9 <_dl_fixup+41>:	mov    0x70(%r10),%rax
+
+0x7ffff7fe00ed: => 0x7ffff7fe00ed <_dl_fixup+45>:	mov    0x8(%r8),%rsi
+
+0x7ffff7fe00f1: => 0x7ffff7fe00f1 <_dl_fixup+49>:	mov    (%r8),%rbx
+
+0x7ffff7fe00f4: => 0x7ffff7fe00f4 <_dl_fixup+52>:	mov    0x8(%rax),%rax
+
+0x7ffff7fe00f8: => 0x7ffff7fe00f8 <_dl_fixup+56>:	mov    %rsi,%rcx
+
+0x7ffff7fe00fb: => 0x7ffff7fe00fb <_dl_fixup+59>:	shr    $0x20,%rcx
+
+0x7ffff7fe00ff: => 0x7ffff7fe00ff <_dl_fixup+63>:	lea    (%rcx,%rcx,2),%rdx
+
+0x7ffff7fe0103: => 0x7ffff7fe0103 <_dl_fixup+67>:	lea    (%rax,%rdx,8),%rdx
+
+0x7ffff7fe0107: => 0x7ffff7fe0107 <_dl_fixup+71>:	mov    (%r10),%rax
+
+0x7ffff7fe010a: => 0x7ffff7fe010a <_dl_fixup+74>:	mov    %rdx,0x8(%rsp)
+
+0x7ffff7fe010f: => 0x7ffff7fe010f <_dl_fixup+79>:	add    %rax,%rbx
+
+0x7ffff7fe0112: => 0x7ffff7fe0112 <_dl_fixup+82>:	cmp    $0x7,%esi
+
+0x7ffff7fe0115: => 0x7ffff7fe0115 <_dl_fixup+85>:	jne    0x7ffff7fe025e <_dl_fixup+414>
+
+0x7ffff7fe011b: => 0x7ffff7fe011b <_dl_fixup+91>:	testb  $0x3,0x5(%rdx)
+
+0x7ffff7fe011f: => 0x7ffff7fe011f <_dl_fixup+95>:	jne    0x7ffff7fe0200 <_dl_fixup+320>
+
+0x7ffff7fe0125: => 0x7ffff7fe0125 <_dl_fixup+101>:	mov    0x1d0(%r10),%r8
+
+0x7ffff7fe012c: => 0x7ffff7fe012c <_dl_fixup+108>:	test   %r8,%r8
+
+0x7ffff7fe012f: => 0x7ffff7fe012f <_dl_fixup+111>:	je     0x7ffff7fe015d <_dl_fixup+157>
+
+0x7ffff7fe0131: => 0x7ffff7fe0131 <_dl_fixup+113>:	mov    0x8(%r8),%rax
+
+0x7ffff7fe0135: => 0x7ffff7fe0135 <_dl_fixup+117>:	movzwl (%rax,%rcx,2),%eax
+
+0x7ffff7fe0139: => 0x7ffff7fe0139 <_dl_fixup+121>:	and    $0x7fff,%eax
+
+0x7ffff7fe013e: => 0x7ffff7fe013e <_dl_fixup+126>:	lea    (%rax,%rax,2),%rcx
+
+0x7ffff7fe0142: => 0x7ffff7fe0142 <_dl_fixup+130>:	mov    0x2e8(%r10),%rax
+
+0x7ffff7fe0149: => 0x7ffff7fe0149 <_dl_fixup+137>:	lea    (%rax,%rcx,8),%r8
+
+0x7ffff7fe014d: => 0x7ffff7fe014d <_dl_fixup+141>:	mov    $0x0,%eax
+
+0x7ffff7fe0152: => 0x7ffff7fe0152 <_dl_fixup+146>:	mov    0x8(%r8),%r9d
+
+0x7ffff7fe0156: => 0x7ffff7fe0156 <_dl_fixup+150>:	test   %r9d,%r9d
+
+0x7ffff7fe0159: => 0x7ffff7fe0159 <_dl_fixup+153>:	cmove  %rax,%r8
+
+0x7ffff7fe015d: => 0x7ffff7fe015d <_dl_fixup+157>:	mov    %fs:0x18,%ecx
+
+0x7ffff7fe0165: => 0x7ffff7fe0165 <_dl_fixup+165>:	mov    $0x1,%eax
+
+0x7ffff7fe016a: => 0x7ffff7fe016a <_dl_fixup+170>:	test   %ecx,%ecx
+
+0x7ffff7fe016c: => 0x7ffff7fe016c <_dl_fixup+172>:	jne    0x7ffff7fe0248 <_dl_fixup+392>
+
+0x7ffff7fe0172: => 0x7ffff7fe0172 <_dl_fixup+178>:	mov    (%rdx),%edx
+
+0x7ffff7fe0174: => 0x7ffff7fe0174 <_dl_fixup+180>:	lea    0x8(%rsp),%r11
+
+0x7ffff7fe0179: => 0x7ffff7fe0179 <_dl_fixup+185>:	mov    $0x1,%r9d
+
+0x7ffff7fe017f: => 0x7ffff7fe017f <_dl_fixup+191>:	mov    %r10,%rsi
+
+0x7ffff7fe0182: => 0x7ffff7fe0182 <_dl_fixup+194>:	mov    0x390(%r10),%rcx
+
+0x7ffff7fe0189: => 0x7ffff7fe0189 <_dl_fixup+201>:	pushq  $0x0
+
+0x7ffff7fe018b: => 0x7ffff7fe018b <_dl_fixup+203>:	push   %rax
+
+0x7ffff7fe018c: => 0x7ffff7fe018c <_dl_fixup+204>:	add    %rdx,%rdi
+
+0x7ffff7fe018f: => 0x7ffff7fe018f <_dl_fixup+207>:	mov    %r11,%rdx
+
+0x7ffff7fe0192: => 0x7ffff7fe0192 <_dl_fixup+210>:	callq  0x7ffff7fdb0d0 <_dl_lookup_symbol_x>
+
+0x7ffff7fdb0d0: => 0x7ffff7fdb0d0 <_dl_lookup_symbol_x>:	endbr64 
+
+0x7ffff7fdb0d4: => 0x7ffff7fdb0d4 <_dl_lookup_symbol_x+4>:	push   %r15
+
+0x7ffff7fdb0d6: => 0x7ffff7fdb0d6 <_dl_lookup_symbol_x+6>:	push   %r14
+
+0x7ffff7fdb0d8: => 0x7ffff7fdb0d8 <_dl_lookup_symbol_x+8>:	push   %r13
+
+0x7ffff7fdb0da: => 0x7ffff7fdb0da <_dl_lookup_symbol_x+10>:	mov    %rdi,%r13
+
+0x7ffff7fdb0dd: => 0x7ffff7fdb0dd <_dl_lookup_symbol_x+13>:	push   %r12
+
+0x7ffff7fdb0df: => 0x7ffff7fdb0df <_dl_lookup_symbol_x+15>:	mov    %rdx,%r12
+
+0x7ffff7fdb0e2: => 0x7ffff7fdb0e2 <_dl_lookup_symbol_x+18>:	push   %rbp
+
+0x7ffff7fdb0e3: => 0x7ffff7fdb0e3 <_dl_lookup_symbol_x+19>:	push   %rbx
+
+0x7ffff7fdb0e4: => 0x7ffff7fdb0e4 <_dl_lookup_symbol_x+20>:	sub    $0x98,%rsp
+
+0x7ffff7fdb0eb: => 0x7ffff7fdb0eb <_dl_lookup_symbol_x+27>:	movzbl (%rdi),%edx
+
+0x7ffff7fdb0ee: => 0x7ffff7fdb0ee <_dl_lookup_symbol_x+30>:	mov    %rsi,0x10(%rsp)
+
+0x7ffff7fdb0f3: => 0x7ffff7fdb0f3 <_dl_lookup_symbol_x+35>:	mov    %rcx,0x18(%rsp)
+
+0x7ffff7fdb0f8: => 0x7ffff7fdb0f8 <_dl_lookup_symbol_x+40>:	mov    %r8,0x8(%rsp)
+
+0x7ffff7fdb0fd: => 0x7ffff7fdb0fd <_dl_lookup_symbol_x+45>:	mov    %r9d,0x38(%rsp)
+
+0x7ffff7fdb102: => 0x7ffff7fdb102 <_dl_lookup_symbol_x+50>:	test   %dl,%dl
+
+0x7ffff7fdb104: => 0x7ffff7fdb104 <_dl_lookup_symbol_x+52>:	je     0x7ffff7fdb330 <_dl_lookup_symbol_x+608>
+
+0x7ffff7fdb10a: => 0x7ffff7fdb10a <_dl_lookup_symbol_x+58>:	mov    %rdi,%rcx
+
+0x7ffff7fdb10d: => 0x7ffff7fdb10d <_dl_lookup_symbol_x+61>:	mov    $0x1505,%eax
+
+0x7ffff7fdb112: => 0x7ffff7fdb112 <_dl_lookup_symbol_x+66>:	nopw   0x0(%rax,%rax,1)
+
+0x7ffff7fdb118: => 0x7ffff7fdb118 <_dl_lookup_symbol_x+72>:	mov    %rax,%rsi
+
+0x7ffff7fdb11b: => 0x7ffff7fdb11b <_dl_lookup_symbol_x+75>:	movzbl %dl,%edx
+
+0x7ffff7fdb11e: => 0x7ffff7fdb11e <_dl_lookup_symbol_x+78>:	add    $0x1,%rcx
+
+0x7ffff7fdb122: => 0x7ffff7fdb122 <_dl_lookup_symbol_x+82>:	shl    $0x5,%rsi
+
+0x7ffff7fdb126: => 0x7ffff7fdb126 <_dl_lookup_symbol_x+86>:	add    %rsi,%rax
+
+0x7ffff7fdb129: => 0x7ffff7fdb129 <_dl_lookup_symbol_x+89>:	add    %rdx,%rax
+
+0x7ffff7fdb12c: => 0x7ffff7fdb12c <_dl_lookup_symbol_x+92>:	movzbl (%rcx),%edx
+
+0x7ffff7fdb12f: => 0x7ffff7fdb12f <_dl_lookup_symbol_x+95>:	test   %dl,%dl
+
+0x7ffff7fdb131: => 0x7ffff7fdb131 <_dl_lookup_symbol_x+97>:	jne    0x7ffff7fdb118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fdb118: => 0x7ffff7fdb118 <_dl_lookup_symbol_x+72>:	mov    %rax,%rsi
+
+0x7ffff7fdb11b: => 0x7ffff7fdb11b <_dl_lookup_symbol_x+75>:	movzbl %dl,%edx
+
+0x7ffff7fdb11e: => 0x7ffff7fdb11e <_dl_lookup_symbol_x+78>:	add    $0x1,%rcx
+
+0x7ffff7fdb122: => 0x7ffff7fdb122 <_dl_lookup_symbol_x+82>:	shl    $0x5,%rsi
+
+0x7ffff7fdb126: => 0x7ffff7fdb126 <_dl_lookup_symbol_x+86>:	add    %rsi,%rax
+
+0x7ffff7fdb129: => 0x7ffff7fdb129 <_dl_lookup_symbol_x+89>:	add    %rdx,%rax
+
+0x7ffff7fdb12c: => 0x7ffff7fdb12c <_dl_lookup_symbol_x+92>:	movzbl (%rcx),%edx
+
+0x7ffff7fdb12f: => 0x7ffff7fdb12f <_dl_lookup_symbol_x+95>:	test   %dl,%dl
+
+0x7ffff7fdb131: => 0x7ffff7fdb131 <_dl_lookup_symbol_x+97>:	jne    0x7ffff7fdb118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fdb118: => 0x7ffff7fdb118 <_dl_lookup_symbol_x+72>:	mov    %rax,%rsi
+
+0x7ffff7fdb11b: => 0x7ffff7fdb11b <_dl_lookup_symbol_x+75>:	movzbl %dl,%edx
+
+0x7ffff7fdb11e: => 0x7ffff7fdb11e <_dl_lookup_symbol_x+78>:	add    $0x1,%rcx
+
+0x7ffff7fdb122: => 0x7ffff7fdb122 <_dl_lookup_symbol_x+82>:	shl    $0x5,%rsi
+
+0x7ffff7fdb126: => 0x7ffff7fdb126 <_dl_lookup_symbol_x+86>:	add    %rsi,%rax
+
+0x7ffff7fdb129: => 0x7ffff7fdb129 <_dl_lookup_symbol_x+89>:	add    %rdx,%rax
+
+0x7ffff7fdb12c: => 0x7ffff7fdb12c <_dl_lookup_symbol_x+92>:	movzbl (%rcx),%edx
+
+0x7ffff7fdb12f: => 0x7ffff7fdb12f <_dl_lookup_symbol_x+95>:	test   %dl,%dl
+
+0x7ffff7fdb131: => 0x7ffff7fdb131 <_dl_lookup_symbol_x+97>:	jne    0x7ffff7fdb118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fdb118: => 0x7ffff7fdb118 <_dl_lookup_symbol_x+72>:	mov    %rax,%rsi
+
+0x7ffff7fdb11b: => 0x7ffff7fdb11b <_dl_lookup_symbol_x+75>:	movzbl %dl,%edx
+
+0x7ffff7fdb11e: => 0x7ffff7fdb11e <_dl_lookup_symbol_x+78>:	add    $0x1,%rcx
+
+0x7ffff7fdb122: => 0x7ffff7fdb122 <_dl_lookup_symbol_x+82>:	shl    $0x5,%rsi
+
+0x7ffff7fdb126: => 0x7ffff7fdb126 <_dl_lookup_symbol_x+86>:	add    %rsi,%rax
+
+0x7ffff7fdb129: => 0x7ffff7fdb129 <_dl_lookup_symbol_x+89>:	add    %rdx,%rax
+
+0x7ffff7fdb12c: => 0x7ffff7fdb12c <_dl_lookup_symbol_x+92>:	movzbl (%rcx),%edx
+
+0x7ffff7fdb12f: => 0x7ffff7fdb12f <_dl_lookup_symbol_x+95>:	test   %dl,%dl
+
+0x7ffff7fdb131: => 0x7ffff7fdb131 <_dl_lookup_symbol_x+97>:	jne    0x7ffff7fdb118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fdb118: => 0x7ffff7fdb118 <_dl_lookup_symbol_x+72>:	mov    %rax,%rsi
+
+0x7ffff7fdb11b: => 0x7ffff7fdb11b <_dl_lookup_symbol_x+75>:	movzbl %dl,%edx
+
+0x7ffff7fdb11e: => 0x7ffff7fdb11e <_dl_lookup_symbol_x+78>:	add    $0x1,%rcx
+
+0x7ffff7fdb122: => 0x7ffff7fdb122 <_dl_lookup_symbol_x+82>:	shl    $0x5,%rsi
+
+0x7ffff7fdb126: => 0x7ffff7fdb126 <_dl_lookup_symbol_x+86>:	add    %rsi,%rax
+
+0x7ffff7fdb129: => 0x7ffff7fdb129 <_dl_lookup_symbol_x+89>:	add    %rdx,%rax
+
+0x7ffff7fdb12c: => 0x7ffff7fdb12c <_dl_lookup_symbol_x+92>:	movzbl (%rcx),%edx
+
+0x7ffff7fdb12f: => 0x7ffff7fdb12f <_dl_lookup_symbol_x+95>:	test   %dl,%dl
+
+0x7ffff7fdb131: => 0x7ffff7fdb131 <_dl_lookup_symbol_x+97>:	jne    0x7ffff7fdb118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fdb118: => 0x7ffff7fdb118 <_dl_lookup_symbol_x+72>:	mov    %rax,%rsi
+
+0x7ffff7fdb11b: => 0x7ffff7fdb11b <_dl_lookup_symbol_x+75>:	movzbl %dl,%edx
+
+0x7ffff7fdb11e: => 0x7ffff7fdb11e <_dl_lookup_symbol_x+78>:	add    $0x1,%rcx
+
+0x7ffff7fdb122: => 0x7ffff7fdb122 <_dl_lookup_symbol_x+82>:	shl    $0x5,%rsi
+
+0x7ffff7fdb126: => 0x7ffff7fdb126 <_dl_lookup_symbol_x+86>:	add    %rsi,%rax
+
+0x7ffff7fdb129: => 0x7ffff7fdb129 <_dl_lookup_symbol_x+89>:	add    %rdx,%rax
+
+0x7ffff7fdb12c: => 0x7ffff7fdb12c <_dl_lookup_symbol_x+92>:	movzbl (%rcx),%edx
+
+0x7ffff7fdb12f: => 0x7ffff7fdb12f <_dl_lookup_symbol_x+95>:	test   %dl,%dl
+
+0x7ffff7fdb131: => 0x7ffff7fdb131 <_dl_lookup_symbol_x+97>:	jne    0x7ffff7fdb118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fdb118: => 0x7ffff7fdb118 <_dl_lookup_symbol_x+72>:	mov    %rax,%rsi
+
+0x7ffff7fdb11b: => 0x7ffff7fdb11b <_dl_lookup_symbol_x+75>:	movzbl %dl,%edx
+
+0x7ffff7fdb11e: => 0x7ffff7fdb11e <_dl_lookup_symbol_x+78>:	add    $0x1,%rcx
+
+0x7ffff7fdb122: => 0x7ffff7fdb122 <_dl_lookup_symbol_x+82>:	shl    $0x5,%rsi
+
+0x7ffff7fdb126: => 0x7ffff7fdb126 <_dl_lookup_symbol_x+86>:	add    %rsi,%rax
+
+0x7ffff7fdb129: => 0x7ffff7fdb129 <_dl_lookup_symbol_x+89>:	add    %rdx,%rax
+
+0x7ffff7fdb12c: => 0x7ffff7fdb12c <_dl_lookup_symbol_x+92>:	movzbl (%rcx),%edx
+
+0x7ffff7fdb12f: => 0x7ffff7fdb12f <_dl_lookup_symbol_x+95>:	test   %dl,%dl
+
+0x7ffff7fdb131: => 0x7ffff7fdb131 <_dl_lookup_symbol_x+97>:	jne    0x7ffff7fdb118 <_dl_lookup_symbol_x+72>
+
+0x7ffff7fdb133: => 0x7ffff7fdb133 <_dl_lookup_symbol_x+99>:	mov    %eax,%ebx
+
+0x7ffff7fdb135: => 0x7ffff7fdb135 <_dl_lookup_symbol_x+101>:	addq   $0x1,0x22893(%rip)        # 0x7ffff7ffd9d0 <_rtld_global+2416>
+
+0x7ffff7fdb13d: => 0x7ffff7fdb13d <_dl_lookup_symbol_x+109>:	mov    $0xffffffff,%eax
+
+0x7ffff7fdb142: => 0x7ffff7fdb142 <_dl_lookup_symbol_x+114>:	pxor   %xmm0,%xmm0
+
+0x7ffff7fdb146: => 0x7ffff7fdb146 <_dl_lookup_symbol_x+118>:	cmpq   $0x0,0x8(%rsp)
+
+0x7ffff7fdb14c: => 0x7ffff7fdb14c <_dl_lookup_symbol_x+124>:	mov    %rax,0x40(%rsp)
+
+0x7ffff7fdb151: => 0x7ffff7fdb151 <_dl_lookup_symbol_x+129>:	movaps %xmm0,0x50(%rsp)
+
+0x7ffff7fdb156: => 0x7ffff7fdb156 <_dl_lookup_symbol_x+134>:	je     0x7ffff7fdb166 <_dl_lookup_symbol_x+150>
+
+0x7ffff7fdb158: => 0x7ffff7fdb158 <_dl_lookup_symbol_x+136>:	testb  $0x2,0xd0(%rsp)
+
+0x7ffff7fdb160: => 0x7ffff7fdb160 <_dl_lookup_symbol_x+144>:	jne    0x7ffff7fdbeb2 <_dl_lookup_symbol_x+3554>
+
+0x7ffff7fdb166: => 0x7ffff7fdb166 <_dl_lookup_symbol_x+150>:	mov    0x18(%rsp),%rax
+
+0x7ffff7fdb16b: => 0x7ffff7fdb16b <_dl_lookup_symbol_x+155>:	mov    (%r12),%rcx
+
+0x7ffff7fdb16f: => 0x7ffff7fdb16f <_dl_lookup_symbol_x+159>:	cmpq   $0x0,0xd8(%rsp)
+
+0x7ffff7fdb178: => 0x7ffff7fdb178 <_dl_lookup_symbol_x+168>:	mov    (%rax),%r9
+
+0x7ffff7fdb17b: => 0x7ffff7fdb17b <_dl_lookup_symbol_x+171>:	jne    0x7ffff7fdb3f0 <_dl_lookup_symbol_x+800>
+
+0x7ffff7fdb181: => 0x7ffff7fdb181 <_dl_lookup_symbol_x+177>:	test   %r9,%r9
+
+0x7ffff7fdb184: => 0x7ffff7fdb184 <_dl_lookup_symbol_x+180>:	je     0x7ffff7fdb340 <_dl_lookup_symbol_x+624>
+
+0x7ffff7fdb18a: => 0x7ffff7fdb18a <_dl_lookup_symbol_x+186>:	movq   $0x0,0x20(%rsp)
+
+0x7ffff7fdb193: => 0x7ffff7fdb193 <_dl_lookup_symbol_x+195>:	mov    %rax,%rbp
+
+0x7ffff7fdb196: => 0x7ffff7fdb196 <_dl_lookup_symbol_x+198>:	mov    0x20(%rsp),%rax
+
+0x7ffff7fdb19b: => 0x7ffff7fdb19b <_dl_lookup_symbol_x+203>:	lea    0x50(%rsp),%r15
+
+0x7ffff7fdb1a0: => 0x7ffff7fdb1a0 <_dl_lookup_symbol_x+208>:	lea    0x40(%rsp),%r14
+
+0x7ffff7fdb1a5: => 0x7ffff7fdb1a5 <_dl_lookup_symbol_x+213>:	jmp    0x7ffff7fdb1c3 <_dl_lookup_symbol_x+243>
+
+0x7ffff7fdb1c3: => 0x7ffff7fdb1c3 <_dl_lookup_symbol_x+243>:	pushq  0x10(%rsp)
+
+0x7ffff7fdb1c7: => 0x7ffff7fdb1c7 <_dl_lookup_symbol_x+247>:	mov    0x40(%rsp),%edi
+
+0x7ffff7fdb1cb: => 0x7ffff7fdb1cb <_dl_lookup_symbol_x+251>:	mov    %r15,%r8
+
+0x7ffff7fdb1ce: => 0x7ffff7fdb1ce <_dl_lookup_symbol_x+254>:	mov    %r14,%rdx
+
+0x7ffff7fdb1d1: => 0x7ffff7fdb1d1 <_dl_lookup_symbol_x+257>:	mov    %rbx,%rsi
+
+0x7ffff7fdb1d4: => 0x7ffff7fdb1d4 <_dl_lookup_symbol_x+260>:	push   %rdi
+
+0x7ffff7fdb1d5: => 0x7ffff7fdb1d5 <_dl_lookup_symbol_x+261>:	pushq  0xe8(%rsp)
+
+0x7ffff7fdb1dc: => 0x7ffff7fdb1dc <_dl_lookup_symbol_x+268>:	mov    0xe8(%rsp),%edi
+
+0x7ffff7fdb1e3: => 0x7ffff7fdb1e3 <_dl_lookup_symbol_x+275>:	push   %rdi
+
+0x7ffff7fdb1e4: => 0x7ffff7fdb1e4 <_dl_lookup_symbol_x+276>:	mov    %r13,%rdi
+
+0x7ffff7fdb1e7: => 0x7ffff7fdb1e7 <_dl_lookup_symbol_x+279>:	pushq  0x28(%rsp)
+
+0x7ffff7fdb1eb: => 0x7ffff7fdb1eb <_dl_lookup_symbol_x+283>:	push   %rax
+
+0x7ffff7fdb1ec: => 0x7ffff7fdb1ec <_dl_lookup_symbol_x+284>:	callq  0x7ffff7fda4c0 <do_lookup_x>
+
+0x7ffff7fda4c0: => 0x7ffff7fda4c0 <do_lookup_x>:	push   %r15
+
+0x7ffff7fda4c2: => 0x7ffff7fda4c2 <do_lookup_x+2>:	push   %r14
+
+0x7ffff7fda4c4: => 0x7ffff7fda4c4 <do_lookup_x+4>:	mov    %rsi,%r14
+
+0x7ffff7fda4c7: => 0x7ffff7fda4c7 <do_lookup_x+7>:	push   %r13
+
+0x7ffff7fda4c9: => 0x7ffff7fda4c9 <do_lookup_x+9>:	push   %r12
+
+0x7ffff7fda4cb: => 0x7ffff7fda4cb <do_lookup_x+11>:	push   %rbp
+
+0x7ffff7fda4cc: => 0x7ffff7fda4cc <do_lookup_x+12>:	push   %rbx
+
+0x7ffff7fda4cd: => 0x7ffff7fda4cd <do_lookup_x+13>:	sub    $0x98,%rsp
+
+0x7ffff7fda4d4: => 0x7ffff7fda4d4 <do_lookup_x+20>:	mov    0x8(%r9),%r12d
+
+0x7ffff7fda4d8: => 0x7ffff7fda4d8 <do_lookup_x+24>:	mov    %rdi,0x20(%rsp)
+
+0x7ffff7fda4dd: => 0x7ffff7fda4dd <do_lookup_x+29>:	mov    0xd0(%rsp),%rbp
+
+0x7ffff7fda4e5: => 0x7ffff7fda4e5 <do_lookup_x+37>:	mov    %rdx,0x58(%rsp)
+
+0x7ffff7fda4ea: => 0x7ffff7fda4ea <do_lookup_x+42>:	mov    0xe8(%rsp),%r15
+
+0x7ffff7fda4f2: => 0x7ffff7fda4f2 <do_lookup_x+50>:	mov    %rcx,0x50(%rsp)
+
+0x7ffff7fda4f7: => 0x7ffff7fda4f7 <do_lookup_x+55>:	mov    %r8,0x48(%rsp)
+
+0x7ffff7fda4fc: => 0x7ffff7fda4fc <do_lookup_x+60>:	shr    $0x6,%rsi
+
+0x7ffff7fda500: => 0x7ffff7fda500 <do_lookup_x+64>:	mov    %r12,%r11
+
+0x7ffff7fda503: => 0x7ffff7fda503 <do_lookup_x+67>:	mov    %r14,0x28(%rsp)
+
+0x7ffff7fda508: => 0x7ffff7fda508 <do_lookup_x+72>:	mov    %r15,%r12
+
+0x7ffff7fda50b: => 0x7ffff7fda50b <do_lookup_x+75>:	mov    0xf0(%rsp),%eax
+
+0x7ffff7fda512: => 0x7ffff7fda512 <do_lookup_x+82>:	mov    (%r9),%r13
+
+0x7ffff7fda515: => 0x7ffff7fda515 <do_lookup_x+85>:	mov    %rsi,0x30(%rsp)
+
+0x7ffff7fda51a: => 0x7ffff7fda51a <do_lookup_x+90>:	and    $0x2,%eax
+
+0x7ffff7fda51d: => 0x7ffff7fda51d <do_lookup_x+93>:	mov    %eax,0x64(%rsp)
+
+0x7ffff7fda521: => 0x7ffff7fda521 <do_lookup_x+97>:	mov    %eax,%r15d
+
+0x7ffff7fda524: => 0x7ffff7fda524 <do_lookup_x+100>:	jmpq   0x7ffff7fda5bf <do_lookup_x+255>
+
+0x7ffff7fda5bf: => 0x7ffff7fda5bf <do_lookup_x+255>:	mov    0x0(%r13,%rbp,8),%rax
+
+0x7ffff7fda5c4: => 0x7ffff7fda5c4 <do_lookup_x+260>:	mov    0x28(%rax),%rbx
+
+0x7ffff7fda5c8: => 0x7ffff7fda5c8 <do_lookup_x+264>:	cmp    %r12,%rbx
+
+0x7ffff7fda5cb: => 0x7ffff7fda5cb <do_lookup_x+267>:	je     0x7ffff7fda5b2 <do_lookup_x+242>
+
+0x7ffff7fda5cd: => 0x7ffff7fda5cd <do_lookup_x+269>:	test   %r15d,%r15d
+
+0x7ffff7fda5d0: => 0x7ffff7fda5d0 <do_lookup_x+272>:	je     0x7ffff7fda5db <do_lookup_x+283>
+
+0x7ffff7fda5db: => 0x7ffff7fda5db <do_lookup_x+283>:	testb  $0x20,0x31d(%rbx)
+
+0x7ffff7fda5e2: => 0x7ffff7fda5e2 <do_lookup_x+290>:	jne    0x7ffff7fda5b2 <do_lookup_x+242>
+
+0x7ffff7fda5e4: => 0x7ffff7fda5e4 <do_lookup_x+292>:	testb  $0x8,0x22035(%rip)        # 0x7ffff7ffc620 <_rtld_global_ro>
+
+0x7ffff7fda5eb: => 0x7ffff7fda5eb <do_lookup_x+299>:	je     0x7ffff7fda530 <do_lookup_x+112>
+
+0x7ffff7fda530: => 0x7ffff7fda530 <do_lookup_x+112>:	mov    0x2f4(%rbx),%esi
+
+0x7ffff7fda536: => 0x7ffff7fda536 <do_lookup_x+118>:	test   %esi,%esi
+
+0x7ffff7fda538: => 0x7ffff7fda538 <do_lookup_x+120>:	je     0x7ffff7fda5b2 <do_lookup_x+242>
+
+0x7ffff7fda53a: => 0x7ffff7fda53a <do_lookup_x+122>:	movl   $0x0,0x84(%rsp)
+
+0x7ffff7fda545: => 0x7ffff7fda545 <do_lookup_x+133>:	mov    0x70(%rbx),%rax
+
+0x7ffff7fda549: => 0x7ffff7fda549 <do_lookup_x+137>:	movq   $0x0,0x88(%rsp)
+
+0x7ffff7fda555: => 0x7ffff7fda555 <do_lookup_x+149>:	mov    0x8(%rax),%rax
+
+0x7ffff7fda559: => 0x7ffff7fda559 <do_lookup_x+153>:	mov    %rax,0x18(%rsp)
+
+0x7ffff7fda55e: => 0x7ffff7fda55e <do_lookup_x+158>:	mov    0x68(%rbx),%rax
+
+0x7ffff7fda562: => 0x7ffff7fda562 <do_lookup_x+162>:	mov    0x8(%rax),%rax
+
+0x7ffff7fda566: => 0x7ffff7fda566 <do_lookup_x+166>:	mov    %rax,(%rsp)
+
+0x7ffff7fda56a: => 0x7ffff7fda56a <do_lookup_x+170>:	mov    0x300(%rbx),%rax
+
+0x7ffff7fda571: => 0x7ffff7fda571 <do_lookup_x+177>:	test   %rax,%rax
+
+0x7ffff7fda574: => 0x7ffff7fda574 <do_lookup_x+180>:	je     0x7ffff7fda640 <do_lookup_x+384>
+
+0x7ffff7fda57a: => 0x7ffff7fda57a <do_lookup_x+186>:	mov    0x28(%rsp),%rdi
+
+0x7ffff7fda57f: => 0x7ffff7fda57f <do_lookup_x+191>:	mov    0x2fc(%rbx),%ecx
+
+0x7ffff7fda585: => 0x7ffff7fda585 <do_lookup_x+197>:	mov    0x30(%rsp),%edx
+
+0x7ffff7fda589: => 0x7ffff7fda589 <do_lookup_x+201>:	and    0x2f8(%rbx),%edx
+
+0x7ffff7fda58f: => 0x7ffff7fda58f <do_lookup_x+207>:	mov    (%rax,%rdx,8),%rax
+
+0x7ffff7fda593: => 0x7ffff7fda593 <do_lookup_x+211>:	mov    %rdi,%rdx
+
+0x7ffff7fda596: => 0x7ffff7fda596 <do_lookup_x+214>:	shr    %cl,%rdx
+
+0x7ffff7fda599: => 0x7ffff7fda599 <do_lookup_x+217>:	mov    %rdx,%rcx
+
+0x7ffff7fda59c: => 0x7ffff7fda59c <do_lookup_x+220>:	mov    %rax,%rdx
+
+0x7ffff7fda59f: => 0x7ffff7fda59f <do_lookup_x+223>:	shr    %cl,%rdx
+
+0x7ffff7fda5a2: => 0x7ffff7fda5a2 <do_lookup_x+226>:	mov    %edi,%ecx
+
+0x7ffff7fda5a4: => 0x7ffff7fda5a4 <do_lookup_x+228>:	shr    %cl,%rax
+
+0x7ffff7fda5a7: => 0x7ffff7fda5a7 <do_lookup_x+231>:	and    %rdx,%rax
+
+0x7ffff7fda5aa: => 0x7ffff7fda5aa <do_lookup_x+234>:	test   $0x1,%al
+
+0x7ffff7fda5ac: => 0x7ffff7fda5ac <do_lookup_x+236>:	jne    0x7ffff7fda7b0 <do_lookup_x+752>
+
+0x7ffff7fda5b2: => 0x7ffff7fda5b2 <do_lookup_x+242>:	add    $0x1,%rbp
+
+0x7ffff7fda5b6: => 0x7ffff7fda5b6 <do_lookup_x+246>:	cmp    %rbp,%r11
+
+0x7ffff7fda5b9: => 0x7ffff7fda5b9 <do_lookup_x+249>:	jbe    0x7ffff7fda8a0 <do_lookup_x+992>
+
+0x7ffff7fda5bf: => 0x7ffff7fda5bf <do_lookup_x+255>:	mov    0x0(%r13,%rbp,8),%rax
+
+0x7ffff7fda5c4: => 0x7ffff7fda5c4 <do_lookup_x+260>:	mov    0x28(%rax),%rbx
+
+0x7ffff7fda5c8: => 0x7ffff7fda5c8 <do_lookup_x+264>:	cmp    %r12,%rbx
+
+0x7ffff7fda5cb: => 0x7ffff7fda5cb <do_lookup_x+267>:	je     0x7ffff7fda5b2 <do_lookup_x+242>
+
+0x7ffff7fda5cd: => 0x7ffff7fda5cd <do_lookup_x+269>:	test   %r15d,%r15d
+
+0x7ffff7fda5d0: => 0x7ffff7fda5d0 <do_lookup_x+272>:	je     0x7ffff7fda5db <do_lookup_x+283>
+
+0x7ffff7fda5db: => 0x7ffff7fda5db <do_lookup_x+283>:	testb  $0x20,0x31d(%rbx)
+
+0x7ffff7fda5e2: => 0x7ffff7fda5e2 <do_lookup_x+290>:	jne    0x7ffff7fda5b2 <do_lookup_x+242>
+
+0x7ffff7fda5e4: => 0x7ffff7fda5e4 <do_lookup_x+292>:	testb  $0x8,0x22035(%rip)        # 0x7ffff7ffc620 <_rtld_global_ro>
+
+0x7ffff7fda5eb: => 0x7ffff7fda5eb <do_lookup_x+299>:	je     0x7ffff7fda530 <do_lookup_x+112>
+
+0x7ffff7fda530: => 0x7ffff7fda530 <do_lookup_x+112>:	mov    0x2f4(%rbx),%esi
+
+0x7ffff7fda536: => 0x7ffff7fda536 <do_lookup_x+118>:	test   %esi,%esi
+
+0x7ffff7fda538: => 0x7ffff7fda538 <do_lookup_x+120>:	je     0x7ffff7fda5b2 <do_lookup_x+242>
+
+0x7ffff7fda53a: => 0x7ffff7fda53a <do_lookup_x+122>:	movl   $0x0,0x84(%rsp)
+
+0x7ffff7fda545: => 0x7ffff7fda545 <do_lookup_x+133>:	mov    0x70(%rbx),%rax
+
+0x7ffff7fda549: => 0x7ffff7fda549 <do_lookup_x+137>:	movq   $0x0,0x88(%rsp)
+
+0x7ffff7fda555: => 0x7ffff7fda555 <do_lookup_x+149>:	mov    0x8(%rax),%rax
+
+0x7ffff7fda559: => 0x7ffff7fda559 <do_lookup_x+153>:	mov    %rax,0x18(%rsp)
+
+0x7ffff7fda55e: => 0x7ffff7fda55e <do_lookup_x+158>:	mov    0x68(%rbx),%rax
+
+0x7ffff7fda562: => 0x7ffff7fda562 <do_lookup_x+162>:	mov    0x8(%rax),%rax
+
+0x7ffff7fda566: => 0x7ffff7fda566 <do_lookup_x+166>:	mov    %rax,(%rsp)
+
+0x7ffff7fda56a: => 0x7ffff7fda56a <do_lookup_x+170>:	mov    0x300(%rbx),%rax
+
+0x7ffff7fda571: => 0x7ffff7fda571 <do_lookup_x+177>:	test   %rax,%rax
+
+0x7ffff7fda574: => 0x7ffff7fda574 <do_lookup_x+180>:	je     0x7ffff7fda640 <do_lookup_x+384>
+
+0x7ffff7fda57a: => 0x7ffff7fda57a <do_lookup_x+186>:	mov    0x28(%rsp),%rdi
+
+0x7ffff7fda57f: => 0x7ffff7fda57f <do_lookup_x+191>:	mov    0x2fc(%rbx),%ecx
+
+0x7ffff7fda585: => 0x7ffff7fda585 <do_lookup_x+197>:	mov    0x30(%rsp),%edx
+
+0x7ffff7fda589: => 0x7ffff7fda589 <do_lookup_x+201>:	and    0x2f8(%rbx),%edx
+
+0x7ffff7fda58f: => 0x7ffff7fda58f <do_lookup_x+207>:	mov    (%rax,%rdx,8),%rax
+
+0x7ffff7fda593: => 0x7ffff7fda593 <do_lookup_x+211>:	mov    %rdi,%rdx
+
+0x7ffff7fda596: => 0x7ffff7fda596 <do_lookup_x+214>:	shr    %cl,%rdx
+
+0x7ffff7fda599: => 0x7ffff7fda599 <do_lookup_x+217>:	mov    %rdx,%rcx
+
+0x7ffff7fda59c: => 0x7ffff7fda59c <do_lookup_x+220>:	mov    %rax,%rdx
+
+0x7ffff7fda59f: => 0x7ffff7fda59f <do_lookup_x+223>:	shr    %cl,%rdx
+
+0x7ffff7fda5a2: => 0x7ffff7fda5a2 <do_lookup_x+226>:	mov    %edi,%ecx
+
+0x7ffff7fda5a4: => 0x7ffff7fda5a4 <do_lookup_x+228>:	shr    %cl,%rax
+
+0x7ffff7fda5a7: => 0x7ffff7fda5a7 <do_lookup_x+231>:	and    %rdx,%rax
+
+0x7ffff7fda5aa: => 0x7ffff7fda5aa <do_lookup_x+234>:	test   $0x1,%al
+
+0x7ffff7fda5ac: => 0x7ffff7fda5ac <do_lookup_x+236>:	jne    0x7ffff7fda7b0 <do_lookup_x+752>
+
+0x7ffff7fda7b0: => 0x7ffff7fda7b0 <do_lookup_x+752>:	mov    %rdi,%rax
+
+0x7ffff7fda7b3: => 0x7ffff7fda7b3 <do_lookup_x+755>:	xor    %edx,%edx
+
+0x7ffff7fda7b5: => 0x7ffff7fda7b5 <do_lookup_x+757>:	div    %rsi
+
+0x7ffff7fda7b8: => 0x7ffff7fda7b8 <do_lookup_x+760>:	mov    0x308(%rbx),%rax
+
+0x7ffff7fda7bf: => 0x7ffff7fda7bf <do_lookup_x+767>:	mov    (%rax,%rdx,4),%eax
+
+0x7ffff7fda7c2: => 0x7ffff7fda7c2 <do_lookup_x+770>:	test   %eax,%eax
+
+0x7ffff7fda7c4: => 0x7ffff7fda7c4 <do_lookup_x+772>:	je     0x7ffff7fda5b2 <do_lookup_x+242>
+
+0x7ffff7fda7ca: => 0x7ffff7fda7ca <do_lookup_x+778>:	mov    0x310(%rbx),%rdx
+
+0x7ffff7fda7d1: => 0x7ffff7fda7d1 <do_lookup_x+785>:	mov    %r15d,0x40(%rsp)
+
+0x7ffff7fda7d6: => 0x7ffff7fda7d6 <do_lookup_x+790>:	mov    %r13,0x68(%rsp)
+
+0x7ffff7fda7db: => 0x7ffff7fda7db <do_lookup_x+795>:	mov    0xe0(%rsp),%r15d
+
+0x7ffff7fda7e3: => 0x7ffff7fda7e3 <do_lookup_x+803>:	lea    (%rdx,%rax,4),%r14
+
+0x7ffff7fda7e7: => 0x7ffff7fda7e7 <do_lookup_x+807>:	lea    0x84(%rsp),%rax
+
+0x7ffff7fda7ef: => 0x7ffff7fda7ef <do_lookup_x+815>:	mov    %r11,0x70(%rsp)
+
+0x7ffff7fda7f4: => 0x7ffff7fda7f4 <do_lookup_x+820>:	mov    0xd8(%rsp),%r13
+
+0x7ffff7fda7fc: => 0x7ffff7fda7fc <do_lookup_x+828>:	mov    %rbp,0xd0(%rsp)
+
+0x7ffff7fda804: => 0x7ffff7fda804 <do_lookup_x+836>:	mov    %rdi,%rbp
+
+0x7ffff7fda807: => 0x7ffff7fda807 <do_lookup_x+839>:	mov    %r12,0xe8(%rsp)
+
+0x7ffff7fda80f: => 0x7ffff7fda80f <do_lookup_x+847>:	mov    0x50(%rsp),%r12
+
+0x7ffff7fda814: => 0x7ffff7fda814 <do_lookup_x+852>:	mov    %rax,0x38(%rsp)
+
+0x7ffff7fda819: => 0x7ffff7fda819 <do_lookup_x+857>:	jmp    0x7ffff7fda82d <do_lookup_x+877>
+
+0x7ffff7fda82d: => 0x7ffff7fda82d <do_lookup_x+877>:	mov    (%r14),%eax
+
+0x7ffff7fda830: => 0x7ffff7fda830 <do_lookup_x+880>:	mov    %rax,%rdx
+
+0x7ffff7fda833: => 0x7ffff7fda833 <do_lookup_x+883>:	xor    %rbp,%rax
+
+0x7ffff7fda836: => 0x7ffff7fda836 <do_lookup_x+886>:	shr    %rax
+
+0x7ffff7fda839: => 0x7ffff7fda839 <do_lookup_x+889>:	jne    0x7ffff7fda820 <do_lookup_x+864>
+
+0x7ffff7fda83b: => 0x7ffff7fda83b <do_lookup_x+891>:	sub    $0x8,%rsp
+
+0x7ffff7fda83f: => 0x7ffff7fda83f <do_lookup_x+895>:	mov    %r14,%rax
+
+0x7ffff7fda842: => 0x7ffff7fda842 <do_lookup_x+898>:	sub    0x310(%rbx),%rax
+
+0x7ffff7fda849: => 0x7ffff7fda849 <do_lookup_x+905>:	mov    %r12,%rsi
+
+0x7ffff7fda84c: => 0x7ffff7fda84c <do_lookup_x+908>:	pushq  0x40(%rsp)
+
+0x7ffff7fda850: => 0x7ffff7fda850 <do_lookup_x+912>:	sar    $0x2,%rax
+
+0x7ffff7fda854: => 0x7ffff7fda854 <do_lookup_x+916>:	mov    %eax,%edx
+
+0x7ffff7fda856: => 0x7ffff7fda856 <do_lookup_x+918>:	lea    (%rdx,%rdx,2),%rdx
+
+0x7ffff7fda85a: => 0x7ffff7fda85a <do_lookup_x+922>:	lea    0x98(%rsp),%rcx
+
+0x7ffff7fda862: => 0x7ffff7fda862 <do_lookup_x+930>:	push   %rcx
+
+0x7ffff7fda863: => 0x7ffff7fda863 <do_lookup_x+931>:	mov    %r15d,%ecx
+
+0x7ffff7fda866: => 0x7ffff7fda866 <do_lookup_x+934>:	push   %rbx
+
+0x7ffff7fda867: => 0x7ffff7fda867 <do_lookup_x+935>:	pushq  0x20(%rsp)
+
+0x7ffff7fda86b: => 0x7ffff7fda86b <do_lookup_x+939>:	push   %rax
+
+0x7ffff7fda86c: => 0x7ffff7fda86c <do_lookup_x+940>:	mov    0x48(%rsp),%rax
+
+0x7ffff7fda871: => 0x7ffff7fda871 <do_lookup_x+945>:	mov    0x120(%rsp),%r8d
+
+0x7ffff7fda879: => 0x7ffff7fda879 <do_lookup_x+953>:	mov    0x50(%rsp),%rdi
+
+0x7ffff7fda87e: => 0x7ffff7fda87e <do_lookup_x+958>:	lea    (%rax,%rdx,8),%r9
+
+0x7ffff7fda882: => 0x7ffff7fda882 <do_lookup_x+962>:	mov    %r13,%rdx
+
+0x7ffff7fda885: => 0x7ffff7fda885 <do_lookup_x+965>:	callq  0x7ffff7fda330 <check_match>
+
+0x7ffff7fda330: => 0x7ffff7fda330 <check_match>:	push   %r14
+
+0x7ffff7fda332: => 0x7ffff7fda332 <check_match+2>:	mov    %rdi,%r10
+
+0x7ffff7fda335: => 0x7ffff7fda335 <check_match+5>:	push   %r13
+
+0x7ffff7fda337: => 0x7ffff7fda337 <check_match+7>:	mov    %rdx,%r13
+
+0x7ffff7fda33a: => 0x7ffff7fda33a <check_match+10>:	movzwl 0x6(%r9),%edx
+
+0x7ffff7fda33f: => 0x7ffff7fda33f <check_match+15>:	push   %r12
+
+0x7ffff7fda341: => 0x7ffff7fda341 <check_match+17>:	push   %rbp
+
+0x7ffff7fda342: => 0x7ffff7fda342 <check_match+18>:	mov    %ecx,%ebp
+
+0x7ffff7fda344: => 0x7ffff7fda344 <check_match+20>:	movzbl 0x4(%r9),%ecx
+
+0x7ffff7fda349: => 0x7ffff7fda349 <check_match+25>:	push   %rbx
+
+0x7ffff7fda34a: => 0x7ffff7fda34a <check_match+26>:	mov    %r9,%rbx
+
+0x7ffff7fda34d: => 0x7ffff7fda34d <check_match+29>:	mov    0x40(%rsp),%r12
+
+0x7ffff7fda352: => 0x7ffff7fda352 <check_match+34>:	and    $0xf,%ecx
+
+0x7ffff7fda355: => 0x7ffff7fda355 <check_match+37>:	cmpq   $0x0,0x8(%r9)
+
+0x7ffff7fda35a: => 0x7ffff7fda35a <check_match+42>:	je     0x7ffff7fda468 <check_match+312>
+
+0x7ffff7fda360: => 0x7ffff7fda360 <check_match+48>:	mov    $0x467,%eax
+
+0x7ffff7fda365: => 0x7ffff7fda365 <check_match+53>:	sar    %cl,%eax
+
+0x7ffff7fda367: => 0x7ffff7fda367 <check_match+55>:	not    %eax
+
+0x7ffff7fda369: => 0x7ffff7fda369 <check_match+57>:	and    $0x1,%eax
+
+0x7ffff7fda36c: => 0x7ffff7fda36c <check_match+60>:	test   %dx,%dx
+
+0x7ffff7fda36f: => 0x7ffff7fda36f <check_match+63>:	sete   %dl
+
+0x7ffff7fda372: => 0x7ffff7fda372 <check_match+66>:	movzbl %dl,%edx
+
+0x7ffff7fda375: => 0x7ffff7fda375 <check_match+69>:	and    %edx,%r8d
+
+0x7ffff7fda378: => 0x7ffff7fda378 <check_match+72>:	or     %r8d,%eax
+
+0x7ffff7fda37b: => 0x7ffff7fda37b <check_match+75>:	jne    0x7ffff7fda440 <check_match+272>
+
+0x7ffff7fda381: => 0x7ffff7fda381 <check_match+81>:	cmp    %rsi,%rbx
+
+0x7ffff7fda384: => 0x7ffff7fda384 <check_match+84>:	je     0x7ffff7fda39d <check_match+109>
+
+0x7ffff7fda386: => 0x7ffff7fda386 <check_match+86>:	mov    (%rbx),%edi
+
+0x7ffff7fda388: => 0x7ffff7fda388 <check_match+88>:	mov    %r10,%rsi
+
+0x7ffff7fda38b: => 0x7ffff7fda38b <check_match+91>:	add    0x38(%rsp),%rdi
+
+0x7ffff7fda390: => 0x7ffff7fda390 <check_match+96>:	callq  0x7ffff7fee600 <strcmp>
+
+0x7ffff7fee600: => 0x7ffff7fee600 <strcmp>:	endbr64 
+
+0x7ffff7fee604: => 0x7ffff7fee604 <strcmp+4>:	mov    %esi,%ecx
+
+0x7ffff7fee606: => 0x7ffff7fee606 <strcmp+6>:	mov    %edi,%eax
+
+0x7ffff7fee608: => 0x7ffff7fee608 <strcmp+8>:	and    $0x3f,%rcx
+
+0x7ffff7fee60c: => 0x7ffff7fee60c <strcmp+12>:	and    $0x3f,%rax
+
+0x7ffff7fee610: => 0x7ffff7fee610 <strcmp+16>:	cmp    $0x30,%ecx
+
+0x7ffff7fee613: => 0x7ffff7fee613 <strcmp+19>:	ja     0x7ffff7fee660 <strcmp+96>
+
+0x7ffff7fee615: => 0x7ffff7fee615 <strcmp+21>:	cmp    $0x30,%eax
+
+0x7ffff7fee618: => 0x7ffff7fee618 <strcmp+24>:	ja     0x7ffff7fee660 <strcmp+96>
+
+0x7ffff7fee61a: => 0x7ffff7fee61a <strcmp+26>:	movlpd (%rdi),%xmm1
+
+0x7ffff7fee61e: => 0x7ffff7fee61e <strcmp+30>:	movlpd (%rsi),%xmm2
+
+0x7ffff7fee622: => 0x7ffff7fee622 <strcmp+34>:	movhpd 0x8(%rdi),%xmm1
+
+0x7ffff7fee627: => 0x7ffff7fee627 <strcmp+39>:	movhpd 0x8(%rsi),%xmm2
+
+0x7ffff7fee62c: => 0x7ffff7fee62c <strcmp+44>:	pxor   %xmm0,%xmm0
+
+0x7ffff7fee630: => 0x7ffff7fee630 <strcmp+48>:	pcmpeqb %xmm1,%xmm0
+
+0x7ffff7fee634: => 0x7ffff7fee634 <strcmp+52>:	pcmpeqb %xmm2,%xmm1
+
+0x7ffff7fee638: => 0x7ffff7fee638 <strcmp+56>:	psubb  %xmm0,%xmm1
+
+0x7ffff7fee63c: => 0x7ffff7fee63c <strcmp+60>:	pmovmskb %xmm1,%edx
+
+0x7ffff7fee640: => 0x7ffff7fee640 <strcmp+64>:	sub    $0xffff,%edx
+
+0x7ffff7fee646: => 0x7ffff7fee646 <strcmp+70>:	jne    0x7ffff7fefa20 <strcmp+5152>
+
+0x7ffff7fefa20: => 0x7ffff7fefa20 <strcmp+5152>:	bsf    %rdx,%rdx
+
+0x7ffff7fefa24: => 0x7ffff7fefa24 <strcmp+5156>:	movzbl (%rsi,%rdx,1),%ecx
+
+0x7ffff7fefa28: => 0x7ffff7fefa28 <strcmp+5160>:	movzbl (%rdi,%rdx,1),%eax
+
+0x7ffff7fefa2c: => 0x7ffff7fefa2c <strcmp+5164>:	sub    %ecx,%eax
+
+0x7ffff7fefa2e: => 0x7ffff7fefa2e <strcmp+5166>:	retq   
+
+0x7ffff7fda395: => 0x7ffff7fda395 <check_match+101>:	test   %eax,%eax
+
+0x7ffff7fda397: => 0x7ffff7fda397 <check_match+103>:	jne    0x7ffff7fda440 <check_match+272>
+
+0x7ffff7fda39d: => 0x7ffff7fda39d <check_match+109>:	mov    0x340(%r12),%rax
+
+0x7ffff7fda3a5: => 0x7ffff7fda3a5 <check_match+117>:	test   %r13,%r13
+
+0x7ffff7fda3a8: => 0x7ffff7fda3a8 <check_match+120>:	je     0x7ffff7fda3f8 <check_match+200>
+
+0x7ffff7fda3aa: => 0x7ffff7fda3aa <check_match+122>:	test   %rax,%rax
+
+0x7ffff7fda3ad: => 0x7ffff7fda3ad <check_match+125>:	je     0x7ffff7fda480 <check_match+336>
+
+0x7ffff7fda3b3: => 0x7ffff7fda3b3 <check_match+131>:	mov    0x30(%rsp),%edx
+
+0x7ffff7fda3b7: => 0x7ffff7fda3b7 <check_match+135>:	movzwl (%rax,%rdx,2),%r14d
+
+0x7ffff7fda3bc: => 0x7ffff7fda3bc <check_match+140>:	mov    %r14,%rax
+
+0x7ffff7fda3bf: => 0x7ffff7fda3bf <check_match+143>:	and    $0x7fff,%eax
+
+0x7ffff7fda3c4: => 0x7ffff7fda3c4 <check_match+148>:	lea    (%rax,%rax,2),%rdx
+
+0x7ffff7fda3c8: => 0x7ffff7fda3c8 <check_match+152>:	mov    0x2e8(%r12),%rax
+
+0x7ffff7fda3d0: => 0x7ffff7fda3d0 <check_match+160>:	lea    (%rax,%rdx,8),%rax
+
+0x7ffff7fda3d4: => 0x7ffff7fda3d4 <check_match+164>:	mov    0x8(%rax),%ebp
+
+0x7ffff7fda3d7: => 0x7ffff7fda3d7 <check_match+167>:	cmp    0x8(%r13),%ebp
+
+0x7ffff7fda3db: => 0x7ffff7fda3db <check_match+171>:	je     0x7ffff7fda450 <check_match+288>
+
+0x7ffff7fda450: => 0x7ffff7fda450 <check_match+288>:	mov    0x0(%r13),%rsi
+
+0x7ffff7fda454: => 0x7ffff7fda454 <check_match+292>:	mov    (%rax),%rdi
+
+0x7ffff7fda457: => 0x7ffff7fda457 <check_match+295>:	callq  0x7ffff7fee600 <strcmp>
+
+0x7ffff7fee600: => 0x7ffff7fee600 <strcmp>:	endbr64 
+
+0x7ffff7fee604: => 0x7ffff7fee604 <strcmp+4>:	mov    %esi,%ecx
+
+0x7ffff7fee606: => 0x7ffff7fee606 <strcmp+6>:	mov    %edi,%eax
+
+0x7ffff7fee608: => 0x7ffff7fee608 <strcmp+8>:	and    $0x3f,%rcx
+
+0x7ffff7fee60c: => 0x7ffff7fee60c <strcmp+12>:	and    $0x3f,%rax
+
+0x7ffff7fee610: => 0x7ffff7fee610 <strcmp+16>:	cmp    $0x30,%ecx
+
+0x7ffff7fee613: => 0x7ffff7fee613 <strcmp+19>:	ja     0x7ffff7fee660 <strcmp+96>
+
+0x7ffff7fee660: => 0x7ffff7fee660 <strcmp+96>:	and    $0xfffffffffffffff0,%rsi
+
+0x7ffff7fee664: => 0x7ffff7fee664 <strcmp+100>:	and    $0xfffffffffffffff0,%rdi
+
+0x7ffff7fee668: => 0x7ffff7fee668 <strcmp+104>:	mov    $0xffff,%edx
+
+0x7ffff7fee66d: => 0x7ffff7fee66d <strcmp+109>:	xor    %r8d,%r8d
+
+0x7ffff7fee670: => 0x7ffff7fee670 <strcmp+112>:	and    $0xf,%ecx
+
+0x7ffff7fee673: => 0x7ffff7fee673 <strcmp+115>:	and    $0xf,%eax
+
+0x7ffff7fee676: => 0x7ffff7fee676 <strcmp+118>:	cmp    %eax,%ecx
+
+0x7ffff7fee678: => 0x7ffff7fee678 <strcmp+120>:	je     0x7ffff7fee6a0 <strcmp+160>
+
+0x7ffff7fee67a: => 0x7ffff7fee67a <strcmp+122>:	ja     0x7ffff7fee683 <strcmp+131>
+
+0x7ffff7fee67c: => 0x7ffff7fee67c <strcmp+124>:	mov    %edx,%r8d
+
+0x7ffff7fee67f: => 0x7ffff7fee67f <strcmp+127>:	xchg   %eax,%ecx
+
+0x7ffff7fee680: => 0x7ffff7fee680 <strcmp+128>:	xchg   %rsi,%rdi
+
+0x7ffff7fee683: => 0x7ffff7fee683 <strcmp+131>:	lea    0xf(%rax),%r9
+
+0x7ffff7fee687: => 0x7ffff7fee687 <strcmp+135>:	sub    %rcx,%r9
+
+0x7ffff7fee68a: => 0x7ffff7fee68a <strcmp+138>:	lea    0x58b7(%rip),%r10        # 0x7ffff7ff3f48
+
+0x7ffff7fee691: => 0x7ffff7fee691 <strcmp+145>:	movslq (%r10,%r9,4),%r9
+
+0x7ffff7fee695: => 0x7ffff7fee695 <strcmp+149>:	lea    (%r10,%r9,1),%r10
+
+0x7ffff7fee699: => 0x7ffff7fee699 <strcmp+153>:	notrack jmpq *%r10
+
+0x7ffff7fef140: => 0x7ffff7fef140 <strcmp+2880>:	pxor   %xmm0,%xmm0
+
+0x7ffff7fef144: => 0x7ffff7fef144 <strcmp+2884>:	movdqa (%rdi),%xmm2
+
+0x7ffff7fef148: => 0x7ffff7fef148 <strcmp+2888>:	movdqa (%rsi),%xmm1
+
+0x7ffff7fef14c: => 0x7ffff7fef14c <strcmp+2892>:	pcmpeqb %xmm1,%xmm0
+
+0x7ffff7fef150: => 0x7ffff7fef150 <strcmp+2896>:	pslldq $0x7,%xmm2
+
+0x7ffff7fef155: => 0x7ffff7fef155 <strcmp+2901>:	pcmpeqb %xmm1,%xmm2
+
+0x7ffff7fef159: => 0x7ffff7fef159 <strcmp+2905>:	psubb  %xmm0,%xmm2
+
+0x7ffff7fef15d: => 0x7ffff7fef15d <strcmp+2909>:	pmovmskb %xmm2,%r9d
+
+0x7ffff7fef162: => 0x7ffff7fef162 <strcmp+2914>:	shr    %cl,%edx
+
+0x7ffff7fef164: => 0x7ffff7fef164 <strcmp+2916>:	shr    %cl,%r9d
+
+0x7ffff7fef167: => 0x7ffff7fef167 <strcmp+2919>:	sub    %r9d,%edx
+
+0x7ffff7fef16a: => 0x7ffff7fef16a <strcmp+2922>:	jne    0x7ffff7fefa05 <strcmp+5125>
+
+0x7ffff7fef170: => 0x7ffff7fef170 <strcmp+2928>:	movdqa (%rdi),%xmm3
+
+0x7ffff7fef174: => 0x7ffff7fef174 <strcmp+2932>:	pxor   %xmm0,%xmm0
+
+0x7ffff7fef178: => 0x7ffff7fef178 <strcmp+2936>:	mov    $0x10,%rcx
+
+0x7ffff7fef17f: => 0x7ffff7fef17f <strcmp+2943>:	mov    $0x9,%r9d
+
+0x7ffff7fef185: => 0x7ffff7fef185 <strcmp+2949>:	lea    0x9(%rdi),%r10
+
+0x7ffff7fef189: => 0x7ffff7fef189 <strcmp+2953>:	and    $0xfff,%r10
+
+0x7ffff7fef190: => 0x7ffff7fef190 <strcmp+2960>:	sub    $0x1000,%r10
+
+0x7ffff7fef197: => 0x7ffff7fef197 <strcmp+2967>:	nopw   0x0(%rax,%rax,1)
+
+0x7ffff7fef1a0: => 0x7ffff7fef1a0 <strcmp+2976>:	add    $0x10,%r10
+
+0x7ffff7fef1a4: => 0x7ffff7fef1a4 <strcmp+2980>:	jg     0x7ffff7fef240 <strcmp+3136>
+
+0x7ffff7fef1aa: => 0x7ffff7fef1aa <strcmp+2986>:	movdqa (%rsi,%rcx,1),%xmm1
+
+0x7ffff7fef1af: => 0x7ffff7fef1af <strcmp+2991>:	movdqa (%rdi,%rcx,1),%xmm2
+
+0x7ffff7fef1b4: => 0x7ffff7fef1b4 <strcmp+2996>:	movdqa %xmm2,%xmm4
+
+0x7ffff7fef1b8: => 0x7ffff7fef1b8 <strcmp+3000>:	psrldq $0x9,%xmm3
+
+0x7ffff7fef1bd: => 0x7ffff7fef1bd <strcmp+3005>:	pslldq $0x7,%xmm2
+
+0x7ffff7fef1c2: => 0x7ffff7fef1c2 <strcmp+3010>:	por    %xmm3,%xmm2
+
+0x7ffff7fef1c6: => 0x7ffff7fef1c6 <strcmp+3014>:	pcmpeqb %xmm1,%xmm0
+
+0x7ffff7fef1ca: => 0x7ffff7fef1ca <strcmp+3018>:	pcmpeqb %xmm2,%xmm1
+
+0x7ffff7fef1ce: => 0x7ffff7fef1ce <strcmp+3022>:	psubb  %xmm0,%xmm1
+
+0x7ffff7fef1d2: => 0x7ffff7fef1d2 <strcmp+3026>:	pmovmskb %xmm1,%edx
+
+0x7ffff7fef1d6: => 0x7ffff7fef1d6 <strcmp+3030>:	sub    $0xffff,%edx
+
+0x7ffff7fef1dc: => 0x7ffff7fef1dc <strcmp+3036>:	jne    0x7ffff7fefa00 <strcmp+5120>
+
+0x7ffff7fefa00: => 0x7ffff7fefa00 <strcmp+5120>:	lea    -0x10(%r9,%rcx,1),%rax
+
+0x7ffff7fefa05: => 0x7ffff7fefa05 <strcmp+5125>:	lea    (%rdi,%rax,1),%rdi
+
+0x7ffff7fefa09: => 0x7ffff7fefa09 <strcmp+5129>:	lea    (%rsi,%rcx,1),%rsi
+
+0x7ffff7fefa0d: => 0x7ffff7fefa0d <strcmp+5133>:	test   %r8d,%r8d
+
+0x7ffff7fefa10: => 0x7ffff7fefa10 <strcmp+5136>:	je     0x7ffff7fefa20 <strcmp+5152>
+
+0x7ffff7fefa12: => 0x7ffff7fefa12 <strcmp+5138>:	xchg   %rsi,%rdi
+
+0x7ffff7fefa15: => 0x7ffff7fefa15 <strcmp+5141>:	data16 nopw %cs:0x0(%rax,%rax,1)
+
+0x7ffff7fefa20: => 0x7ffff7fefa20 <strcmp+5152>:	bsf    %rdx,%rdx
+
+0x7ffff7fefa24: => 0x7ffff7fefa24 <strcmp+5156>:	movzbl (%rsi,%rdx,1),%ecx
+
+0x7ffff7fefa28: => 0x7ffff7fefa28 <strcmp+5160>:	movzbl (%rdi,%rdx,1),%eax
+
+0x7ffff7fefa2c: => 0x7ffff7fefa2c <strcmp+5164>:	sub    %ecx,%eax
+
+0x7ffff7fefa2e: => 0x7ffff7fefa2e <strcmp+5166>:	retq   
+
+0x7ffff7fda45c: => 0x7ffff7fda45c <check_match+300>:	test   %eax,%eax
+
+0x7ffff7fda45e: => 0x7ffff7fda45e <check_match+302>:	je     0x7ffff7fda3e9 <check_match+185>
+
+0x7ffff7fda3e9: => 0x7ffff7fda3e9 <check_match+185>:	mov    %rbx,%rax
+
+0x7ffff7fda3ec: => 0x7ffff7fda3ec <check_match+188>:	pop    %rbx
+
+0x7ffff7fda3ed: => 0x7ffff7fda3ed <check_match+189>:	pop    %rbp
+
+0x7ffff7fda3ee: => 0x7ffff7fda3ee <check_match+190>:	pop    %r12
+
+0x7ffff7fda3f0: => 0x7ffff7fda3f0 <check_match+192>:	pop    %r13
+
+0x7ffff7fda3f2: => 0x7ffff7fda3f2 <check_match+194>:	pop    %r14
+
+0x7ffff7fda3f4: => 0x7ffff7fda3f4 <check_match+196>:	retq   
+
+0x7ffff7fda88a: => 0x7ffff7fda88a <do_lookup_x+970>:	add    $0x30,%rsp
+
+0x7ffff7fda88e: => 0x7ffff7fda88e <do_lookup_x+974>:	test   %rax,%rax
+
+0x7ffff7fda891: => 0x7ffff7fda891 <do_lookup_x+977>:	jne    0x7ffff7fdafd4 <do_lookup_x+2836>
+
+0x7ffff7fdafd4: => 0x7ffff7fdafd4 <do_lookup_x+2836>:	mov    0x40(%rsp),%r15d
+
+0x7ffff7fdafd9: => 0x7ffff7fdafd9 <do_lookup_x+2841>:	mov    0x68(%rsp),%r13
+
+0x7ffff7fdafde: => 0x7ffff7fdafde <do_lookup_x+2846>:	mov    %rax,%r8
+
+0x7ffff7fdafe1: => 0x7ffff7fdafe1 <do_lookup_x+2849>:	mov    0xd0(%rsp),%rbp
+
+0x7ffff7fdafe9: => 0x7ffff7fdafe9 <do_lookup_x+2857>:	mov    0xe8(%rsp),%r12
+
+0x7ffff7fdaff1: => 0x7ffff7fdaff1 <do_lookup_x+2865>:	mov    0x70(%rsp),%r11
+
+0x7ffff7fdaff6: => 0x7ffff7fdaff6 <do_lookup_x+2870>:	jmpq   0x7ffff7fda748 <do_lookup_x+648>
+
+0x7ffff7fda748: => 0x7ffff7fda748 <do_lookup_x+648>:	cmpq   $0x0,0xf8(%rsp)
+
+0x7ffff7fda751: => 0x7ffff7fda751 <do_lookup_x+657>:	je     0x7ffff7fda8b8 <do_lookup_x+1016>
+
+0x7ffff7fda757: => 0x7ffff7fda757 <do_lookup_x+663>:	movzbl 0x5(%r8),%eax
+
+0x7ffff7fda75c: => 0x7ffff7fda75c <do_lookup_x+668>:	and    $0x3,%eax
+
+0x7ffff7fda75f: => 0x7ffff7fda75f <do_lookup_x+671>:	sub    $0x1,%eax
+
+0x7ffff7fda762: => 0x7ffff7fda762 <do_lookup_x+674>:	cmp    $0x1,%eax
+
+0x7ffff7fda765: => 0x7ffff7fda765 <do_lookup_x+677>:	jbe    0x7ffff7fda5b2 <do_lookup_x+242>
+
+0x7ffff7fda76b: => 0x7ffff7fda76b <do_lookup_x+683>:	movzbl 0x4(%r8),%eax
+
+0x7ffff7fda770: => 0x7ffff7fda770 <do_lookup_x+688>:	shr    $0x4,%al
+
+0x7ffff7fda773: => 0x7ffff7fda773 <do_lookup_x+691>:	cmp    $0x2,%al
+
+0x7ffff7fda775: => 0x7ffff7fda775 <do_lookup_x+693>:	je     0x7ffff7fda9c0 <do_lookup_x+1280>
+
+0x7ffff7fda9c0: => 0x7ffff7fda9c0 <do_lookup_x+1280>:	mov    0x21ca6(%rip),%ecx        # 0x7ffff7ffc66c <_rtld_global_ro+76>
+
+0x7ffff7fda9c6: => 0x7ffff7fda9c6 <do_lookup_x+1286>:	test   %ecx,%ecx
+
+0x7ffff7fda9c8: => 0x7ffff7fda9c8 <do_lookup_x+1288>:	je     0x7ffff7fda78b <do_lookup_x+715>
+
+0x7ffff7fda78b: => 0x7ffff7fda78b <do_lookup_x+715>:	mov    0x48(%rsp),%rax
+
+0x7ffff7fda790: => 0x7ffff7fda790 <do_lookup_x+720>:	movq   %r8,%xmm0
+
+0x7ffff7fda795: => 0x7ffff7fda795 <do_lookup_x+725>:	movq   %rbx,%xmm1
+
+0x7ffff7fda79a: => 0x7ffff7fda79a <do_lookup_x+730>:	punpcklqdq %xmm1,%xmm0
+
+0x7ffff7fda79e: => 0x7ffff7fda79e <do_lookup_x+734>:	movaps %xmm0,(%rax)
+
+0x7ffff7fda7a1: => 0x7ffff7fda7a1 <do_lookup_x+737>:	mov    $0x1,%eax
+
+0x7ffff7fda7a6: => 0x7ffff7fda7a6 <do_lookup_x+742>:	jmpq   0x7ffff7fda8a2 <do_lookup_x+994>
+
+0x7ffff7fda8a2: => 0x7ffff7fda8a2 <do_lookup_x+994>:	add    $0x98,%rsp
+
+0x7ffff7fda8a9: => 0x7ffff7fda8a9 <do_lookup_x+1001>:	pop    %rbx
+
+0x7ffff7fda8aa: => 0x7ffff7fda8aa <do_lookup_x+1002>:	pop    %rbp
+
+0x7ffff7fda8ab: => 0x7ffff7fda8ab <do_lookup_x+1003>:	pop    %r12
+
+0x7ffff7fda8ad: => 0x7ffff7fda8ad <do_lookup_x+1005>:	pop    %r13
+
+0x7ffff7fda8af: => 0x7ffff7fda8af <do_lookup_x+1007>:	pop    %r14
+
+0x7ffff7fda8b1: => 0x7ffff7fda8b1 <do_lookup_x+1009>:	pop    %r15
+
+0x7ffff7fda8b3: => 0x7ffff7fda8b3 <do_lookup_x+1011>:	retq   
+
+0x7ffff7fdb1f1: => 0x7ffff7fdb1f1 <_dl_lookup_symbol_x+289>:	add    $0x30,%rsp
+
+0x7ffff7fdb1f5: => 0x7ffff7fdb1f5 <_dl_lookup_symbol_x+293>:	test   %eax,%eax
+
+0x7ffff7fdb1f7: => 0x7ffff7fdb1f7 <_dl_lookup_symbol_x+295>:	je     0x7ffff7fdb1b0 <_dl_lookup_symbol_x+224>
+
+0x7ffff7fdb1f9: => 0x7ffff7fdb1f9 <_dl_lookup_symbol_x+297>:	mov    (%r12),%rcx
+
+0x7ffff7fdb1fd: => 0x7ffff7fdb1fd <_dl_lookup_symbol_x+301>:	cmpq   $0x0,0x50(%rsp)
+
+0x7ffff7fdb203: => 0x7ffff7fdb203 <_dl_lookup_symbol_x+307>:	je     0x7ffff7fdb340 <_dl_lookup_symbol_x+624>
+
+0x7ffff7fdb209: => 0x7ffff7fdb209 <_dl_lookup_symbol_x+313>:	test   %rcx,%rcx
+
+0x7ffff7fdb20c: => 0x7ffff7fdb20c <_dl_lookup_symbol_x+316>:	je     0x7ffff7fdb219 <_dl_lookup_symbol_x+329>
+
+0x7ffff7fdb20e: => 0x7ffff7fdb20e <_dl_lookup_symbol_x+318>:	movzbl 0x5(%rcx),%eax
+
+0x7ffff7fdb212: => 0x7ffff7fdb212 <_dl_lookup_symbol_x+322>:	and    $0x3,%eax
+
+0x7ffff7fdb215: => 0x7ffff7fdb215 <_dl_lookup_symbol_x+325>:	cmp    $0x3,%al
+
+0x7ffff7fdb217: => 0x7ffff7fdb217 <_dl_lookup_symbol_x+327>:	je     0x7ffff7fdb278 <_dl_lookup_symbol_x+424>
+
+0x7ffff7fdb219: => 0x7ffff7fdb219 <_dl_lookup_symbol_x+329>:	mov    0x58(%rsp),%r14
+
+0x7ffff7fdb21e: => 0x7ffff7fdb21e <_dl_lookup_symbol_x+334>:	xor    %ebx,%ebx
+
+0x7ffff7fdb220: => 0x7ffff7fdb220 <_dl_lookup_symbol_x+336>:	movzbl 0x31c(%r14),%eax
+
+0x7ffff7fdb228: => 0x7ffff7fdb228 <_dl_lookup_symbol_x+344>:	and    $0x3,%eax
+
+0x7ffff7fdb22b: => 0x7ffff7fdb22b <_dl_lookup_symbol_x+347>:	cmp    $0x2,%al
+
+0x7ffff7fdb22d: => 0x7ffff7fdb22d <_dl_lookup_symbol_x+349>:	je     0x7ffff7fdb5fa <_dl_lookup_symbol_x+1322>
+
+0x7ffff7fdb233: => 0x7ffff7fdb233 <_dl_lookup_symbol_x+355>:	mov    0x3dc(%r14),%ecx
+
+0x7ffff7fdb23a: => 0x7ffff7fdb23a <_dl_lookup_symbol_x+362>:	test   %ecx,%ecx
+
+0x7ffff7fdb23c: => 0x7ffff7fdb23c <_dl_lookup_symbol_x+364>:	je     0x7ffff7fdb5ea <_dl_lookup_symbol_x+1306>
+
+0x7ffff7fdb242: => 0x7ffff7fdb242 <_dl_lookup_symbol_x+370>:	mov    0x213d8(%rip),%eax        # 0x7ffff7ffc620 <_rtld_global_ro>
+
+0x7ffff7fdb248: => 0x7ffff7fdb248 <_dl_lookup_symbol_x+376>:	test   $0x804,%eax
+
+0x7ffff7fdb24d: => 0x7ffff7fdb24d <_dl_lookup_symbol_x+381>:	jne    0x7ffff7fdb429 <_dl_lookup_symbol_x+857>
+
+0x7ffff7fdb253: => 0x7ffff7fdb253 <_dl_lookup_symbol_x+387>:	mov    0x50(%rsp),%rax
+
+0x7ffff7fdb258: => 0x7ffff7fdb258 <_dl_lookup_symbol_x+392>:	mov    %rax,(%r12)
+
+0x7ffff7fdb25c: => 0x7ffff7fdb25c <_dl_lookup_symbol_x+396>:	add    $0x98,%rsp
+
+0x7ffff7fdb263: => 0x7ffff7fdb263 <_dl_lookup_symbol_x+403>:	mov    %r14,%rax
+
+0x7ffff7fdb266: => 0x7ffff7fdb266 <_dl_lookup_symbol_x+406>:	pop    %rbx
+
+0x7ffff7fdb267: => 0x7ffff7fdb267 <_dl_lookup_symbol_x+407>:	pop    %rbp
+
+0x7ffff7fdb268: => 0x7ffff7fdb268 <_dl_lookup_symbol_x+408>:	pop    %r12
+
+0x7ffff7fdb26a: => 0x7ffff7fdb26a <_dl_lookup_symbol_x+410>:	pop    %r13
+
+0x7ffff7fdb26c: => 0x7ffff7fdb26c <_dl_lookup_symbol_x+412>:	pop    %r14
+
+0x7ffff7fdb26e: => 0x7ffff7fdb26e <_dl_lookup_symbol_x+414>:	pop    %r15
+
+0x7ffff7fdb270: => 0x7ffff7fdb270 <_dl_lookup_symbol_x+416>:	retq   
+
+0x7ffff7fe0197: => 0x7ffff7fe0197 <_dl_fixup+215>:	mov    %rax,%r8
+
+0x7ffff7fe019a: => 0x7ffff7fe019a <_dl_fixup+218>:	mov    %fs:0x18,%eax
+
+0x7ffff7fe01a2: => 0x7ffff7fe01a2 <_dl_fixup+226>:	pop    %rcx
+
+0x7ffff7fe01a3: => 0x7ffff7fe01a3 <_dl_fixup+227>:	pop    %rsi
+
+0x7ffff7fe01a4: => 0x7ffff7fe01a4 <_dl_fixup+228>:	test   %eax,%eax
+
+0x7ffff7fe01a6: => 0x7ffff7fe01a6 <_dl_fixup+230>:	jne    0x7ffff7fe0210 <_dl_fixup+336>
+
+0x7ffff7fe01a8: => 0x7ffff7fe01a8 <_dl_fixup+232>:	mov    0x8(%rsp),%rdx
+
+0x7ffff7fe01ad: => 0x7ffff7fe01ad <_dl_fixup+237>:	xor    %eax,%eax
+
+0x7ffff7fe01af: => 0x7ffff7fe01af <_dl_fixup+239>:	test   %rdx,%rdx
+
+0x7ffff7fe01b2: => 0x7ffff7fe01b2 <_dl_fixup+242>:	je     0x7ffff7fe01d3 <_dl_fixup+275>
+
+0x7ffff7fe01b4: => 0x7ffff7fe01b4 <_dl_fixup+244>:	cmpw   $0xfff1,0x6(%rdx)
+
+0x7ffff7fe01b9: => 0x7ffff7fe01b9 <_dl_fixup+249>:	je     0x7ffff7fe01f0 <_dl_fixup+304>
+
+0x7ffff7fe01bb: => 0x7ffff7fe01bb <_dl_fixup+251>:	test   %r8,%r8
+
+0x7ffff7fe01be: => 0x7ffff7fe01be <_dl_fixup+254>:	je     0x7ffff7fe01f0 <_dl_fixup+304>
+
+0x7ffff7fe01c0: => 0x7ffff7fe01c0 <_dl_fixup+256>:	mov    (%r8),%rax
+
+0x7ffff7fe01c3: => 0x7ffff7fe01c3 <_dl_fixup+259>:	add    0x8(%rdx),%rax
+
+0x7ffff7fe01c7: => 0x7ffff7fe01c7 <_dl_fixup+263>:	movzbl 0x4(%rdx),%edx
+
+0x7ffff7fe01cb: => 0x7ffff7fe01cb <_dl_fixup+267>:	and    $0xf,%edx
+
+0x7ffff7fe01ce: => 0x7ffff7fe01ce <_dl_fixup+270>:	cmp    $0xa,%dl
+
+0x7ffff7fe01d1: => 0x7ffff7fe01d1 <_dl_fixup+273>:	je     0x7ffff7fe01f8 <_dl_fixup+312>
+
+0x7ffff7fe01d3: => 0x7ffff7fe01d3 <_dl_fixup+275>:	mov    0x1c48f(%rip),%edx        # 0x7ffff7ffc668 <_rtld_global_ro+72>
+
+0x7ffff7fe01d9: => 0x7ffff7fe01d9 <_dl_fixup+281>:	test   %edx,%edx
+
+0x7ffff7fe01db: => 0x7ffff7fe01db <_dl_fixup+283>:	jne    0x7ffff7fe01e0 <_dl_fixup+288>
+
+0x7ffff7fe01dd: => 0x7ffff7fe01dd <_dl_fixup+285>:	mov    %rax,(%rbx)
+
+0x7ffff7fe01e0: => 0x7ffff7fe01e0 <_dl_fixup+288>:	add    $0x10,%rsp
+
+0x7ffff7fe01e4: => 0x7ffff7fe01e4 <_dl_fixup+292>:	pop    %rbx
+
+0x7ffff7fe01e5: => 0x7ffff7fe01e5 <_dl_fixup+293>:	retq   
+
+0x7ffff7fe7c3e: => 0x7ffff7fe7c3e <_dl_runtime_resolve_xsavec+126>:	mov    %rax,%r11
+
+0x7ffff7fe7c41: => 0x7ffff7fe7c41 <_dl_runtime_resolve_xsavec+129>:	mov    $0xee,%eax
+
+0x7ffff7fe7c46: => 0x7ffff7fe7c46 <_dl_runtime_resolve_xsavec+134>:	xor    %edx,%edx
+
+0x7ffff7fe7c48: => 0x7ffff7fe7c48 <_dl_runtime_resolve_xsavec+136>:	xrstor 0x40(%rsp)
+
+0x7ffff7fe7c4d: => 0x7ffff7fe7c4d <_dl_runtime_resolve_xsavec+141>:	mov    0x30(%rsp),%r9
+
+0x7ffff7fe7c52: => 0x7ffff7fe7c52 <_dl_runtime_resolve_xsavec+146>:	mov    0x28(%rsp),%r8
+
+0x7ffff7fe7c57: => 0x7ffff7fe7c57 <_dl_runtime_resolve_xsavec+151>:	mov    0x20(%rsp),%rdi
+
+0x7ffff7fe7c5c: => 0x7ffff7fe7c5c <_dl_runtime_resolve_xsavec+156>:	mov    0x18(%rsp),%rsi
+
+0x7ffff7fe7c61: => 0x7ffff7fe7c61 <_dl_runtime_resolve_xsavec+161>:	mov    0x10(%rsp),%rdx
+
+0x7ffff7fe7c66: => 0x7ffff7fe7c66 <_dl_runtime_resolve_xsavec+166>:	mov    0x8(%rsp),%rcx
+
+0x7ffff7fe7c6b: => 0x7ffff7fe7c6b <_dl_runtime_resolve_xsavec+171>:	mov    (%rsp),%rax
+
+0x7ffff7fe7c6f: => 0x7ffff7fe7c6f <_dl_runtime_resolve_xsavec+175>:	mov    %rbx,%rsp
+
+0x7ffff7fe7c72: => 0x7ffff7fe7c72 <_dl_runtime_resolve_xsavec+178>:	mov    (%rsp),%rbx
+
+0x7ffff7fe7c76: => 0x7ffff7fe7c76 <_dl_runtime_resolve_xsavec+182>:	add    $0x18,%rsp
+
+0x7ffff7fe7c7a: => 0x7ffff7fe7c7a <_dl_runtime_resolve_xsavec+186>:	bnd jmpq *%r11
+
+0x7ffff7ea8e80: => 0x7ffff7ea8e80 <__opendir>:	endbr64 
+
+0x7ffff7ea8e84: => 0x7ffff7ea8e84 <__opendir+4>:	push   %r13
+
+0x7ffff7ea8e86: => 0x7ffff7ea8e86 <__opendir+6>:	push   %r12
+
+0x7ffff7ea8e88: => 0x7ffff7ea8e88 <__opendir+8>:	push   %rbp
+
+0x7ffff7ea8e89: => 0x7ffff7ea8e89 <__opendir+9>:	push   %rbx
+
+0x7ffff7ea8e8a: => 0x7ffff7ea8e8a <__opendir+10>:	sub    $0xa8,%rsp
+
+0x7ffff7ea8e91: => 0x7ffff7ea8e91 <__opendir+17>:	mov    %fs:0x28,%rax
+
+0x7ffff7ea8e9a: => 0x7ffff7ea8e9a <__opendir+26>:	mov    %rax,0x98(%rsp)
+
+0x7ffff7ea8ea2: => 0x7ffff7ea8ea2 <__opendir+34>:	xor    %eax,%eax
+
+0x7ffff7ea8ea4: => 0x7ffff7ea8ea4 <__opendir+36>:	cmpb   $0x0,(%rdi)
+
+0x7ffff7ea8ea7: => 0x7ffff7ea8ea7 <__opendir+39>:	je     0x7ffff7ea8fa0 <__opendir+288>
+
+0x7ffff7ea8ead: => 0x7ffff7ea8ead <__opendir+45>:	mov    $0x90800,%esi
+
+0x7ffff7ea8eb2: => 0x7ffff7ea8eb2 <__opendir+50>:	callq  0x7ffff7ede6d0 <__GI___open64_nocancel>
+
+0x7ffff7ea8eb7: => 0x7ffff7ea8eb7 <__opendir+55>:	mov    %eax,%ebp
+
+0x7ffff7ea8eb9: => 0x7ffff7ea8eb9 <__opendir+57>:	test   %eax,%eax
+
+0x7ffff7ea8ebb: => 0x7ffff7ea8ebb <__opendir+59>:	js     0x7ffff7ea8fb8 <__opendir+312>
+
+0x7ffff7ea8ec1: => 0x7ffff7ea8ec1 <__opendir+65>:	mov    %rsp,%rdx
+
+0x7ffff7ea8ec4: => 0x7ffff7ea8ec4 <__opendir+68>:	mov    %eax,%esi
+
+0x7ffff7ea8ec6: => 0x7ffff7ea8ec6 <__opendir+70>:	mov    $0x1,%edi
+
+0x7ffff7ea8ecb: => 0x7ffff7ea8ecb <__opendir+75>:	callq  0x7ffff7ed8720 <__GI___fxstat>
+
+0x7ffff7ea8ed0: => 0x7ffff7ea8ed0 <__opendir+80>:	test   %eax,%eax
+
+0x7ffff7ea8ed2: => 0x7ffff7ea8ed2 <__opendir+82>:	js     0x7ffff7ea8f8e <__opendir+270>
+
+0x7ffff7ea8ed8: => 0x7ffff7ea8ed8 <__opendir+88>:	mov    0x18(%rsp),%eax
+
+0x7ffff7ea8edc: => 0x7ffff7ea8edc <__opendir+92>:	and    $0xf000,%eax
+
+0x7ffff7ea8ee1: => 0x7ffff7ea8ee1 <__opendir+97>:	cmp    $0x4000,%eax
+
+0x7ffff7ea8ee6: => 0x7ffff7ea8ee6 <__opendir+102>:	jne    0x7ffff7ea8f80 <__opendir+256>
+
+0x7ffff7ea8eec: => 0x7ffff7ea8eec <__opendir+108>:	cmpq   $0x8000,0x38(%rsp)
+
+0x7ffff7ea8ef5: => 0x7ffff7ea8ef5 <__opendir+117>:	mov    $0x8000,%ebx
+
+0x7ffff7ea8efa: => 0x7ffff7ea8efa <__opendir+122>:	cmovae 0x38(%rsp),%rbx
+
+0x7ffff7ea8f00: => 0x7ffff7ea8f00 <__opendir+128>:	mov    $0x100000,%eax
+
+0x7ffff7ea8f05: => 0x7ffff7ea8f05 <__opendir+133>:	cmp    $0x100000,%rbx
+
+0x7ffff7ea8f0c: => 0x7ffff7ea8f0c <__opendir+140>:	cmova  %rax,%rbx
+
+0x7ffff7ea8f10: => 0x7ffff7ea8f10 <__opendir+144>:	lea    0x30(%rbx),%rdi
+
+0x7ffff7ea8f14: => 0x7ffff7ea8f14 <__opendir+148>:	callq  0x7ffff7ded310 <malloc@plt>
+
+0x7ffff7ea8f19: => 0x7ffff7ea8f19 <__opendir+153>:	mov    %rax,%r12
+
+0x7ffff7ea8f1c: => 0x7ffff7ea8f1c <__opendir+156>:	test   %rax,%rax
+
+0x7ffff7ea8f1f: => 0x7ffff7ea8f1f <__opendir+159>:	je     0x7ffff7ea8fc2 <__opendir+322>
+
+0x7ffff7ea8f25: => 0x7ffff7ea8f25 <__opendir+165>:	mov    %ebp,(%r12)
+
+0x7ffff7ea8f29: => 0x7ffff7ea8f29 <__opendir+169>:	movl   $0x0,0x4(%r12)
+
+0x7ffff7ea8f32: => 0x7ffff7ea8f32 <__opendir+178>:	mov    %rbx,0x8(%r12)
+
+0x7ffff7ea8f37: => 0x7ffff7ea8f37 <__opendir+183>:	movq   $0x0,0x10(%r12)
+
+0x7ffff7ea8f40: => 0x7ffff7ea8f40 <__opendir+192>:	movq   $0x0,0x18(%r12)
+
+0x7ffff7ea8f49: => 0x7ffff7ea8f49 <__opendir+201>:	movq   $0x0,0x20(%r12)
+
+0x7ffff7ea8f52: => 0x7ffff7ea8f52 <__opendir+210>:	movl   $0x0,0x28(%r12)
+
+0x7ffff7ea8f5b: => 0x7ffff7ea8f5b <__opendir+219>:	mov    0x98(%rsp),%rax
+
+0x7ffff7ea8f63: => 0x7ffff7ea8f63 <__opendir+227>:	xor    %fs:0x28,%rax
+
+0x7ffff7ea8f6c: => 0x7ffff7ea8f6c <__opendir+236>:	jne    0x7ffff7ea8fbd <__opendir+317>
+
+0x7ffff7ea8f6e: => 0x7ffff7ea8f6e <__opendir+238>:	add    $0xa8,%rsp
+
+0x7ffff7ea8f75: => 0x7ffff7ea8f75 <__opendir+245>:	mov    %r12,%rax
+
+0x7ffff7ea8f78: => 0x7ffff7ea8f78 <__opendir+248>:	pop    %rbx
+
+0x7ffff7ea8f79: => 0x7ffff7ea8f79 <__opendir+249>:	pop    %rbp
+
+0x7ffff7ea8f7a: => 0x7ffff7ea8f7a <__opendir+250>:	pop    %r12
+
+0x7ffff7ea8f7c: => 0x7ffff7ea8f7c <__opendir+252>:	pop    %r13
+
+0x7ffff7ea8f7e: => 0x7ffff7ea8f7e <__opendir+254>:	retq   
+
+0x401245: => 0x401245 <list_directory+21>:	mov    %rax,-0x10(%rbp)
+
+0x401249: => 0x401249 <list_directory+25>:	cmpq   $0x0,-0x10(%rbp)
+
+0x40124e: => 0x40124e <list_directory+30>:	jne    0x401299 <list_directory+105>
+
+0x401299: => 0x401299 <list_directory+105>:	jmp    0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012f8: => 0x4012f8 <list_directory+200>:	mov    -0x18(%rbp),%rax
+
+0x4012fc: => 0x4012fc <list_directory+204>:	add    $0x13,%rax
+
+0x401300: => 0x401300 <list_directory+208>:	movabs $0x40201f,%rdi
+
+0x40130a: => 0x40130a <list_directory+218>:	mov    %rax,%rsi
+
+0x40130d: => 0x40130d <list_directory+221>:	mov    $0x0,%al
+
+0x40130f: => 0x40130f <list_directory+223>:	callq  0x401050 <printf@plt>
+
+0x401314: => 0x401314 <list_directory+228>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012f8: => 0x4012f8 <list_directory+200>:	mov    -0x18(%rbp),%rax
+
+0x4012fc: => 0x4012fc <list_directory+204>:	add    $0x13,%rax
+
+0x401300: => 0x401300 <list_directory+208>:	movabs $0x40201f,%rdi
+
+0x40130a: => 0x40130a <list_directory+218>:	mov    %rax,%rsi
+
+0x40130d: => 0x40130d <list_directory+221>:	mov    $0x0,%al
+
+0x40130f: => 0x40130f <list_directory+223>:	callq  0x401050 <printf@plt>
+
+0x401314: => 0x401314 <list_directory+228>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012f8: => 0x4012f8 <list_directory+200>:	mov    -0x18(%rbp),%rax
+
+0x4012fc: => 0x4012fc <list_directory+204>:	add    $0x13,%rax
+
+0x401300: => 0x401300 <list_directory+208>:	movabs $0x40201f,%rdi
+
+0x40130a: => 0x40130a <list_directory+218>:	mov    %rax,%rsi
+
+0x40130d: => 0x40130d <list_directory+221>:	mov    $0x0,%al
+
+0x40130f: => 0x40130f <list_directory+223>:	callq  0x401050 <printf@plt>
+
+0x401314: => 0x401314 <list_directory+228>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x4012b2: => 0x4012b2 <list_directory+130>:	mov    -0x18(%rbp),%rax
+
+0x4012b6: => 0x4012b6 <list_directory+134>:	movzbl 0x12(%rax),%ecx
+
+0x4012ba: => 0x4012ba <list_directory+138>:	mov    %ecx,%edx
+
+0x4012bc: => 0x4012bc <list_directory+140>:	sub    $0x4,%edx
+
+0x4012bf: => 0x4012bf <list_directory+143>:	mov    %ecx,-0x30(%rbp)
+
+0x4012c2: => 0x4012c2 <list_directory+146>:	je     0x4012f8 <list_directory+200>
+
+0x4012c4: => 0x4012c4 <list_directory+148>:	jmp    0x4012c6 <list_directory+150>
+
+0x4012c6: => 0x4012c6 <list_directory+150>:	mov    -0x30(%rbp),%eax
+
+0x4012c9: => 0x4012c9 <list_directory+153>:	sub    $0x8,%eax
+
+0x4012cc: => 0x4012cc <list_directory+156>:	je     0x4012da <list_directory+170>
+
+0x4012da: => 0x4012da <list_directory+170>:	mov    -0x18(%rbp),%rax
+
+0x4012de: => 0x4012de <list_directory+174>:	add    $0x13,%rax
+
+0x4012e2: => 0x4012e2 <list_directory+178>:	movabs $0x40201b,%rdi
+
+0x4012ec: => 0x4012ec <list_directory+188>:	mov    %rax,%rsi
+
+0x4012ef: => 0x4012ef <list_directory+191>:	mov    $0x0,%al
+
+0x4012f1: => 0x4012f1 <list_directory+193>:	callq  0x401050 <printf@plt>
+
+0x4012f6: => 0x4012f6 <list_directory+198>:	jmp    0x401350 <list_directory+288>
+
+0x401350: => 0x401350 <list_directory+288>:	jmpq   0x40129b <list_directory+107>
+
+0x40129b: => 0x40129b <list_directory+107>:	mov    -0x10(%rbp),%rdi
+
+0x40129f: => 0x40129f <list_directory+111>:	callq  0x401080 <readdir@plt>
+
+0x4012a4: => 0x4012a4 <list_directory+116>:	mov    %rax,-0x18(%rbp)
+
+0x4012a8: => 0x4012a8 <list_directory+120>:	cmp    $0x0,%rax
+
+0x4012ac: => 0x4012ac <list_directory+124>:	je     0x401355 <list_directory+293>
+
+0x401355: => 0x401355 <list_directory+293>:	mov    -0x10(%rbp),%rdi
+
+0x401359: => 0x401359 <list_directory+297>:	callq  0x401060 <closedir@plt>
+
+0x40135e: => 0x40135e <list_directory+302>:	add    $0x30,%rsp
+
+0x401362: => 0x401362 <list_directory+306>:	pop    %rbp
+
+0x401363: => 0x401363 <list_directory+307>:	retq   
+
+0x40121f: => 0x40121f <_main+79>:	xor    %eax,%eax
+
+0x401221: => 0x401221 <_main+81>:	add    $0x20,%rsp
+
+0x401225: => 0x401225 <_main+85>:	pop    %rbp
+
+0x401226: => 0x401226 <_main+86>:	retq   
+
+0x4011c2: => 0x4011c2 <main+34>:	add    $0x10,%rsp
+
+0x4011c6: => 0x4011c6 <main+38>:	pop    %rbp
+
+0x4011c7: => 0x4011c7 <main+39>:	retq   
+
+0x7ffff7def083: => 0x7ffff7def083 <__libc_start_main+243>:	mov    %eax,%edi
+
+0x7ffff7def085: => 0x7ffff7def085 <__libc_start_main+245>:	callq  0x7ffff7e11a40 <__GI_exit>
+
