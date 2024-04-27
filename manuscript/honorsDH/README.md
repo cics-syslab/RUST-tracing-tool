@@ -1,1 +1,0 @@
-To be used for writing the Departmental Honors Essay.
