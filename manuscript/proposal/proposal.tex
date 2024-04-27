@@ -1,0 +1,62 @@
+\documentclass[11pt]{article}
+
+\usepackage[top=0.5in, bottom=0.5in, left=0.5in, right=0.5in]{geometry}
+\usepackage{authblk}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{biblatex}
+
+\bibliography{references.bib}
+
+\newcommand{\email}[1]{\texttt{\href{mailto:#1}{#1}}}
+
+\title{Project Proposal: Analyzing the Garbage Collection Efficiency of the RUST Programming Language}
+\author{Kushagra Srivastava, under guidance of Prof. Meng Chieh Chiu}
+
+\makeatletter
+\let\inserttitle\@title
+\let\insertauthor\@author
+\makeatother
+
+\begin{document}
+
+\begin{center}
+  \LARGE{\inserttitle}
+
+  \Large{\insertauthor}
+\end{center}
+
+\section{Descriptive Title}
+
+\textit{Comparing and Contrasting Performance Metrics for RUST and C/C++, by Detecting and Analyzing Phase Change Metrics.}
+
+\vspace{0.1in}
+
+\textit{The following Research Proposal draws inspiration from and is used as an extension of the paper, "Real-Time Program-Specific Phase Change Detection for
+Java Programs", authored by Professor Meng Chieh Chiu. By analyzing phase changes in different programming languages, we can notably infer how quick and robust a given programming language can be. This data may help us in comparing performance metrics between different programming languages, as well as provide tools for other developers or researchers for further implementations.}
+
+\vspace{0.1in}
+
+\textit{The main idea behind this project would be to detect Real-time Phase Changes in the compilation and execution of different programming languages in different languages. We plan to detect the phase changes in a very similar way as outlined in the above-mentioned paper: by collecting some benchmark points, and creating a real-time phase-change detector in order to correctly analyze the performance. This detection would be }
+
+\section{Criteria for Evaluation}
+
+\textit{The main criteria for evaluation for the project would be two-fold: a paper describing the different findings and analyses of the project, as well as the tools developed for the programming languages which would help us track the Phase Changes. Moreover, a log of different activities, as well as repositories of the tools developed for the research would also be taken into consideration.}
+
+\section{Planned Activities}
+
+\textit{The project takes part across the Spring and thwe Fall 2023 semester. The Spring Semester would be used to develop tools which would detect phase changes in the RUST and the C/C++ programming languages, with further analyses done during the Fall Semester, with consideration for woerk to be continued in future semesters if deemed necessary.}
+
+\section{Statement of Objectives}
+
+\textit{}
+
+\end{document}
