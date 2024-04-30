@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{listings}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -66,6 +67,79 @@ By writing the same program on these two languages, if we were to extract their 
 
 I plan to conduct this reseach on the x86 CPU Architecture, popularized by Intel and AMD in consumer machines. The x86 Architecture consists of various instructions as detailed in the Intel IA64 and IA32 Architecture Manuals\cite{b2}, and Prof. Agner Fog's Instruction Tables provide comprehensive results on Clock Cycle estimates on various x86 processors per instruction\cite{b3}. This hardware has seen immense development in both C++ and RUST, and the hardware has matured to a stable point over the past coupl of decades, having released in the 1980s at first\cite{b4}. Unlike novel architectures such as ARM, I believe that the x86 architecture would minimize potential setbacks to conduct such an experiment, especially when dealing with C++ and RUST compilers in a era-specific context. For example, a potential setback could arise with Apple's ARM Architecture popularized in the M1 processors and above, which rely on a lot of x86 Architecture Virtualization through Apple's proprietary translation mechanism: Rosetta 2\cite{b5}. These processors run older x86 programs in a software-defined x86 environment, which may lead to errors gathering rea-time Assembly Trace Output data (since it relies on fetching data during live execution). However, I believe that the tooling created as part of this thesis can be extended to other architectures as well, such as RISC-V or ARM, given the programs run were compiled native to the platform. 
 
+\subsection{Significance of the Problem}
+
+Most of the low level systems code is written in C or C++, and are continued to be used still today. A quick look at the Linux kernel shows that about 98.3\% of the codebase is based on C\cite{b6}, and GNU Coreutils (the set of programs that run on the Command Line and help a user in navigation and operation) is 59\% based on C\cite{b7}. Similarly, macOS being a UNIX variant, and the Windows NT Kernel are mainly C-based as well\cite{b8}. This is mainly because C/C++ hold legacy value, and have seen a lot of contributions since their initial release in 1983. They have a dedicated community, ranging from Open-Source Developers to companies that are invested in the architecture due to back-end and server infrastructures that rely on them.
+
+However, this also means that there is a lot of legacy holdover from these languages that are still being used today. For example, C++ is prone to various errors if users are not mindful: memory leaks, segmentation faults, kernel errors, and so on. Error messages given out by the compiler can be often cryptic and hard to understand, and debugging code is often more complicated than other high-level languages such as Python. 
+
+On the other hand, we have RUST: a language whose development started in 2010 and is continuing today. RUST attempts to employ stricter typesetting, better error tracking, and more stringent memory usage to run more efficiently. To demonstrate the differences in how RUST and C++ handle error tracking through a live example, let's take an example of a deliberate Race Condition below. 
+
+\begin{lstlisting}
+// Race Condition Demo, written by Kush.
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+int shared_variable = 0;
+
+void *increment(void *arg) {
+    for (int i = 0; i < 1000000; i++) {
+        shared_variable++;
+        }
+        return NULL;
+        }
+
+        int main() {
+            pthread_t thread1, thread2;
+
+            if (pthread_create(&thread1, NULL, increment, NULL) != 0) {
+                perror("pthread_create");
+                return 1;
+            }
+
+            if (pthread_create(&thread2, NULL, increment, NULL) != 0) {
+                perror("pthread_create");
+                return 1;
+            }
+
+            pthread_join(thread1, NULL);
+            pthread_join(thread2, NULL);
+
+            printf("Shared variable: %d\n", shared_variable);
+
+            return 0;
+        }
+\end{lstlisting}
+
+In the C code, two threads are incrementing the shared_variable concurrently, leading to a race condition where the final value is unpredictable. However, C will let us run this with no issues or errors, as demonstrated below 10 times on my own system:
+
+\begin{lstlisting}
+
+suobset@Kush-Surface:/mnt/c/Users/kushd/Documents/GitHub/temp$ gcc race.c
+suobset@Kush-Surface:/mnt/c/Users/kushd/Documents/GitHub/temp$ ./a.out
+Shared variable: 1138441
+suobset@Kush-Surface:/mnt/c/Users/kushd/Documents/GitHub/temp$ ./a.out
+Shared variable: 1339034
+suobset@Kush-Surface:/mnt/c/Users/kushd/Documents/GitHub/temp$ ./a.out
+Shared variable: 1070599
+suobset@Kush-Surface:/mnt/c/Users/kushd/Documents/GitHub/temp$ ./a.out
+Shared variable: 1103020
+suobset@Kush-Surface:/mnt/c/Users/kushd/Documents/GitHub/temp$ ./a.out
+Shared variable: 1073974
+suobset@Kush-Surface:/mnt/c/Users/kushd/Documents/GitHub/temp$ ./a.out
+Shared variable: 1233980
+suobset@Kush-Surface:/mnt/c/Users/kushd/Documents/GitHub/temp$ ./a.out
+Shared variable: 1403249
+suobset@Kush-Surface:/mnt/c/Users/kushd/Documents/GitHub/temp$ ./a.out
+Shared variable: 1200399
+suobset@Kush-Surface:/mnt/c/Users/kushd/Documents/GitHub/temp$ ./a.out
+Shared variable: 1036593
+suobset@Kush-Surface:/mnt/c/Users/kushd/Documents/GitHub/temp$ ./a.out
+Shared variable: 1115206
+
+\end{lstlisting}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{thebibliography}{00}
 	\bibitem{b1} Meng-Chieh Chiu, “RUN-TIME PROGRAM PHASE CHANGE DETECTION AND PREDICTION: A Dissertation Presented by Meng-Chieh Chiu” (PhD Thesis, University of Massachusetts, 2018).
@@ -73,5 +147,8 @@ I plan to conduct this reseach on the x86 CPU Architecture, popularized by Intel
 	\bibitem{b3} Agner Fog, “Software Optimization Resources,” November 2022, accessed February 16, 2024, https://www.agner.org/optimize.
 	\bibitem{b4} Pryce, Dave (May 11, 1989). "80486 32-bit CPU breaks new ground in chip density and operating performance. (Intel Corp.) (product announcement) EDN" (Press release).
 	\bibitem{b5} “Rosetta 2 on a Mac with Apple Silicon,” Apple Support, accessed April 27, 2024, https://support.apple.com/guide/security/rosetta-2-on-a-mac-with-apple-silicon-secebb113be1/web.
+	\bibitem{b6} Linus Torvalds and The Linux Foundation, Linux Kernel, n.d., accessed April 30, 2024, https://github.com/torvalds/linux.
+	\bibitem{b7} The Free Software Foundation, GNU Coreutils, n.d., accessed April 30, 2024, https://github.com/coreutils/coreutils.
+	\bibitem{b8} Apple, Inc., GitHub - Apple-Oss-Distributions/Distribution-MacOS at Macos-144, n.d., accessed April 30, 2024, https://github.com/apple-oss-distributions/distribution-macOS.
 \end{thebibliography}
 \end{document}
