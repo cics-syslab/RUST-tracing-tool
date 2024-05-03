@@ -1,0 +1,28 @@
+0x401241: => 0x401241 <main+1>:	mov    %rsp,%rbp
+
+0x401244: => 0x401244 <main+4>:	sub    $0x10,%rsp
+
+0x401248: => 0x401248 <main+8>:	movl   $0x0,-0x4(%rbp)
+
+0x40124f: => 0x40124f <main+15>:	mov    %edi,-0x8(%rbp)
+
+0x401252: => 0x401252 <main+18>:	mov    %rsi,-0x10(%rbp)
+
+0x401256: => 0x401256 <main+22>:	mov    -0x8(%rbp),%edi
+
+0x401259: => 0x401259 <main+25>:	mov    -0x10(%rbp),%rsi
+
+0x40125d: => 0x40125d <main+29>:	callq  0x401270 <_main>
+
+0x401262: => 0x401262 <main+34>:	add    $0x10,%rsp
+
+0x401266: => 0x401266 <main+38>:	pop    %rbp
+
+0x401267: => 0x401267 <main+39>:	retq   
+
+0x7ffff7def083: => 0x7ffff7def083 <__libc_start_main+243>:	mov    %eax,%edi
+
+0x7ffff7def085: => 0x7ffff7def085 <__libc_start_main+245>:	callq  0x7ffff7e11a40 <__GI_exit>
+
+0x7ffff7def085: => 0x7ffff7def085 <__libc_start_main+245>:	callq  0x7ffff7e11a40 <__GI_exit>
+

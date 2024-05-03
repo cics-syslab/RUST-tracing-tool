@@ -1,0 +1,2574 @@
+0x401241: => 0x401241 <main+1>:	mov    %rsp,%rbp
+
+0x401244: => 0x401244 <main+4>:	sub    $0x10,%rsp
+
+0x401248: => 0x401248 <main+8>:	movl   $0x0,-0x4(%rbp)
+
+0x40124f: => 0x40124f <main+15>:	mov    %edi,-0x8(%rbp)
+
+0x401252: => 0x401252 <main+18>:	mov    %rsi,-0x10(%rbp)
+
+0x401256: => 0x401256 <main+22>:	mov    -0x8(%rbp),%edi
+
+0x401259: => 0x401259 <main+25>:	mov    -0x10(%rbp),%rsi
+
+0x40125d: => 0x40125d <main+29>:	callq  0x401270 <_main>
+
+0x401270: => 0x401270 <_main>:	push   %rbp
+
+0x401271: => 0x401271 <_main+1>:	mov    %rsp,%rbp
+
+0x401274: => 0x401274 <_main+4>:	sub    $0x30,%rsp
+
+0x401278: => 0x401278 <_main+8>:	mov    %edi,-0x4(%rbp)
+
+0x40127b: => 0x40127b <_main+11>:	mov    %rsi,-0x10(%rbp)
+
+0x40127f: => 0x40127f <_main+15>:	movl   $0x0,-0x14(%rbp)
+
+0x401286: => 0x401286 <_main+22>:	movl   $0x0,-0x18(%rbp)
+
+0x40128d: => 0x40128d <_main+29>:	movl   $0x0,-0x1c(%rbp)
+
+0x401294: => 0x401294 <_main+36>:	movl   $0x1,-0x20(%rbp)
+
+0x40129b: => 0x40129b <_main+43>:	mov    -0x20(%rbp),%eax
+
+0x40129e: => 0x40129e <_main+46>:	cmp    -0x4(%rbp),%eax
+
+0x4012a1: => 0x4012a1 <_main+49>:	jge    0x401370 <_main+256>
+
+0x401370: => 0x401370 <_main+256>:	movl   $0x1,-0x24(%rbp)
+
+0x401377: => 0x401377 <_main+263>:	mov    -0x24(%rbp),%eax
+
+0x40137a: => 0x40137a <_main+266>:	cmp    -0x4(%rbp),%eax
+
+0x40137d: => 0x40137d <_main+269>:	jge    0x4013b8 <_main+328>
+
+0x4013b8: => 0x4013b8 <_main+328>:	cmpl   $0x1,-0x4(%rbp)
+
+0x4013bc: => 0x4013bc <_main+332>:	jne    0x4013d6 <_main+358>
+
+0x4013be: => 0x4013be <_main+334>:	mov    -0x14(%rbp),%esi
+
+0x4013c1: => 0x4013c1 <_main+337>:	mov    -0x18(%rbp),%edx
+
+0x4013c4: => 0x4013c4 <_main+340>:	mov    -0x1c(%rbp),%ecx
+
+0x4013c7: => 0x4013c7 <_main+343>:	movabs $0x402015,%rdi
+
+0x4013d1: => 0x4013d1 <_main+353>:	callq  0x4013e0 <list_directory>
+
+0x4013e0: => 0x4013e0 <list_directory>:	push   %rbp
+
+0x4013e1: => 0x4013e1 <list_directory+1>:	mov    %rsp,%rbp
+
+0x4013e4: => 0x4013e4 <list_directory+4>:	sub    $0x70,%rsp
+
+0x4013e8: => 0x4013e8 <list_directory+8>:	mov    %rdi,-0x8(%rbp)
+
+0x4013ec: => 0x4013ec <list_directory+12>:	mov    %esi,-0xc(%rbp)
+
+0x4013ef: => 0x4013ef <list_directory+15>:	mov    %edx,-0x10(%rbp)
+
+0x4013f2: => 0x4013f2 <list_directory+18>:	mov    %ecx,-0x14(%rbp)
+
+0x4013f5: => 0x4013f5 <list_directory+21>:	mov    -0x8(%rbp),%rdi
+
+0x4013f9: => 0x4013f9 <list_directory+25>:	callq  0x401060 <opendir@plt>
+
+0x401060: => 0x401060 <opendir@plt>:	jmpq   *0x2fca(%rip)        # 0x404030 <opendir@got.plt>
+
+0x401066: => 0x401066 <opendir@plt+6>:	pushq  $0x3
+
+0x40106b: => 0x40106b <opendir@plt+11>:	jmpq   0x401020
+
+0x401020: => 0x401020:	pushq  0x2fe2(%rip)        # 0x404008
+
+0x401026: => 0x401026:	jmpq   *0x2fe4(%rip)        # 0x404010
+
+0x7ffff7fe7bc0: => 0x7ffff7fe7bc0 <_dl_runtime_resolve_xsavec>:	endbr64 
+
+0x7ffff7fe7bc4: => 0x7ffff7fe7bc4 <_dl_runtime_resolve_xsavec+4>:	push   %rbx
+
+0x7ffff7fe7bc5: => 0x7ffff7fe7bc5 <_dl_runtime_resolve_xsavec+5>:	mov    %rsp,%rbx
+
+0x7ffff7fe7bc8: => 0x7ffff7fe7bc8 <_dl_runtime_resolve_xsavec+8>:	and    $0xffffffffffffffc0,%rsp
+
+0x7ffff7fe7bcc: => 0x7ffff7fe7bcc <_dl_runtime_resolve_xsavec+12>:	sub    0x14b35(%rip),%rsp        # 0x7ffff7ffc708 <_rtld_global_ro+232>
+
+0x7ffff7fe7bd3: => 0x7ffff7fe7bd3 <_dl_runtime_resolve_xsavec+19>:	mov    %rax,(%rsp)
+
+0x7ffff7fe7bd7: => 0x7ffff7fe7bd7 <_dl_runtime_resolve_xsavec+23>:	mov    %rcx,0x8(%rsp)
+
+0x7ffff7fe7bdc: => 0x7ffff7fe7bdc <_dl_runtime_resolve_xsavec+28>:	mov    %rdx,0x10(%rsp)
+
+0x7ffff7fe7be1: => 0x7ffff7fe7be1 <_dl_runtime_resolve_xsavec+33>:	mov    %rsi,0x18(%rsp)
+
+0x7ffff7fe7be6: => 0x7ffff7fe7be6 <_dl_runtime_resolve_xsavec+38>:	mov    %rdi,0x20(%rsp)
+
+0x7ffff7fe7beb: => 0x7ffff7fe7beb <_dl_runtime_resolve_xsavec+43>:	mov    %r8,0x28(%rsp)
+
+0x7ffff7fe7bf0: => 0x7ffff7fe7bf0 <_dl_runtime_resolve_xsavec+48>:	mov    %r9,0x30(%rsp)
+
+0x7ffff7fe7bf5: => 0x7ffff7fe7bf5 <_dl_runtime_resolve_xsavec+53>:	mov    $0xee,%eax
+
+0x7ffff7fe7bfa: => 0x7ffff7fe7bfa <_dl_runtime_resolve_xsavec+58>:	xor    %edx,%edx
+
+0x7ffff7fe7bfc: => 0x7ffff7fe7bfc <_dl_runtime_resolve_xsavec+60>:	mov    %rdx,0x250(%rsp)
+
+0x7ffff7fe7c04: => 0x7ffff7fe7c04 <_dl_runtime_resolve_xsavec+68>:	mov    %rdx,0x258(%rsp)
+
+0x7ffff7fe7c0c: => 0x7ffff7fe7c0c <_dl_runtime_resolve_xsavec+76>:	mov    %rdx,0x260(%rsp)
+
+0x7ffff7fe7c14: => 0x7ffff7fe7c14 <_dl_runtime_resolve_xsavec+84>:	mov    %rdx,0x268(%rsp)
+
+0x7ffff7fe7c1c: => 0x7ffff7fe7c1c <_dl_runtime_resolve_xsavec+92>:	mov    %rdx,0x270(%rsp)
+
+0x7ffff7fe7c24: => 0x7ffff7fe7c24 <_dl_runtime_resolve_xsavec+100>:	mov    %rdx,0x278(%rsp)
+
+0x7ffff7fe7c2c: => 0x7ffff7fe7c2c <_dl_runtime_resolve_xsavec+108>:	xsavec 0x40(%rsp)
+
+0x7ffff7fe7c31: => 0x7ffff7fe7c31 <_dl_runtime_resolve_xsavec+113>:	mov    0x10(%rbx),%rsi
+
+0x7ffff7fe7c35: => 0x7ffff7fe7c35 <_dl_runtime_resolve_xsavec+117>:	mov    0x8(%rbx),%rdi
+
+0x7ffff7fe7c39: => 0x7ffff7fe7c39 <_dl_runtime_resolve_xsavec+121>:	callq  0x7ffff7fe00c0 <_dl_fixup>
+
+0x7ffff7fe7c3e: => 0x7ffff7fe7c3e <_dl_runtime_resolve_xsavec+126>:	mov    %rax,%r11
+
+0x7ffff7fe7c41: => 0x7ffff7fe7c41 <_dl_runtime_resolve_xsavec+129>:	mov    $0xee,%eax
+
+0x7ffff7fe7c46: => 0x7ffff7fe7c46 <_dl_runtime_resolve_xsavec+134>:	xor    %edx,%edx
+
+0x7ffff7fe7c48: => 0x7ffff7fe7c48 <_dl_runtime_resolve_xsavec+136>:	xrstor 0x40(%rsp)
+
+0x7ffff7fe7c4d: => 0x7ffff7fe7c4d <_dl_runtime_resolve_xsavec+141>:	mov    0x30(%rsp),%r9
+
+0x7ffff7fe7c52: => 0x7ffff7fe7c52 <_dl_runtime_resolve_xsavec+146>:	mov    0x28(%rsp),%r8
+
+0x7ffff7fe7c57: => 0x7ffff7fe7c57 <_dl_runtime_resolve_xsavec+151>:	mov    0x20(%rsp),%rdi
+
+0x7ffff7fe7c5c: => 0x7ffff7fe7c5c <_dl_runtime_resolve_xsavec+156>:	mov    0x18(%rsp),%rsi
+
+0x7ffff7fe7c61: => 0x7ffff7fe7c61 <_dl_runtime_resolve_xsavec+161>:	mov    0x10(%rsp),%rdx
+
+0x7ffff7fe7c66: => 0x7ffff7fe7c66 <_dl_runtime_resolve_xsavec+166>:	mov    0x8(%rsp),%rcx
+
+0x7ffff7fe7c6b: => 0x7ffff7fe7c6b <_dl_runtime_resolve_xsavec+171>:	mov    (%rsp),%rax
+
+0x7ffff7fe7c6f: => 0x7ffff7fe7c6f <_dl_runtime_resolve_xsavec+175>:	mov    %rbx,%rsp
+
+0x7ffff7fe7c72: => 0x7ffff7fe7c72 <_dl_runtime_resolve_xsavec+178>:	mov    (%rsp),%rbx
+
+0x7ffff7fe7c76: => 0x7ffff7fe7c76 <_dl_runtime_resolve_xsavec+182>:	add    $0x18,%rsp
+
+0x7ffff7fe7c7a: => 0x7ffff7fe7c7a <_dl_runtime_resolve_xsavec+186>:	bnd jmpq *%r11
+
+0x7ffff7ea8e80: => 0x7ffff7ea8e80 <__opendir>:	endbr64 
+
+0x7ffff7ea8e84: => 0x7ffff7ea8e84 <__opendir+4>:	push   %r13
+
+0x7ffff7ea8e86: => 0x7ffff7ea8e86 <__opendir+6>:	push   %r12
+
+0x7ffff7ea8e88: => 0x7ffff7ea8e88 <__opendir+8>:	push   %rbp
+
+0x7ffff7ea8e89: => 0x7ffff7ea8e89 <__opendir+9>:	push   %rbx
+
+0x7ffff7ea8e8a: => 0x7ffff7ea8e8a <__opendir+10>:	sub    $0xa8,%rsp
+
+0x7ffff7ea8e91: => 0x7ffff7ea8e91 <__opendir+17>:	mov    %fs:0x28,%rax
+
+0x7ffff7ea8e9a: => 0x7ffff7ea8e9a <__opendir+26>:	mov    %rax,0x98(%rsp)
+
+0x7ffff7ea8ea2: => 0x7ffff7ea8ea2 <__opendir+34>:	xor    %eax,%eax
+
+0x7ffff7ea8ea4: => 0x7ffff7ea8ea4 <__opendir+36>:	cmpb   $0x0,(%rdi)
+
+0x7ffff7ea8ea7: => 0x7ffff7ea8ea7 <__opendir+39>:	je     0x7ffff7ea8fa0 <__opendir+288>
+
+0x7ffff7ea8ead: => 0x7ffff7ea8ead <__opendir+45>:	mov    $0x90800,%esi
+
+0x7ffff7ea8eb2: => 0x7ffff7ea8eb2 <__opendir+50>:	callq  0x7ffff7ede6d0 <__GI___open64_nocancel>
+
+0x7ffff7ea8eb7: => 0x7ffff7ea8eb7 <__opendir+55>:	mov    %eax,%ebp
+
+0x7ffff7ea8eb9: => 0x7ffff7ea8eb9 <__opendir+57>:	test   %eax,%eax
+
+0x7ffff7ea8ebb: => 0x7ffff7ea8ebb <__opendir+59>:	js     0x7ffff7ea8fb8 <__opendir+312>
+
+0x7ffff7ea8ec1: => 0x7ffff7ea8ec1 <__opendir+65>:	mov    %rsp,%rdx
+
+0x7ffff7ea8ec4: => 0x7ffff7ea8ec4 <__opendir+68>:	mov    %eax,%esi
+
+0x7ffff7ea8ec6: => 0x7ffff7ea8ec6 <__opendir+70>:	mov    $0x1,%edi
+
+0x7ffff7ea8ecb: => 0x7ffff7ea8ecb <__opendir+75>:	callq  0x7ffff7ed8720 <__GI___fxstat>
+
+0x7ffff7ea8ed0: => 0x7ffff7ea8ed0 <__opendir+80>:	test   %eax,%eax
+
+0x7ffff7ea8ed2: => 0x7ffff7ea8ed2 <__opendir+82>:	js     0x7ffff7ea8f8e <__opendir+270>
+
+0x7ffff7ea8ed8: => 0x7ffff7ea8ed8 <__opendir+88>:	mov    0x18(%rsp),%eax
+
+0x7ffff7ea8edc: => 0x7ffff7ea8edc <__opendir+92>:	and    $0xf000,%eax
+
+0x7ffff7ea8ee1: => 0x7ffff7ea8ee1 <__opendir+97>:	cmp    $0x4000,%eax
+
+0x7ffff7ea8ee6: => 0x7ffff7ea8ee6 <__opendir+102>:	jne    0x7ffff7ea8f80 <__opendir+256>
+
+0x7ffff7ea8eec: => 0x7ffff7ea8eec <__opendir+108>:	cmpq   $0x8000,0x38(%rsp)
+
+0x7ffff7ea8ef5: => 0x7ffff7ea8ef5 <__opendir+117>:	mov    $0x8000,%ebx
+
+0x7ffff7ea8efa: => 0x7ffff7ea8efa <__opendir+122>:	cmovae 0x38(%rsp),%rbx
+
+0x7ffff7ea8f00: => 0x7ffff7ea8f00 <__opendir+128>:	mov    $0x100000,%eax
+
+0x7ffff7ea8f05: => 0x7ffff7ea8f05 <__opendir+133>:	cmp    $0x100000,%rbx
+
+0x7ffff7ea8f0c: => 0x7ffff7ea8f0c <__opendir+140>:	cmova  %rax,%rbx
+
+0x7ffff7ea8f10: => 0x7ffff7ea8f10 <__opendir+144>:	lea    0x30(%rbx),%rdi
+
+0x7ffff7ea8f14: => 0x7ffff7ea8f14 <__opendir+148>:	callq  0x7ffff7ded310 <malloc@plt>
+
+0x7ffff7ea8f19: => 0x7ffff7ea8f19 <__opendir+153>:	mov    %rax,%r12
+
+0x7ffff7ea8f1c: => 0x7ffff7ea8f1c <__opendir+156>:	test   %rax,%rax
+
+0x7ffff7ea8f1f: => 0x7ffff7ea8f1f <__opendir+159>:	je     0x7ffff7ea8fc2 <__opendir+322>
+
+0x7ffff7ea8f25: => 0x7ffff7ea8f25 <__opendir+165>:	mov    %ebp,(%r12)
+
+0x7ffff7ea8f29: => 0x7ffff7ea8f29 <__opendir+169>:	movl   $0x0,0x4(%r12)
+
+0x7ffff7ea8f32: => 0x7ffff7ea8f32 <__opendir+178>:	mov    %rbx,0x8(%r12)
+
+0x7ffff7ea8f37: => 0x7ffff7ea8f37 <__opendir+183>:	movq   $0x0,0x10(%r12)
+
+0x7ffff7ea8f40: => 0x7ffff7ea8f40 <__opendir+192>:	movq   $0x0,0x18(%r12)
+
+0x7ffff7ea8f49: => 0x7ffff7ea8f49 <__opendir+201>:	movq   $0x0,0x20(%r12)
+
+0x7ffff7ea8f52: => 0x7ffff7ea8f52 <__opendir+210>:	movl   $0x0,0x28(%r12)
+
+0x7ffff7ea8f5b: => 0x7ffff7ea8f5b <__opendir+219>:	mov    0x98(%rsp),%rax
+
+0x7ffff7ea8f63: => 0x7ffff7ea8f63 <__opendir+227>:	xor    %fs:0x28,%rax
+
+0x7ffff7ea8f6c: => 0x7ffff7ea8f6c <__opendir+236>:	jne    0x7ffff7ea8fbd <__opendir+317>
+
+0x7ffff7ea8f6e: => 0x7ffff7ea8f6e <__opendir+238>:	add    $0xa8,%rsp
+
+0x7ffff7ea8f75: => 0x7ffff7ea8f75 <__opendir+245>:	mov    %r12,%rax
+
+0x7ffff7ea8f78: => 0x7ffff7ea8f78 <__opendir+248>:	pop    %rbx
+
+0x7ffff7ea8f79: => 0x7ffff7ea8f79 <__opendir+249>:	pop    %rbp
+
+0x7ffff7ea8f7a: => 0x7ffff7ea8f7a <__opendir+250>:	pop    %r12
+
+0x7ffff7ea8f7c: => 0x7ffff7ea8f7c <__opendir+252>:	pop    %r13
+
+0x7ffff7ea8f7e: => 0x7ffff7ea8f7e <__opendir+254>:	retq   
+
+0x4013fe: => 0x4013fe <list_directory+30>:	mov    %rax,-0x20(%rbp)
+
+0x401402: => 0x401402 <list_directory+34>:	cmpq   $0x0,-0x20(%rbp)
+
+0x401407: => 0x401407 <list_directory+39>:	jne    0x401452 <list_directory+114>
+
+0x401452: => 0x401452 <list_directory+114>:	xor    %eax,%eax
+
+0x401454: => 0x401454 <list_directory+116>:	mov    %eax,%edx
+
+0x401456: => 0x401456 <list_directory+118>:	mov    -0x8(%rbp),%rdi
+
+0x40145a: => 0x40145a <list_directory+122>:	lea    -0x28(%rbp),%rsi
+
+0x40145e: => 0x40145e <list_directory+126>:	movabs $0x4010e0,%rcx
+
+0x401468: => 0x401468 <list_directory+136>:	callq  0x4010c0 <scandir@plt>
+
+0x40146d: => 0x40146d <list_directory+141>:	mov    %eax,-0x2c(%rbp)
+
+0x401470: => 0x401470 <list_directory+144>:	cmpl   $0x0,-0x2c(%rbp)
+
+0x401474: => 0x401474 <list_directory+148>:	jge    0x4014bf <list_directory+223>
+
+0x4014bf: => 0x4014bf <list_directory+223>:	cmpl   $0x0,-0x14(%rbp)
+
+0x4014c3: => 0x4014c3 <list_directory+227>:	je     0x401568 <list_directory+392>
+
+0x401568: => 0x401568 <list_directory+392>:	movl   $0x0,-0x34(%rbp)
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401596: => 0x401596 <list_directory+438>:	jmp    0x4015f4 <list_directory+532>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401596: => 0x401596 <list_directory+438>:	jmp    0x4015f4 <list_directory+532>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x40157b: => 0x40157b <list_directory+411>:	cmpl   $0x0,-0xc(%rbp)
+
+0x40157f: => 0x40157f <list_directory+415>:	jne    0x401598 <list_directory+440>
+
+0x401581: => 0x401581 <list_directory+417>:	mov    -0x28(%rbp),%rax
+
+0x401585: => 0x401585 <list_directory+421>:	movslq -0x34(%rbp),%rcx
+
+0x401589: => 0x401589 <list_directory+425>:	mov    (%rax,%rcx,8),%rax
+
+0x40158d: => 0x40158d <list_directory+429>:	movsbl 0x13(%rax),%edx
+
+0x401591: => 0x401591 <list_directory+433>:	cmp    $0x2e,%edx
+
+0x401594: => 0x401594 <list_directory+436>:	jne    0x401598 <list_directory+440>
+
+0x401598: => 0x401598 <list_directory+440>:	cmpl   $0x0,-0x10(%rbp)
+
+0x40159c: => 0x40159c <list_directory+444>:	je     0x4015bc <list_directory+476>
+
+0x4015bc: => 0x4015bc <list_directory+476>:	mov    -0x28(%rbp),%rax
+
+0x4015c0: => 0x4015c0 <list_directory+480>:	movslq -0x34(%rbp),%rcx
+
+0x4015c4: => 0x4015c4 <list_directory+484>:	mov    (%rax,%rcx,8),%rax
+
+0x4015c8: => 0x4015c8 <list_directory+488>:	add    $0x13,%rax
+
+0x4015cc: => 0x4015cc <list_directory+492>:	movabs $0x402049,%rdi
+
+0x4015d6: => 0x4015d6 <list_directory+502>:	mov    %rax,%rsi
+
+0x4015d9: => 0x4015d9 <list_directory+505>:	mov    $0x0,%al
+
+0x4015db: => 0x4015db <list_directory+507>:	callq  0x401090 <printf@plt>
+
+0x4015e0: => 0x4015e0 <list_directory+512>:	mov    -0x28(%rbp),%rax
+
+0x4015e4: => 0x4015e4 <list_directory+516>:	movslq -0x34(%rbp),%rcx
+
+0x4015e8: => 0x4015e8 <list_directory+520>:	mov    (%rax,%rcx,8),%rax
+
+0x4015ec: => 0x4015ec <list_directory+524>:	mov    %rax,%rdi
+
+0x4015ef: => 0x4015ef <list_directory+527>:	callq  0x401030 <free@plt>
+
+0x4015f4: => 0x4015f4 <list_directory+532>:	mov    -0x34(%rbp),%eax
+
+0x4015f7: => 0x4015f7 <list_directory+535>:	add    $0x1,%eax
+
+0x4015fa: => 0x4015fa <list_directory+538>:	mov    %eax,-0x34(%rbp)
+
+0x4015fd: => 0x4015fd <list_directory+541>:	jmpq   0x40156f <list_directory+399>
+
+0x40156f: => 0x40156f <list_directory+399>:	mov    -0x34(%rbp),%eax
+
+0x401572: => 0x401572 <list_directory+402>:	cmp    -0x2c(%rbp),%eax
+
+0x401575: => 0x401575 <list_directory+405>:	jge    0x401602 <list_directory+546>
+
+0x401602: => 0x401602 <list_directory+546>:	jmp    0x401604 <list_directory+548>
+
+0x401604: => 0x401604 <list_directory+548>:	mov    -0x20(%rbp),%rdi
+
+0x401608: => 0x401608 <list_directory+552>:	callq  0x4010d0 <closedir@plt>
+
+0x40160d: => 0x40160d <list_directory+557>:	mov    -0x28(%rbp),%rcx
+
+0x401611: => 0x401611 <list_directory+561>:	mov    %rcx,%rdi
+
+0x401614: => 0x401614 <list_directory+564>:	mov    %eax,-0x68(%rbp)
+
+0x401617: => 0x401617 <list_directory+567>:	callq  0x401030 <free@plt>
+
+0x40161c: => 0x40161c <list_directory+572>:	add    $0x70,%rsp
+
+0x401620: => 0x401620 <list_directory+576>:	pop    %rbp
+
+0x401621: => 0x401621 <list_directory+577>:	retq   
+
+0x4013d6: => 0x4013d6 <_main+358>:	xor    %eax,%eax
+
+0x4013d8: => 0x4013d8 <_main+360>:	add    $0x30,%rsp
+
+0x4013dc: => 0x4013dc <_main+364>:	pop    %rbp
+
+0x4013dd: => 0x4013dd <_main+365>:	retq   
+
+0x401262: => 0x401262 <main+34>:	add    $0x10,%rsp
+
+0x401266: => 0x401266 <main+38>:	pop    %rbp
+
+0x401267: => 0x401267 <main+39>:	retq   
+
+0x7ffff7def083: => 0x7ffff7def083 <__libc_start_main+243>:	mov    %eax,%edi
+
+0x7ffff7def085: => 0x7ffff7def085 <__libc_start_main+245>:	callq  0x7ffff7e11a40 <__GI_exit>
+
