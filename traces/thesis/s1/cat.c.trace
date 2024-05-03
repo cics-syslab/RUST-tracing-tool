@@ -1,0 +1,442 @@
+0x4011a1: => 0x4011a1 <main+1>:	mov    %rsp,%rbp
+
+0x4011a4: => 0x4011a4 <main+4>:	sub    $0x10,%rsp
+
+0x4011a8: => 0x4011a8 <main+8>:	movl   $0x0,-0x4(%rbp)
+
+0x4011af: => 0x4011af <main+15>:	mov    %edi,-0x8(%rbp)
+
+0x4011b2: => 0x4011b2 <main+18>:	mov    %rsi,-0x10(%rbp)
+
+0x4011b6: => 0x4011b6 <main+22>:	mov    -0x8(%rbp),%edi
+
+0x4011b9: => 0x4011b9 <main+25>:	mov    -0x10(%rbp),%rsi
+
+0x4011bd: => 0x4011bd <main+29>:	callq  0x4011d0 <_main>
+
+0x4011d0: => 0x4011d0 <_main>:	push   %rbp
+
+0x4011d1: => 0x4011d1 <_main+1>:	mov    %rsp,%rbp
+
+0x4011d4: => 0x4011d4 <_main+4>:	sub    $0x20,%rsp
+
+0x4011d8: => 0x4011d8 <_main+8>:	mov    %edi,-0x8(%rbp)
+
+0x4011db: => 0x4011db <_main+11>:	mov    %rsi,-0x10(%rbp)
+
+0x4011df: => 0x4011df <_main+15>:	cmpl   $0x1,-0x8(%rbp)
+
+0x4011e3: => 0x4011e3 <_main+19>:	jne    0x401207 <_main+55>
+
+0x4011e5: => 0x4011e5 <_main+21>:	mov    0x4040a0,%rdi
+
+0x4011ed: => 0x4011ed <_main+29>:	movabs $0x402004,%rsi
+
+0x4011f7: => 0x4011f7 <_main+39>:	mov    $0x0,%al
+
+0x4011f9: => 0x4011f9 <_main+41>:	callq  0x401060 <fprintf@plt>
+
+0x401060: => 0x401060 <fprintf@plt>:	jmpq   *0x2fca(%rip)        # 0x404030 <fprintf@got.plt>
+
+0x401066: => 0x401066 <fprintf@plt+6>:	pushq  $0x3
+
+0x40106b: => 0x40106b <fprintf@plt+11>:	jmpq   0x401020
+
+0x401020: => 0x401020:	pushq  0x2fe2(%rip)        # 0x404008
+
+0x401026: => 0x401026:	jmpq   *0x2fe4(%rip)        # 0x404010
+
+0x7ffff7fe7bc0: => 0x7ffff7fe7bc0 <_dl_runtime_resolve_xsavec>:	endbr64 
+
+0x7ffff7fe7bc4: => 0x7ffff7fe7bc4 <_dl_runtime_resolve_xsavec+4>:	push   %rbx
+
+0x7ffff7fe7bc5: => 0x7ffff7fe7bc5 <_dl_runtime_resolve_xsavec+5>:	mov    %rsp,%rbx
+
+0x7ffff7fe7bc8: => 0x7ffff7fe7bc8 <_dl_runtime_resolve_xsavec+8>:	and    $0xffffffffffffffc0,%rsp
+
+0x7ffff7fe7bcc: => 0x7ffff7fe7bcc <_dl_runtime_resolve_xsavec+12>:	sub    0x14b35(%rip),%rsp        # 0x7ffff7ffc708 <_rtld_global_ro+232>
+
+0x7ffff7fe7bd3: => 0x7ffff7fe7bd3 <_dl_runtime_resolve_xsavec+19>:	mov    %rax,(%rsp)
+
+0x7ffff7fe7bd7: => 0x7ffff7fe7bd7 <_dl_runtime_resolve_xsavec+23>:	mov    %rcx,0x8(%rsp)
+
+0x7ffff7fe7bdc: => 0x7ffff7fe7bdc <_dl_runtime_resolve_xsavec+28>:	mov    %rdx,0x10(%rsp)
+
+0x7ffff7fe7be1: => 0x7ffff7fe7be1 <_dl_runtime_resolve_xsavec+33>:	mov    %rsi,0x18(%rsp)
+
+0x7ffff7fe7be6: => 0x7ffff7fe7be6 <_dl_runtime_resolve_xsavec+38>:	mov    %rdi,0x20(%rsp)
+
+0x7ffff7fe7beb: => 0x7ffff7fe7beb <_dl_runtime_resolve_xsavec+43>:	mov    %r8,0x28(%rsp)
+
+0x7ffff7fe7bf0: => 0x7ffff7fe7bf0 <_dl_runtime_resolve_xsavec+48>:	mov    %r9,0x30(%rsp)
+
+0x7ffff7fe7bf5: => 0x7ffff7fe7bf5 <_dl_runtime_resolve_xsavec+53>:	mov    $0xee,%eax
+
+0x7ffff7fe7bfa: => 0x7ffff7fe7bfa <_dl_runtime_resolve_xsavec+58>:	xor    %edx,%edx
+
+0x7ffff7fe7bfc: => 0x7ffff7fe7bfc <_dl_runtime_resolve_xsavec+60>:	mov    %rdx,0x250(%rsp)
+
+0x7ffff7fe7c04: => 0x7ffff7fe7c04 <_dl_runtime_resolve_xsavec+68>:	mov    %rdx,0x258(%rsp)
+
+0x7ffff7fe7c0c: => 0x7ffff7fe7c0c <_dl_runtime_resolve_xsavec+76>:	mov    %rdx,0x260(%rsp)
+
+0x7ffff7fe7c14: => 0x7ffff7fe7c14 <_dl_runtime_resolve_xsavec+84>:	mov    %rdx,0x268(%rsp)
+
+0x7ffff7fe7c1c: => 0x7ffff7fe7c1c <_dl_runtime_resolve_xsavec+92>:	mov    %rdx,0x270(%rsp)
+
+0x7ffff7fe7c24: => 0x7ffff7fe7c24 <_dl_runtime_resolve_xsavec+100>:	mov    %rdx,0x278(%rsp)
+
+0x7ffff7fe7c2c: => 0x7ffff7fe7c2c <_dl_runtime_resolve_xsavec+108>:	xsavec 0x40(%rsp)
+
+0x7ffff7fe7c31: => 0x7ffff7fe7c31 <_dl_runtime_resolve_xsavec+113>:	mov    0x10(%rbx),%rsi
+
+0x7ffff7fe7c35: => 0x7ffff7fe7c35 <_dl_runtime_resolve_xsavec+117>:	mov    0x8(%rbx),%rdi
+
+0x7ffff7fe7c39: => 0x7ffff7fe7c39 <_dl_runtime_resolve_xsavec+121>:	callq  0x7ffff7fe00c0 <_dl_fixup>
+
+0x7ffff7fe7c3e: => 0x7ffff7fe7c3e <_dl_runtime_resolve_xsavec+126>:	mov    %rax,%r11
+
+0x7ffff7fe7c41: => 0x7ffff7fe7c41 <_dl_runtime_resolve_xsavec+129>:	mov    $0xee,%eax
+
+0x7ffff7fe7c46: => 0x7ffff7fe7c46 <_dl_runtime_resolve_xsavec+134>:	xor    %edx,%edx
+
+0x7ffff7fe7c48: => 0x7ffff7fe7c48 <_dl_runtime_resolve_xsavec+136>:	xrstor 0x40(%rsp)
+
+0x7ffff7fe7c4d: => 0x7ffff7fe7c4d <_dl_runtime_resolve_xsavec+141>:	mov    0x30(%rsp),%r9
+
+0x7ffff7fe7c52: => 0x7ffff7fe7c52 <_dl_runtime_resolve_xsavec+146>:	mov    0x28(%rsp),%r8
+
+0x7ffff7fe7c57: => 0x7ffff7fe7c57 <_dl_runtime_resolve_xsavec+151>:	mov    0x20(%rsp),%rdi
+
+0x7ffff7fe7c5c: => 0x7ffff7fe7c5c <_dl_runtime_resolve_xsavec+156>:	mov    0x18(%rsp),%rsi
+
+0x7ffff7fe7c61: => 0x7ffff7fe7c61 <_dl_runtime_resolve_xsavec+161>:	mov    0x10(%rsp),%rdx
+
+0x7ffff7fe7c66: => 0x7ffff7fe7c66 <_dl_runtime_resolve_xsavec+166>:	mov    0x8(%rsp),%rcx
+
+0x7ffff7fe7c6b: => 0x7ffff7fe7c6b <_dl_runtime_resolve_xsavec+171>:	mov    (%rsp),%rax
+
+0x7ffff7fe7c6f: => 0x7ffff7fe7c6f <_dl_runtime_resolve_xsavec+175>:	mov    %rbx,%rsp
+
+0x7ffff7fe7c72: => 0x7ffff7fe7c72 <_dl_runtime_resolve_xsavec+178>:	mov    (%rsp),%rbx
+
+0x7ffff7fe7c76: => 0x7ffff7fe7c76 <_dl_runtime_resolve_xsavec+182>:	add    $0x18,%rsp
+
+0x7ffff7fe7c7a: => 0x7ffff7fe7c7a <_dl_runtime_resolve_xsavec+186>:	bnd jmpq *%r11
+
+0x7ffff7e2cbd0: => 0x7ffff7e2cbd0 <__fprintf>:	endbr64 
+
+0x7ffff7e2cbd4: => 0x7ffff7e2cbd4 <__fprintf+4>:	sub    $0xd8,%rsp
+
+0x7ffff7e2cbdb: => 0x7ffff7e2cbdb <__fprintf+11>:	mov    %rdx,0x30(%rsp)
+
+0x7ffff7e2cbe0: => 0x7ffff7e2cbe0 <__fprintf+16>:	mov    %rcx,0x38(%rsp)
+
+0x7ffff7e2cbe5: => 0x7ffff7e2cbe5 <__fprintf+21>:	mov    %r8,0x40(%rsp)
+
+0x7ffff7e2cbea: => 0x7ffff7e2cbea <__fprintf+26>:	mov    %r9,0x48(%rsp)
+
+0x7ffff7e2cbef: => 0x7ffff7e2cbef <__fprintf+31>:	test   %al,%al
+
+0x7ffff7e2cbf1: => 0x7ffff7e2cbf1 <__fprintf+33>:	je     0x7ffff7e2cc2a <__fprintf+90>
+
+0x7ffff7e2cc2a: => 0x7ffff7e2cc2a <__fprintf+90>:	mov    %fs:0x28,%rax
+
+0x7ffff7e2cc33: => 0x7ffff7e2cc33 <__fprintf+99>:	mov    %rax,0x18(%rsp)
+
+0x7ffff7e2cc38: => 0x7ffff7e2cc38 <__fprintf+104>:	xor    %eax,%eax
+
+0x7ffff7e2cc3a: => 0x7ffff7e2cc3a <__fprintf+106>:	lea    0xe0(%rsp),%rax
+
+0x7ffff7e2cc42: => 0x7ffff7e2cc42 <__fprintf+114>:	xor    %ecx,%ecx
+
+0x7ffff7e2cc44: => 0x7ffff7e2cc44 <__fprintf+116>:	mov    %rsp,%rdx
+
+0x7ffff7e2cc47: => 0x7ffff7e2cc47 <__fprintf+119>:	mov    %rax,0x8(%rsp)
+
+0x7ffff7e2cc4c: => 0x7ffff7e2cc4c <__fprintf+124>:	lea    0x20(%rsp),%rax
+
+0x7ffff7e2cc51: => 0x7ffff7e2cc51 <__fprintf+129>:	movl   $0x10,(%rsp)
+
+0x7ffff7e2cc58: => 0x7ffff7e2cc58 <__fprintf+136>:	movl   $0x30,0x4(%rsp)
+
+0x7ffff7e2cc60: => 0x7ffff7e2cc60 <__fprintf+144>:	mov    %rax,0x10(%rsp)
+
+0x7ffff7e2cc65: => 0x7ffff7e2cc65 <__fprintf+149>:	callq  0x7ffff7e41860 <__vfprintf_internal>
+
+0x7ffff7e2cc6a: => 0x7ffff7e2cc6a <__fprintf+154>:	mov    0x18(%rsp),%rcx
+
+0x7ffff7e2cc6f: => 0x7ffff7e2cc6f <__fprintf+159>:	xor    %fs:0x28,%rcx
+
+0x7ffff7e2cc78: => 0x7ffff7e2cc78 <__fprintf+168>:	jne    0x7ffff7e2cc82 <__fprintf+178>
+
+0x7ffff7e2cc7a: => 0x7ffff7e2cc7a <__fprintf+170>:	add    $0xd8,%rsp
+
+0x7ffff7e2cc81: => 0x7ffff7e2cc81 <__fprintf+177>:	retq   
+
+0x4011fe: => 0x4011fe <_main+46>:	movl   $0x1,-0x4(%rbp)
+
+0x401205: => 0x401205 <_main+53>:	jmp    0x401239 <_main+105>
+
+0x401239: => 0x401239 <_main+105>:	mov    -0x4(%rbp),%eax
+
+0x40123c: => 0x40123c <_main+108>:	add    $0x20,%rsp
+
+0x401240: => 0x401240 <_main+112>:	pop    %rbp
+
+0x401241: => 0x401241 <_main+113>:	retq   
+
+0x4011c2: => 0x4011c2 <main+34>:	add    $0x10,%rsp
+
+0x4011c6: => 0x4011c6 <main+38>:	pop    %rbp
+
+0x4011c7: => 0x4011c7 <main+39>:	retq   
+
+0x7ffff7def083: => 0x7ffff7def083 <__libc_start_main+243>:	mov    %eax,%edi
+
+0x7ffff7def085: => 0x7ffff7def085 <__libc_start_main+245>:	callq  0x7ffff7e11a40 <__GI_exit>
+
+0x7ffff7e11a40: => 0x7ffff7e11a40 <__GI_exit>:	endbr64 
+
+0x7ffff7e11a44: => 0x7ffff7e11a44 <__GI_exit+4>:	push   %rax
+
+0x7ffff7e11a45: => 0x7ffff7e11a45 <__GI_exit+5>:	pop    %rax
+
+0x7ffff7e11a46: => 0x7ffff7e11a46 <__GI_exit+6>:	mov    $0x1,%ecx
+
+0x7ffff7e11a4b: => 0x7ffff7e11a4b <__GI_exit+11>:	mov    $0x1,%edx
+
+0x7ffff7e11a50: => 0x7ffff7e11a50 <__GI_exit+16>:	lea    0x1a5cc1(%rip),%rsi        # 0x7ffff7fb7718 <__exit_funcs>
+
+0x7ffff7e11a57: => 0x7ffff7e11a57 <__GI_exit+23>:	sub    $0x8,%rsp
+
+0x7ffff7e11a5b: => 0x7ffff7e11a5b <__GI_exit+27>:	callq  0x7ffff7e117b0 <__run_exit_handlers>
+
+0x7ffff7e117b0: => 0x7ffff7e117b0 <__run_exit_handlers>:	endbr64 
+
+0x7ffff7e117b4: => 0x7ffff7e117b4 <__run_exit_handlers+4>:	push   %r15
+
+0x7ffff7e117b6: => 0x7ffff7e117b6 <__run_exit_handlers+6>:	push   %r14
+
+0x7ffff7e117b8: => 0x7ffff7e117b8 <__run_exit_handlers+8>:	push   %r13
+
+0x7ffff7e117ba: => 0x7ffff7e117ba <__run_exit_handlers+10>:	push   %r12
+
+0x7ffff7e117bc: => 0x7ffff7e117bc <__run_exit_handlers+12>:	push   %rbp
+
+0x7ffff7e117bd: => 0x7ffff7e117bd <__run_exit_handlers+13>:	mov    %edi,%ebp
+
+0x7ffff7e117bf: => 0x7ffff7e117bf <__run_exit_handlers+15>:	push   %rbx
+
+0x7ffff7e117c0: => 0x7ffff7e117c0 <__run_exit_handlers+16>:	mov    %rsi,%rbx
+
+0x7ffff7e117c3: => 0x7ffff7e117c3 <__run_exit_handlers+19>:	sub    $0x18,%rsp
+
+0x7ffff7e117c7: => 0x7ffff7e117c7 <__run_exit_handlers+23>:	mov    %edx,0xc(%rsp)
+
+0x7ffff7e117cb: => 0x7ffff7e117cb <__run_exit_handlers+27>:	test   %cl,%cl
+
+0x7ffff7e117cd: => 0x7ffff7e117cd <__run_exit_handlers+29>:	jne    0x7ffff7e11a08 <__run_exit_handlers+600>
+
+0x7ffff7e11a08: => 0x7ffff7e11a08 <__run_exit_handlers+600>:	callq  0x7ffff7e12280 <__GI___call_tls_dtors>
+
+0x7ffff7e12280: => 0x7ffff7e12280 <__GI___call_tls_dtors>:	endbr64 
+
+0x7ffff7e12284: => 0x7ffff7e12284 <__GI___call_tls_dtors+4>:	push   %rbp
+
+0x7ffff7e12285: => 0x7ffff7e12285 <__GI___call_tls_dtors+5>:	push   %rbx
+
+0x7ffff7e12286: => 0x7ffff7e12286 <__GI___call_tls_dtors+6>:	sub    $0x8,%rsp
+
+0x7ffff7e1228a: => 0x7ffff7e1228a <__GI___call_tls_dtors+10>:	mov    0x1a4acf(%rip),%rbx        # 0x7ffff7fb6d60
+
+0x7ffff7e12291: => 0x7ffff7e12291 <__GI___call_tls_dtors+17>:	mov    %fs:(%rbx),%rbp
+
+0x7ffff7e12295: => 0x7ffff7e12295 <__GI___call_tls_dtors+21>:	test   %rbp,%rbp
+
+0x7ffff7e12298: => 0x7ffff7e12298 <__GI___call_tls_dtors+24>:	je     0x7ffff7e122dd <__GI___call_tls_dtors+93>
+
+0x7ffff7e122dd: => 0x7ffff7e122dd <__GI___call_tls_dtors+93>:	add    $0x8,%rsp
+
+0x7ffff7e122e1: => 0x7ffff7e122e1 <__GI___call_tls_dtors+97>:	pop    %rbx
+
+0x7ffff7e122e2: => 0x7ffff7e122e2 <__GI___call_tls_dtors+98>:	pop    %rbp
+
+0x7ffff7e122e3: => 0x7ffff7e122e3 <__GI___call_tls_dtors+99>:	retq   
+
+0x7ffff7e11a0d: => 0x7ffff7e11a0d <__run_exit_handlers+605>:	jmpq   0x7ffff7e117d3 <__run_exit_handlers+35>
+
+0x7ffff7e117d3: => 0x7ffff7e117d3 <__run_exit_handlers+35>:	lea    0x1aab0e(%rip),%r14        # 0x7ffff7fbc2e8 <__exit_funcs_lock>
+
+0x7ffff7e117da: => 0x7ffff7e117da <__run_exit_handlers+42>:	xor    %r12d,%r12d
+
+0x7ffff7e117dd: => 0x7ffff7e117dd <__run_exit_handlers+45>:	nopl   (%rax)
+
+0x7ffff7e117e0: => 0x7ffff7e117e0 <__run_exit_handlers+48>:	mov    %fs:0x18,%eax
+
+0x7ffff7e117e8: => 0x7ffff7e117e8 <__run_exit_handlers+56>:	mov    $0x1,%edx
+
+0x7ffff7e117ed: => 0x7ffff7e117ed <__run_exit_handlers+61>:	test   %eax,%eax
+
+0x7ffff7e117ef: => 0x7ffff7e117ef <__run_exit_handlers+63>:	jne    0x7ffff7e119c2 <__run_exit_handlers+530>
+
+0x7ffff7e117f5: => 0x7ffff7e117f5 <__run_exit_handlers+69>:	cmpxchg %edx,(%r14)
+
+0x7ffff7e117f9: => 0x7ffff7e117f9 <__run_exit_handlers+73>:	mov    (%rbx),%r15
+
+0x7ffff7e117fc: => 0x7ffff7e117fc <__run_exit_handlers+76>:	test   %r15,%r15
+
+0x7ffff7e117ff: => 0x7ffff7e117ff <__run_exit_handlers+79>:	jne    0x7ffff7e1183c <__run_exit_handlers+140>
+
+0x7ffff7e1183c: => 0x7ffff7e1183c <__run_exit_handlers+140>:	mov    0x8(%r15),%rax
+
+0x7ffff7e11840: => 0x7ffff7e11840 <__run_exit_handlers+144>:	test   %rax,%rax
+
+0x7ffff7e11843: => 0x7ffff7e11843 <__run_exit_handlers+147>:	je     0x7ffff7e11940 <__run_exit_handlers+400>
+
+0x7ffff7e11849: => 0x7ffff7e11849 <__run_exit_handlers+153>:	lea    -0x1(%rax),%r9
+
+0x7ffff7e1184d: => 0x7ffff7e1184d <__run_exit_handlers+157>:	mov    0x1aaa8c(%rip),%r13        # 0x7ffff7fbc2e0 <__new_exitfn_called>
+
+0x7ffff7e11854: => 0x7ffff7e11854 <__run_exit_handlers+164>:	mov    %r9,0x8(%r15)
+
+0x7ffff7e11858: => 0x7ffff7e11858 <__run_exit_handlers+168>:	mov    %fs:0x18,%eax
+
+0x7ffff7e11860: => 0x7ffff7e11860 <__run_exit_handlers+176>:	test   %eax,%eax
+
+0x7ffff7e11862: => 0x7ffff7e11862 <__run_exit_handlers+178>:	jne    0x7ffff7e11910 <__run_exit_handlers+352>
+
+0x7ffff7e11868: => 0x7ffff7e11868 <__run_exit_handlers+184>:	subl   $0x1,(%r14)
+
+0x7ffff7e1186c: => 0x7ffff7e1186c <__run_exit_handlers+188>:	mov    %r9,%rax
+
+0x7ffff7e1186f: => 0x7ffff7e1186f <__run_exit_handlers+191>:	shl    $0x5,%rax
+
+0x7ffff7e11873: => 0x7ffff7e11873 <__run_exit_handlers+195>:	add    %r15,%rax
+
+0x7ffff7e11876: => 0x7ffff7e11876 <__run_exit_handlers+198>:	mov    0x10(%rax),%rdx
+
+0x7ffff7e1187a: => 0x7ffff7e1187a <__run_exit_handlers+202>:	cmp    $0x3,%rdx
+
+0x7ffff7e1187e: => 0x7ffff7e1187e <__run_exit_handlers+206>:	je     0x7ffff7e118b0 <__run_exit_handlers+256>
+
+0x7ffff7e11880: => 0x7ffff7e11880 <__run_exit_handlers+208>:	cmp    $0x4,%rdx
+
+0x7ffff7e11884: => 0x7ffff7e11884 <__run_exit_handlers+212>:	jne    0x7ffff7e11810 <__run_exit_handlers+96>
+
+0x7ffff7e11886: => 0x7ffff7e11886 <__run_exit_handlers+214>:	mov    0x18(%rax),%rdx
+
+0x7ffff7e1188a: => 0x7ffff7e1188a <__run_exit_handlers+218>:	mov    0x20(%rax),%rdi
+
+0x7ffff7e1188e: => 0x7ffff7e1188e <__run_exit_handlers+222>:	movq   $0x0,0x10(%rax)
+
+0x7ffff7e11896: => 0x7ffff7e11896 <__run_exit_handlers+230>:	mov    %ebp,%esi
+
+0x7ffff7e11898: => 0x7ffff7e11898 <__run_exit_handlers+232>:	ror    $0x11,%rdx
+
+0x7ffff7e1189c: => 0x7ffff7e1189c <__run_exit_handlers+236>:	xor    %fs:0x30,%rdx
+
+0x7ffff7e118a5: => 0x7ffff7e118a5 <__run_exit_handlers+245>:	callq  *%rdx
+
+0x7ffff7e118a7: => 0x7ffff7e118a7 <__run_exit_handlers+247>:	jmpq   0x7ffff7e1181a <__run_exit_handlers+106>
+
+0x7ffff7e1181a: => 0x7ffff7e1181a <__run_exit_handlers+106>:	mov    %fs:0x18,%eax
+
+0x7ffff7e11822: => 0x7ffff7e11822 <__run_exit_handlers+114>:	mov    $0x1,%edx
+
+0x7ffff7e11827: => 0x7ffff7e11827 <__run_exit_handlers+119>:	test   %eax,%eax
+
+0x7ffff7e11829: => 0x7ffff7e11829 <__run_exit_handlers+121>:	jne    0x7ffff7e118f0 <__run_exit_handlers+320>
+
+0x7ffff7e1182f: => 0x7ffff7e1182f <__run_exit_handlers+127>:	cmpxchg %edx,(%r14)
+
+0x7ffff7e11833: => 0x7ffff7e11833 <__run_exit_handlers+131>:	cmp    %r13,0x1aaaa6(%rip)        # 0x7ffff7fbc2e0 <__new_exitfn_called>
+
+0x7ffff7e1183a: => 0x7ffff7e1183a <__run_exit_handlers+138>:	jne    0x7ffff7e117f9 <__run_exit_handlers+73>
+
+0x7ffff7e1183c: => 0x7ffff7e1183c <__run_exit_handlers+140>:	mov    0x8(%r15),%rax
+
+0x7ffff7e11840: => 0x7ffff7e11840 <__run_exit_handlers+144>:	test   %rax,%rax
+
+0x7ffff7e11843: => 0x7ffff7e11843 <__run_exit_handlers+147>:	je     0x7ffff7e11940 <__run_exit_handlers+400>
+
+0x7ffff7e11940: => 0x7ffff7e11940 <__run_exit_handlers+400>:	mov    (%r15),%rax
+
+0x7ffff7e11943: => 0x7ffff7e11943 <__run_exit_handlers+403>:	mov    %rax,(%rbx)
+
+0x7ffff7e11946: => 0x7ffff7e11946 <__run_exit_handlers+406>:	test   %rax,%rax
+
+0x7ffff7e11949: => 0x7ffff7e11949 <__run_exit_handlers+409>:	je     0x7ffff7e11953 <__run_exit_handlers+419>
+
+0x7ffff7e11953: => 0x7ffff7e11953 <__run_exit_handlers+419>:	mov    %fs:0x18,%eax
+
+0x7ffff7e1195b: => 0x7ffff7e1195b <__run_exit_handlers+427>:	test   %eax,%eax
+
+0x7ffff7e1195d: => 0x7ffff7e1195d <__run_exit_handlers+429>:	jne    0x7ffff7e119dd <__run_exit_handlers+557>
+
+0x7ffff7e1195f: => 0x7ffff7e1195f <__run_exit_handlers+431>:	subl   $0x1,(%r14)
+
+0x7ffff7e11963: => 0x7ffff7e11963 <__run_exit_handlers+435>:	jmpq   0x7ffff7e117e0 <__run_exit_handlers+48>
+
+0x7ffff7e117e0: => 0x7ffff7e117e0 <__run_exit_handlers+48>:	mov    %fs:0x18,%eax
+
+0x7ffff7e117e8: => 0x7ffff7e117e8 <__run_exit_handlers+56>:	mov    $0x1,%edx
+
+0x7ffff7e117ed: => 0x7ffff7e117ed <__run_exit_handlers+61>:	test   %eax,%eax
+
+0x7ffff7e117ef: => 0x7ffff7e117ef <__run_exit_handlers+63>:	jne    0x7ffff7e119c2 <__run_exit_handlers+530>
+
+0x7ffff7e117f5: => 0x7ffff7e117f5 <__run_exit_handlers+69>:	cmpxchg %edx,(%r14)
+
+0x7ffff7e117f9: => 0x7ffff7e117f9 <__run_exit_handlers+73>:	mov    (%rbx),%r15
+
+0x7ffff7e117fc: => 0x7ffff7e117fc <__run_exit_handlers+76>:	test   %r15,%r15
+
+0x7ffff7e117ff: => 0x7ffff7e117ff <__run_exit_handlers+79>:	jne    0x7ffff7e1183c <__run_exit_handlers+140>
+
+0x7ffff7e11801: => 0x7ffff7e11801 <__run_exit_handlers+81>:	jmpq   0x7ffff7e11968 <__run_exit_handlers+440>
+
+0x7ffff7e11968: => 0x7ffff7e11968 <__run_exit_handlers+440>:	movb   $0x1,0x1a731d(%rip)        # 0x7ffff7fb8c8c <__exit_funcs_done>
+
+0x7ffff7e1196f: => 0x7ffff7e1196f <__run_exit_handlers+447>:	mov    %fs:0x18,%eax
+
+0x7ffff7e11977: => 0x7ffff7e11977 <__run_exit_handlers+455>:	test   %eax,%eax
+
+0x7ffff7e11979: => 0x7ffff7e11979 <__run_exit_handlers+457>:	jne    0x7ffff7e11a12 <__run_exit_handlers+610>
+
+0x7ffff7e1197f: => 0x7ffff7e1197f <__run_exit_handlers+463>:	subl   $0x1,(%r14)
+
+0x7ffff7e11983: => 0x7ffff7e11983 <__run_exit_handlers+467>:	cmpb   $0x0,0xc(%rsp)
+
+0x7ffff7e11988: => 0x7ffff7e11988 <__run_exit_handlers+472>:	je     0x7ffff7e119bb <__run_exit_handlers+523>
+
+0x7ffff7e1198a: => 0x7ffff7e1198a <__run_exit_handlers+474>:	lea    0x1a1f07(%rip),%rbx        # 0x7ffff7fb3898 <__elf_set___libc_atexit_element__IO_cleanup__>
+
+0x7ffff7e11991: => 0x7ffff7e11991 <__run_exit_handlers+481>:	lea    0x1a1f08(%rip),%rax        # 0x7ffff7fb38a0 <_IO_helper_jumps>
+
+0x7ffff7e11998: => 0x7ffff7e11998 <__run_exit_handlers+488>:	cmp    %rax,%rbx
+
+0x7ffff7e1199b: => 0x7ffff7e1199b <__run_exit_handlers+491>:	jae    0x7ffff7e119bb <__run_exit_handlers+523>
+
+0x7ffff7e1199d: => 0x7ffff7e1199d <__run_exit_handlers+493>:	sub    $0x1,%rax
+
+0x7ffff7e119a1: => 0x7ffff7e119a1 <__run_exit_handlers+497>:	sub    %rbx,%rax
+
+0x7ffff7e119a4: => 0x7ffff7e119a4 <__run_exit_handlers+500>:	shr    $0x3,%rax
+
+0x7ffff7e119a8: => 0x7ffff7e119a8 <__run_exit_handlers+504>:	lea    0x8(%rbx,%rax,8),%r12
+
+0x7ffff7e119ad: => 0x7ffff7e119ad <__run_exit_handlers+509>:	nopl   (%rax)
+
+0x7ffff7e119b0: => 0x7ffff7e119b0 <__run_exit_handlers+512>:	callq  *(%rbx)
+
+0x7ffff7e119b2: => 0x7ffff7e119b2 <__run_exit_handlers+514>:	add    $0x8,%rbx
+
+0x7ffff7e119b6: => 0x7ffff7e119b6 <__run_exit_handlers+518>:	cmp    %rbx,%r12
+
+0x7ffff7e119b9: => 0x7ffff7e119b9 <__run_exit_handlers+521>:	jne    0x7ffff7e119b0 <__run_exit_handlers+512>
+
+0x7ffff7e119bb: => 0x7ffff7e119bb <__run_exit_handlers+523>:	mov    %ebp,%edi
+
+0x7ffff7e119bd: => 0x7ffff7e119bd <__run_exit_handlers+525>:	callq  0x7ffff7eae110 <__GI__exit>
+

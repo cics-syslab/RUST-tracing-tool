@@ -1,0 +1,18 @@
+0x408311: => 0x408311 <main+1>:	mov    %rsi,%rdx
+
+0x408314: => 0x408314 <main+4>:	movslq %edi,%rsi
+
+0x408317: => 0x408317 <main+7>:	lea    -0x77e(%rip),%rdi        # 0x407ba0 <_ZN2ls4main17h4402054c32fbd4e8E>
+
+0x40831e: => 0x40831e <main+14>:	xor    %ecx,%ecx
+
+0x408320: => 0x408320 <main+16>:	callq  0x402dc0 <_ZN3std2rt10lang_start17h03bf1326ed387a58E>
+
+0x408325: => 0x408325 <main+21>:	pop    %rcx
+
+0x408326: => 0x408326 <main+22>:	retq   
+
+0x7ffff7cad083: => 0x7ffff7cad083 <__libc_start_main+243>:	mov    %eax,%edi
+
+0x7ffff7cad085: => 0x7ffff7cad085 <__libc_start_main+245>:	callq  0x7ffff7ccfa40 <__GI_exit>
+

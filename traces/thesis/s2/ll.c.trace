@@ -1,0 +1,912 @@
+0x555555555240: => 0x555555555240 <main+4>:	push   %rbp
+
+0x555555555241: => 0x555555555241 <main+5>:	mov    %rsp,%rbp
+
+0x555555555244: => 0x555555555244 <main+8>:	push   %rbx
+
+0x555555555245: => 0x555555555245 <main+9>:	sub    $0x28,%rsp
+
+0x555555555249: => 0x555555555249 <main+13>:	mov    $0x10,%edi
+
+0x55555555524e: => 0x55555555524e <main+18>:	callq  0x5555555550c0 <_Znwm@plt>
+
+0x5555555550c0: => 0x5555555550c0 <_Znwm@plt>:	endbr64 
+
+0x5555555550c4: => 0x5555555550c4 <_Znwm@plt+4>:	bnd jmpq *0x2edd(%rip)        # 0x555555557fa8 <_Znwm@got.plt>
+
+0x7ffff7e85b10: => 0x7ffff7e85b10 <_Znwm>:	endbr64 
+
+0x7ffff7e85b14: => 0x7ffff7e85b14 <_Znwm+4>:	push   %rbx
+
+0x7ffff7e85b15: => 0x7ffff7e85b15 <_Znwm+5>:	test   %rdi,%rdi
+
+0x7ffff7e85b18: => 0x7ffff7e85b18 <_Znwm+8>:	mov    $0x1,%ebx
+
+0x7ffff7e85b1d: => 0x7ffff7e85b1d <_Znwm+13>:	cmovne %rdi,%rbx
+
+0x7ffff7e85b21: => 0x7ffff7e85b21 <_Znwm+17>:	mov    %rbx,%rdi
+
+0x7ffff7e85b24: => 0x7ffff7e85b24 <_Znwm+20>:	callq  0x7ffff7e75ef0 <malloc@plt>
+
+0x7ffff7e75ef0: => 0x7ffff7e75ef0 <malloc@plt>:	endbr64 
+
+0x7ffff7e75ef4: => 0x7ffff7e75ef4 <malloc@plt+4>:	bnd jmpq *0x1417dd(%rip)        # 0x7ffff7fb76d8 <malloc@got.plt>
+
+0x7ffff7c830e0: => 0x7ffff7c830e0 <__GI___libc_malloc>:	endbr64 
+
+0x7ffff7c830e4: => 0x7ffff7c830e4 <__GI___libc_malloc+4>:	mov    0x151e05(%rip),%rax        # 0x7ffff7dd4ef0
+
+0x7ffff7c830eb: => 0x7ffff7c830eb <__GI___libc_malloc+11>:	push   %r12
+
+0x7ffff7c830ed: => 0x7ffff7c830ed <__GI___libc_malloc+13>:	push   %rbp
+
+0x7ffff7c830ee: => 0x7ffff7c830ee <__GI___libc_malloc+14>:	mov    %rdi,%rbp
+
+0x7ffff7c830f1: => 0x7ffff7c830f1 <__GI___libc_malloc+17>:	push   %rbx
+
+0x7ffff7c830f2: => 0x7ffff7c830f2 <__GI___libc_malloc+18>:	mov    (%rax),%rax
+
+0x7ffff7c830f5: => 0x7ffff7c830f5 <__GI___libc_malloc+21>:	test   %rax,%rax
+
+0x7ffff7c830f8: => 0x7ffff7c830f8 <__GI___libc_malloc+24>:	jne    0x7ffff7c83250 <__GI___libc_malloc+368>
+
+0x7ffff7c830fe: => 0x7ffff7c830fe <__GI___libc_malloc+30>:	test   %rdi,%rdi
+
+0x7ffff7c83101: => 0x7ffff7c83101 <__GI___libc_malloc+33>:	js     0x7ffff7c83230 <__GI___libc_malloc+336>
+
+0x7ffff7c83107: => 0x7ffff7c83107 <__GI___libc_malloc+39>:	lea    0x17(%rdi),%rax
+
+0x7ffff7c8310b: => 0x7ffff7c8310b <__GI___libc_malloc+43>:	xor    %ebx,%ebx
+
+0x7ffff7c8310d: => 0x7ffff7c8310d <__GI___libc_malloc+45>:	cmp    $0x1f,%rax
+
+0x7ffff7c83111: => 0x7ffff7c83111 <__GI___libc_malloc+49>:	ja     0x7ffff7c83190 <__GI___libc_malloc+176>
+
+0x7ffff7c83190: => 0x7ffff7c83190 <__GI___libc_malloc+176>:	and    $0xfffffffffffffff0,%rax
+
+0x7ffff7c83194: => 0x7ffff7c83194 <__GI___libc_malloc+180>:	lea    -0x11(%rax),%rbx
+
+0x7ffff7c83198: => 0x7ffff7c83198 <__GI___libc_malloc+184>:	shr    $0x4,%rbx
+
+0x7ffff7c8319c: => 0x7ffff7c8319c <__GI___libc_malloc+188>:	jmpq   0x7ffff7c83113 <__GI___libc_malloc+51>
+
+0x7ffff7c83113: => 0x7ffff7c83113 <__GI___libc_malloc+51>:	mov    0x151c5e(%rip),%r12        # 0x7ffff7dd4d78
+
+0x7ffff7c8311a: => 0x7ffff7c8311a <__GI___libc_malloc+58>:	mov    %fs:(%r12),%rax
+
+0x7ffff7c8311f: => 0x7ffff7c8311f <__GI___libc_malloc+63>:	test   %rax,%rax
+
+0x7ffff7c83122: => 0x7ffff7c83122 <__GI___libc_malloc+66>:	je     0x7ffff7c831a8 <__GI___libc_malloc+200>
+
+0x7ffff7c83128: => 0x7ffff7c83128 <__GI___libc_malloc+72>:	cmp    0x1521a1(%rip),%rbx        # 0x7ffff7dd52d0 <mp_+80>
+
+0x7ffff7c8312f: => 0x7ffff7c8312f <__GI___libc_malloc+79>:	jb     0x7ffff7c831e0 <__GI___libc_malloc+256>
+
+0x7ffff7c831e0: => 0x7ffff7c831e0 <__GI___libc_malloc+256>:	lea    (%rax,%rbx,2),%rcx
+
+0x7ffff7c831e4: => 0x7ffff7c831e4 <__GI___libc_malloc+260>:	movzwl (%rcx),%edx
+
+0x7ffff7c831e7: => 0x7ffff7c831e7 <__GI___libc_malloc+263>:	test   %dx,%dx
+
+0x7ffff7c831ea: => 0x7ffff7c831ea <__GI___libc_malloc+266>:	je     0x7ffff7c83135 <__GI___libc_malloc+85>
+
+0x7ffff7c83135: => 0x7ffff7c83135 <__GI___libc_malloc+85>:	mov    %fs:0x18,%eax
+
+0x7ffff7c8313d: => 0x7ffff7c8313d <__GI___libc_malloc+93>:	test   %eax,%eax
+
+0x7ffff7c8313f: => 0x7ffff7c8313f <__GI___libc_malloc+95>:	jne    0x7ffff7c83260 <__GI___libc_malloc+384>
+
+0x7ffff7c83145: => 0x7ffff7c83145 <__GI___libc_malloc+101>:	mov    %rbp,%rsi
+
+0x7ffff7c83148: => 0x7ffff7c83148 <__GI___libc_malloc+104>:	lea    0x152a31(%rip),%rdi        # 0x7ffff7dd5b80 <main_arena>
+
+0x7ffff7c8314f: => 0x7ffff7c8314f <__GI___libc_malloc+111>:	callq  0x7ffff7c80a70 <_int_malloc>
+
+0x7ffff7c83154: => 0x7ffff7c83154 <__GI___libc_malloc+116>:	mov    %rax,%r8
+
+0x7ffff7c83157: => 0x7ffff7c83157 <__GI___libc_malloc+119>:	test   %rax,%rax
+
+0x7ffff7c8315a: => 0x7ffff7c8315a <__GI___libc_malloc+122>:	je     0x7ffff7c83220 <__GI___libc_malloc+320>
+
+0x7ffff7c83160: => 0x7ffff7c83160 <__GI___libc_malloc+128>:	mov    -0x8(%rax),%rax
+
+0x7ffff7c83164: => 0x7ffff7c83164 <__GI___libc_malloc+132>:	test   $0x2,%al
+
+0x7ffff7c83166: => 0x7ffff7c83166 <__GI___libc_malloc+134>:	jne    0x7ffff7c83186 <__GI___libc_malloc+166>
+
+0x7ffff7c83168: => 0x7ffff7c83168 <__GI___libc_malloc+136>:	test   $0x4,%al
+
+0x7ffff7c8316a: => 0x7ffff7c8316a <__GI___libc_malloc+138>:	je     0x7ffff7c83186 <__GI___libc_malloc+166>
+
+0x7ffff7c83186: => 0x7ffff7c83186 <__GI___libc_malloc+166>:	pop    %rbx
+
+0x7ffff7c83187: => 0x7ffff7c83187 <__GI___libc_malloc+167>:	mov    %r8,%rax
+
+0x7ffff7c8318a: => 0x7ffff7c8318a <__GI___libc_malloc+170>:	pop    %rbp
+
+0x7ffff7c8318b: => 0x7ffff7c8318b <__GI___libc_malloc+171>:	pop    %r12
+
+0x7ffff7c8318d: => 0x7ffff7c8318d <__GI___libc_malloc+173>:	retq   
+
+0x7ffff7e85b29: => 0x7ffff7e85b29 <_Znwm+25>:	test   %rax,%rax
+
+0x7ffff7e85b2c: => 0x7ffff7e85b2c <_Znwm+28>:	je     0x7ffff7e85b30 <_Znwm+32>
+
+0x7ffff7e85b2e: => 0x7ffff7e85b2e <_Znwm+30>:	pop    %rbx
+
+0x7ffff7e85b2f: => 0x7ffff7e85b2f <_Znwm+31>:	retq   
+
+0x555555555253: => 0x555555555253 <main+23>:	mov    %rax,%rbx
+
+0x555555555256: => 0x555555555256 <main+26>:	mov    $0x1,%esi
+
+0x55555555525b: => 0x55555555525b <main+31>:	mov    %rbx,%rdi
+
+0x55555555525e: => 0x55555555525e <main+34>:	callq  0x555555555388 <_ZN4NodeC2Ei>
+
+0x555555555388: => 0x555555555388 <_ZN4NodeC2Ei>:	endbr64 
+
+0x55555555538c: => 0x55555555538c <_ZN4NodeC2Ei+4>:	push   %rbp
+
+0x55555555538d: => 0x55555555538d <_ZN4NodeC2Ei+5>:	mov    %rsp,%rbp
+
+0x555555555390: => 0x555555555390 <_ZN4NodeC2Ei+8>:	mov    %rdi,-0x8(%rbp)
+
+0x555555555394: => 0x555555555394 <_ZN4NodeC2Ei+12>:	mov    %esi,-0xc(%rbp)
+
+0x555555555397: => 0x555555555397 <_ZN4NodeC2Ei+15>:	mov    -0x8(%rbp),%rax
+
+0x55555555539b: => 0x55555555539b <_ZN4NodeC2Ei+19>:	mov    -0xc(%rbp),%edx
+
+0x55555555539e: => 0x55555555539e <_ZN4NodeC2Ei+22>:	mov    %edx,(%rax)
+
+0x5555555553a0: => 0x5555555553a0 <_ZN4NodeC2Ei+24>:	mov    -0x8(%rbp),%rax
+
+0x5555555553a4: => 0x5555555553a4 <_ZN4NodeC2Ei+28>:	movq   $0x0,0x8(%rax)
+
+0x5555555553ac: => 0x5555555553ac <_ZN4NodeC2Ei+36>:	nop
+
+0x5555555553ad: => 0x5555555553ad <_ZN4NodeC2Ei+37>:	pop    %rbp
+
+0x5555555553ae: => 0x5555555553ae <_ZN4NodeC2Ei+38>:	retq   
+
+0x555555555263: => 0x555555555263 <main+39>:	mov    %rbx,-0x20(%rbp)
+
+0x555555555267: => 0x555555555267 <main+43>:	mov    $0x10,%edi
+
+0x55555555526c: => 0x55555555526c <main+48>:	callq  0x5555555550c0 <_Znwm@plt>
+
+0x5555555550c0: => 0x5555555550c0 <_Znwm@plt>:	endbr64 
+
+0x5555555550c4: => 0x5555555550c4 <_Znwm@plt+4>:	bnd jmpq *0x2edd(%rip)        # 0x555555557fa8 <_Znwm@got.plt>
+
+0x7ffff7e85b10: => 0x7ffff7e85b10 <_Znwm>:	endbr64 
+
+0x7ffff7e85b14: => 0x7ffff7e85b14 <_Znwm+4>:	push   %rbx
+
+0x7ffff7e85b15: => 0x7ffff7e85b15 <_Znwm+5>:	test   %rdi,%rdi
+
+0x7ffff7e85b18: => 0x7ffff7e85b18 <_Znwm+8>:	mov    $0x1,%ebx
+
+0x7ffff7e85b1d: => 0x7ffff7e85b1d <_Znwm+13>:	cmovne %rdi,%rbx
+
+0x7ffff7e85b21: => 0x7ffff7e85b21 <_Znwm+17>:	mov    %rbx,%rdi
+
+0x7ffff7e85b24: => 0x7ffff7e85b24 <_Znwm+20>:	callq  0x7ffff7e75ef0 <malloc@plt>
+
+0x7ffff7e85b29: => 0x7ffff7e85b29 <_Znwm+25>:	test   %rax,%rax
+
+0x7ffff7e85b2c: => 0x7ffff7e85b2c <_Znwm+28>:	je     0x7ffff7e85b30 <_Znwm+32>
+
+0x7ffff7e85b2e: => 0x7ffff7e85b2e <_Znwm+30>:	pop    %rbx
+
+0x7ffff7e85b2f: => 0x7ffff7e85b2f <_Znwm+31>:	retq   
+
+0x555555555271: => 0x555555555271 <main+53>:	mov    %rax,%rbx
+
+0x555555555274: => 0x555555555274 <main+56>:	mov    $0x2,%esi
+
+0x555555555279: => 0x555555555279 <main+61>:	mov    %rbx,%rdi
+
+0x55555555527c: => 0x55555555527c <main+64>:	callq  0x555555555388 <_ZN4NodeC2Ei>
+
+0x555555555281: => 0x555555555281 <main+69>:	mov    -0x20(%rbp),%rax
+
+0x555555555285: => 0x555555555285 <main+73>:	mov    %rbx,0x8(%rax)
+
+0x555555555289: => 0x555555555289 <main+77>:	mov    $0x10,%edi
+
+0x55555555528e: => 0x55555555528e <main+82>:	callq  0x5555555550c0 <_Znwm@plt>
+
+0x555555555293: => 0x555555555293 <main+87>:	mov    %rax,%rbx
+
+0x555555555296: => 0x555555555296 <main+90>:	mov    $0x3,%esi
+
+0x55555555529b: => 0x55555555529b <main+95>:	mov    %rbx,%rdi
+
+0x55555555529e: => 0x55555555529e <main+98>:	callq  0x555555555388 <_ZN4NodeC2Ei>
+
+0x555555555388: => 0x555555555388 <_ZN4NodeC2Ei>:	endbr64 
+
+0x55555555538c: => 0x55555555538c <_ZN4NodeC2Ei+4>:	push   %rbp
+
+0x55555555538d: => 0x55555555538d <_ZN4NodeC2Ei+5>:	mov    %rsp,%rbp
+
+0x555555555390: => 0x555555555390 <_ZN4NodeC2Ei+8>:	mov    %rdi,-0x8(%rbp)
+
+0x555555555394: => 0x555555555394 <_ZN4NodeC2Ei+12>:	mov    %esi,-0xc(%rbp)
+
+0x555555555397: => 0x555555555397 <_ZN4NodeC2Ei+15>:	mov    -0x8(%rbp),%rax
+
+0x55555555539b: => 0x55555555539b <_ZN4NodeC2Ei+19>:	mov    -0xc(%rbp),%edx
+
+0x55555555539e: => 0x55555555539e <_ZN4NodeC2Ei+22>:	mov    %edx,(%rax)
+
+0x5555555553a0: => 0x5555555553a0 <_ZN4NodeC2Ei+24>:	mov    -0x8(%rbp),%rax
+
+0x5555555553a4: => 0x5555555553a4 <_ZN4NodeC2Ei+28>:	movq   $0x0,0x8(%rax)
+
+0x5555555553ac: => 0x5555555553ac <_ZN4NodeC2Ei+36>:	nop
+
+0x5555555553ad: => 0x5555555553ad <_ZN4NodeC2Ei+37>:	pop    %rbp
+
+0x5555555553ae: => 0x5555555553ae <_ZN4NodeC2Ei+38>:	retq   
+
+0x5555555552a3: => 0x5555555552a3 <main+103>:	mov    -0x20(%rbp),%rax
+
+0x5555555552a7: => 0x5555555552a7 <main+107>:	mov    0x8(%rax),%rax
+
+0x5555555552ab: => 0x5555555552ab <main+111>:	mov    %rbx,0x8(%rax)
+
+0x5555555552af: => 0x5555555552af <main+115>:	mov    -0x20(%rbp),%rax
+
+0x5555555552b3: => 0x5555555552b3 <main+119>:	mov    %rax,%rdi
+
+0x5555555552b6: => 0x5555555552b6 <main+122>:	callq  0x5555555551e9 <_Z12reverse_listP4Node>
+
+0x5555555551e9: => 0x5555555551e9 <_Z12reverse_listP4Node>:	endbr64 
+
+0x5555555551ed: => 0x5555555551ed <_Z12reverse_listP4Node+4>:	push   %rbp
+
+0x5555555551ee: => 0x5555555551ee <_Z12reverse_listP4Node+5>:	mov    %rsp,%rbp
+
+0x5555555551f1: => 0x5555555551f1 <_Z12reverse_listP4Node+8>:	mov    %rdi,-0x28(%rbp)
+
+0x5555555551f5: => 0x5555555551f5 <_Z12reverse_listP4Node+12>:	movq   $0x0,-0x18(%rbp)
+
+0x5555555551fd: => 0x5555555551fd <_Z12reverse_listP4Node+20>:	mov    -0x28(%rbp),%rax
+
+0x555555555201: => 0x555555555201 <_Z12reverse_listP4Node+24>:	mov    %rax,-0x10(%rbp)
+
+0x555555555205: => 0x555555555205 <_Z12reverse_listP4Node+28>:	cmpq   $0x0,-0x10(%rbp)
+
+0x55555555520a: => 0x55555555520a <_Z12reverse_listP4Node+33>:	je     0x555555555236 <_Z12reverse_listP4Node+77>
+
+0x55555555520c: => 0x55555555520c <_Z12reverse_listP4Node+35>:	mov    -0x10(%rbp),%rax
+
+0x555555555210: => 0x555555555210 <_Z12reverse_listP4Node+39>:	mov    0x8(%rax),%rax
+
+0x555555555214: => 0x555555555214 <_Z12reverse_listP4Node+43>:	mov    %rax,-0x8(%rbp)
+
+0x555555555218: => 0x555555555218 <_Z12reverse_listP4Node+47>:	mov    -0x10(%rbp),%rax
+
+0x55555555521c: => 0x55555555521c <_Z12reverse_listP4Node+51>:	mov    -0x18(%rbp),%rdx
+
+0x555555555220: => 0x555555555220 <_Z12reverse_listP4Node+55>:	mov    %rdx,0x8(%rax)
+
+0x555555555224: => 0x555555555224 <_Z12reverse_listP4Node+59>:	mov    -0x10(%rbp),%rax
+
+0x555555555228: => 0x555555555228 <_Z12reverse_listP4Node+63>:	mov    %rax,-0x18(%rbp)
+
+0x55555555522c: => 0x55555555522c <_Z12reverse_listP4Node+67>:	mov    -0x8(%rbp),%rax
+
+0x555555555230: => 0x555555555230 <_Z12reverse_listP4Node+71>:	mov    %rax,-0x10(%rbp)
+
+0x555555555234: => 0x555555555234 <_Z12reverse_listP4Node+75>:	jmp    0x555555555205 <_Z12reverse_listP4Node+28>
+
+0x555555555205: => 0x555555555205 <_Z12reverse_listP4Node+28>:	cmpq   $0x0,-0x10(%rbp)
+
+0x55555555520a: => 0x55555555520a <_Z12reverse_listP4Node+33>:	je     0x555555555236 <_Z12reverse_listP4Node+77>
+
+0x55555555520c: => 0x55555555520c <_Z12reverse_listP4Node+35>:	mov    -0x10(%rbp),%rax
+
+0x555555555210: => 0x555555555210 <_Z12reverse_listP4Node+39>:	mov    0x8(%rax),%rax
+
+0x555555555214: => 0x555555555214 <_Z12reverse_listP4Node+43>:	mov    %rax,-0x8(%rbp)
+
+0x555555555218: => 0x555555555218 <_Z12reverse_listP4Node+47>:	mov    -0x10(%rbp),%rax
+
+0x55555555521c: => 0x55555555521c <_Z12reverse_listP4Node+51>:	mov    -0x18(%rbp),%rdx
+
+0x555555555220: => 0x555555555220 <_Z12reverse_listP4Node+55>:	mov    %rdx,0x8(%rax)
+
+0x555555555224: => 0x555555555224 <_Z12reverse_listP4Node+59>:	mov    -0x10(%rbp),%rax
+
+0x555555555228: => 0x555555555228 <_Z12reverse_listP4Node+63>:	mov    %rax,-0x18(%rbp)
+
+0x55555555522c: => 0x55555555522c <_Z12reverse_listP4Node+67>:	mov    -0x8(%rbp),%rax
+
+0x555555555230: => 0x555555555230 <_Z12reverse_listP4Node+71>:	mov    %rax,-0x10(%rbp)
+
+0x555555555234: => 0x555555555234 <_Z12reverse_listP4Node+75>:	jmp    0x555555555205 <_Z12reverse_listP4Node+28>
+
+0x555555555205: => 0x555555555205 <_Z12reverse_listP4Node+28>:	cmpq   $0x0,-0x10(%rbp)
+
+0x55555555520a: => 0x55555555520a <_Z12reverse_listP4Node+33>:	je     0x555555555236 <_Z12reverse_listP4Node+77>
+
+0x55555555520c: => 0x55555555520c <_Z12reverse_listP4Node+35>:	mov    -0x10(%rbp),%rax
+
+0x555555555210: => 0x555555555210 <_Z12reverse_listP4Node+39>:	mov    0x8(%rax),%rax
+
+0x555555555214: => 0x555555555214 <_Z12reverse_listP4Node+43>:	mov    %rax,-0x8(%rbp)
+
+0x555555555218: => 0x555555555218 <_Z12reverse_listP4Node+47>:	mov    -0x10(%rbp),%rax
+
+0x55555555521c: => 0x55555555521c <_Z12reverse_listP4Node+51>:	mov    -0x18(%rbp),%rdx
+
+0x555555555220: => 0x555555555220 <_Z12reverse_listP4Node+55>:	mov    %rdx,0x8(%rax)
+
+0x555555555224: => 0x555555555224 <_Z12reverse_listP4Node+59>:	mov    -0x10(%rbp),%rax
+
+0x555555555228: => 0x555555555228 <_Z12reverse_listP4Node+63>:	mov    %rax,-0x18(%rbp)
+
+0x55555555522c: => 0x55555555522c <_Z12reverse_listP4Node+67>:	mov    -0x8(%rbp),%rax
+
+0x555555555230: => 0x555555555230 <_Z12reverse_listP4Node+71>:	mov    %rax,-0x10(%rbp)
+
+0x555555555234: => 0x555555555234 <_Z12reverse_listP4Node+75>:	jmp    0x555555555205 <_Z12reverse_listP4Node+28>
+
+0x555555555205: => 0x555555555205 <_Z12reverse_listP4Node+28>:	cmpq   $0x0,-0x10(%rbp)
+
+0x55555555520a: => 0x55555555520a <_Z12reverse_listP4Node+33>:	je     0x555555555236 <_Z12reverse_listP4Node+77>
+
+0x555555555236: => 0x555555555236 <_Z12reverse_listP4Node+77>:	mov    -0x18(%rbp),%rax
+
+0x55555555523a: => 0x55555555523a <_Z12reverse_listP4Node+81>:	pop    %rbp
+
+0x55555555523b: => 0x55555555523b <_Z12reverse_listP4Node+82>:	retq   
+
+0x5555555552bb: => 0x5555555552bb <main+127>:	mov    %rax,-0x18(%rbp)
+
+0x5555555552bf: => 0x5555555552bf <main+131>:	mov    -0x18(%rbp),%rax
+
+0x5555555552c3: => 0x5555555552c3 <main+135>:	mov    %rax,-0x28(%rbp)
+
+0x5555555552c7: => 0x5555555552c7 <main+139>:	cmpq   $0x0,-0x28(%rbp)
+
+0x5555555552cc: => 0x5555555552cc <main+144>:	je     0x5555555552ff <main+195>
+
+0x5555555552ce: => 0x5555555552ce <main+146>:	mov    -0x28(%rbp),%rax
+
+0x5555555552d2: => 0x5555555552d2 <main+150>:	mov    (%rax),%eax
+
+0x5555555552d4: => 0x5555555552d4 <main+152>:	mov    %eax,%esi
+
+0x5555555552d6: => 0x5555555552d6 <main+154>:	lea    0x2d63(%rip),%rdi        # 0x555555558040 <_ZSt4cout@@GLIBCXX_3.4>
+
+0x5555555552dd: => 0x5555555552dd <main+161>:	callq  0x5555555550f0 <_ZNSolsEi@plt>
+
+0x5555555550f0: => 0x5555555550f0 <_ZNSolsEi@plt>:	endbr64 
+
+0x5555555550f4: => 0x5555555550f4 <_ZNSolsEi@plt+4>:	bnd jmpq *0x2ec5(%rip)        # 0x555555557fc0 <_ZNSolsEi@got.plt>
+
+0x7ffff7f0ef80: => 0x7ffff7f0ef80 <_ZNSolsEi>:	endbr64 
+
+0x7ffff7f0ef84: => 0x7ffff7f0ef84 <_ZNSolsEi+4>:	mov    (%rdi),%rax
+
+0x7ffff7f0ef87: => 0x7ffff7f0ef87 <_ZNSolsEi+7>:	mov    -0x18(%rax),%rax
+
+0x7ffff7f0ef8b: => 0x7ffff7f0ef8b <_ZNSolsEi+11>:	mov    0x18(%rdi,%rax,1),%eax
+
+0x7ffff7f0ef8f: => 0x7ffff7f0ef8f <_ZNSolsEi+15>:	and    $0x4a,%eax
+
+0x7ffff7f0ef92: => 0x7ffff7f0ef92 <_ZNSolsEi+18>:	cmp    $0x40,%eax
+
+0x7ffff7f0ef95: => 0x7ffff7f0ef95 <_ZNSolsEi+21>:	je     0x7ffff7f0efa8 <_ZNSolsEi+40>
+
+0x7ffff7f0ef97: => 0x7ffff7f0ef97 <_ZNSolsEi+23>:	cmp    $0x8,%eax
+
+0x7ffff7f0ef9a: => 0x7ffff7f0ef9a <_ZNSolsEi+26>:	je     0x7ffff7f0efa8 <_ZNSolsEi+40>
+
+0x7ffff7f0ef9c: => 0x7ffff7f0ef9c <_ZNSolsEi+28>:	movslq %esi,%rsi
+
+0x7ffff7f0ef9f: => 0x7ffff7f0ef9f <_ZNSolsEi+31>:	jmpq   0x7ffff7e76180 <_ZNSo9_M_insertIlEERSoT_@plt>
+
+0x7ffff7e76180: => 0x7ffff7e76180 <_ZNSo9_M_insertIlEERSoT_@plt>:	endbr64 
+
+0x7ffff7e76184: => 0x7ffff7e76184 <_ZNSo9_M_insertIlEERSoT_@plt+4>:	bnd jmpq *0x141695(%rip)        # 0x7ffff7fb7820 <_ZNSo9_M_insertIlEERSoT_@got.plt>
+
+0x7ffff7e72040: => 0x7ffff7e72040:	endbr64 
+
+0x7ffff7e72044: => 0x7ffff7e72044:	pushq  $0x101
+
+0x7ffff7e72049: => 0x7ffff7e72049:	bnd jmpq 0x7ffff7e71020
+
+0x7ffff7e71020: => 0x7ffff7e71020:	pushq  0x145fe2(%rip)        # 0x7ffff7fb7008
+
+0x7ffff7e71026: => 0x7ffff7e71026:	bnd jmpq *0x145fe3(%rip)        # 0x7ffff7fb7010
+
+0x7ffff7fe7bc0: => 0x7ffff7fe7bc0 <_dl_runtime_resolve_xsavec>:	endbr64 
+
+0x7ffff7fe7bc4: => 0x7ffff7fe7bc4 <_dl_runtime_resolve_xsavec+4>:	push   %rbx
+
+0x7ffff7fe7bc5: => 0x7ffff7fe7bc5 <_dl_runtime_resolve_xsavec+5>:	mov    %rsp,%rbx
+
+0x7ffff7fe7bc8: => 0x7ffff7fe7bc8 <_dl_runtime_resolve_xsavec+8>:	and    $0xffffffffffffffc0,%rsp
+
+0x7ffff7fe7bcc: => 0x7ffff7fe7bcc <_dl_runtime_resolve_xsavec+12>:	sub    0x14b35(%rip),%rsp        # 0x7ffff7ffc708 <_rtld_global_ro+232>
+
+0x7ffff7fe7bd3: => 0x7ffff7fe7bd3 <_dl_runtime_resolve_xsavec+19>:	mov    %rax,(%rsp)
+
+0x7ffff7fe7bd7: => 0x7ffff7fe7bd7 <_dl_runtime_resolve_xsavec+23>:	mov    %rcx,0x8(%rsp)
+
+0x7ffff7fe7bdc: => 0x7ffff7fe7bdc <_dl_runtime_resolve_xsavec+28>:	mov    %rdx,0x10(%rsp)
+
+0x7ffff7fe7be1: => 0x7ffff7fe7be1 <_dl_runtime_resolve_xsavec+33>:	mov    %rsi,0x18(%rsp)
+
+0x7ffff7fe7be6: => 0x7ffff7fe7be6 <_dl_runtime_resolve_xsavec+38>:	mov    %rdi,0x20(%rsp)
+
+0x7ffff7fe7beb: => 0x7ffff7fe7beb <_dl_runtime_resolve_xsavec+43>:	mov    %r8,0x28(%rsp)
+
+0x7ffff7fe7bf0: => 0x7ffff7fe7bf0 <_dl_runtime_resolve_xsavec+48>:	mov    %r9,0x30(%rsp)
+
+0x7ffff7fe7bf5: => 0x7ffff7fe7bf5 <_dl_runtime_resolve_xsavec+53>:	mov    $0xee,%eax
+
+0x7ffff7fe7bfa: => 0x7ffff7fe7bfa <_dl_runtime_resolve_xsavec+58>:	xor    %edx,%edx
+
+0x7ffff7fe7bfc: => 0x7ffff7fe7bfc <_dl_runtime_resolve_xsavec+60>:	mov    %rdx,0x250(%rsp)
+
+0x7ffff7fe7c04: => 0x7ffff7fe7c04 <_dl_runtime_resolve_xsavec+68>:	mov    %rdx,0x258(%rsp)
+
+0x7ffff7fe7c0c: => 0x7ffff7fe7c0c <_dl_runtime_resolve_xsavec+76>:	mov    %rdx,0x260(%rsp)
+
+0x7ffff7fe7c14: => 0x7ffff7fe7c14 <_dl_runtime_resolve_xsavec+84>:	mov    %rdx,0x268(%rsp)
+
+0x7ffff7fe7c1c: => 0x7ffff7fe7c1c <_dl_runtime_resolve_xsavec+92>:	mov    %rdx,0x270(%rsp)
+
+0x7ffff7fe7c24: => 0x7ffff7fe7c24 <_dl_runtime_resolve_xsavec+100>:	mov    %rdx,0x278(%rsp)
+
+0x7ffff7fe7c2c: => 0x7ffff7fe7c2c <_dl_runtime_resolve_xsavec+108>:	xsavec 0x40(%rsp)
+
+0x7ffff7fe7c31: => 0x7ffff7fe7c31 <_dl_runtime_resolve_xsavec+113>:	mov    0x10(%rbx),%rsi
+
+0x7ffff7fe7c35: => 0x7ffff7fe7c35 <_dl_runtime_resolve_xsavec+117>:	mov    0x8(%rbx),%rdi
+
+0x7ffff7fe7c39: => 0x7ffff7fe7c39 <_dl_runtime_resolve_xsavec+121>:	callq  0x7ffff7fe00c0 <_dl_fixup>
+
+0x7ffff7fe7c3e: => 0x7ffff7fe7c3e <_dl_runtime_resolve_xsavec+126>:	mov    %rax,%r11
+
+0x7ffff7fe7c41: => 0x7ffff7fe7c41 <_dl_runtime_resolve_xsavec+129>:	mov    $0xee,%eax
+
+0x7ffff7fe7c46: => 0x7ffff7fe7c46 <_dl_runtime_resolve_xsavec+134>:	xor    %edx,%edx
+
+0x7ffff7fe7c48: => 0x7ffff7fe7c48 <_dl_runtime_resolve_xsavec+136>:	xrstor 0x40(%rsp)
+
+0x7ffff7fe7c4d: => 0x7ffff7fe7c4d <_dl_runtime_resolve_xsavec+141>:	mov    0x30(%rsp),%r9
+
+0x7ffff7fe7c52: => 0x7ffff7fe7c52 <_dl_runtime_resolve_xsavec+146>:	mov    0x28(%rsp),%r8
+
+0x7ffff7fe7c57: => 0x7ffff7fe7c57 <_dl_runtime_resolve_xsavec+151>:	mov    0x20(%rsp),%rdi
+
+0x7ffff7fe7c5c: => 0x7ffff7fe7c5c <_dl_runtime_resolve_xsavec+156>:	mov    0x18(%rsp),%rsi
+
+0x7ffff7fe7c61: => 0x7ffff7fe7c61 <_dl_runtime_resolve_xsavec+161>:	mov    0x10(%rsp),%rdx
+
+0x7ffff7fe7c66: => 0x7ffff7fe7c66 <_dl_runtime_resolve_xsavec+166>:	mov    0x8(%rsp),%rcx
+
+0x7ffff7fe7c6b: => 0x7ffff7fe7c6b <_dl_runtime_resolve_xsavec+171>:	mov    (%rsp),%rax
+
+0x7ffff7fe7c6f: => 0x7ffff7fe7c6f <_dl_runtime_resolve_xsavec+175>:	mov    %rbx,%rsp
+
+0x7ffff7fe7c72: => 0x7ffff7fe7c72 <_dl_runtime_resolve_xsavec+178>:	mov    (%rsp),%rbx
+
+0x7ffff7fe7c76: => 0x7ffff7fe7c76 <_dl_runtime_resolve_xsavec+182>:	add    $0x18,%rsp
+
+0x7ffff7fe7c7a: => 0x7ffff7fe7c7a <_dl_runtime_resolve_xsavec+186>:	bnd jmpq *%r11
+
+0x7ffff7f0ed00: => 0x7ffff7f0ed00 <_ZNSo9_M_insertIlEERSoT_>:	endbr64 
+
+0x7ffff7f0ed04: => 0x7ffff7f0ed04 <_ZNSo9_M_insertIlEERSoT_+4>:	push   %r15
+
+0x7ffff7f0ed06: => 0x7ffff7f0ed06 <_ZNSo9_M_insertIlEERSoT_+6>:	push   %r14
+
+0x7ffff7f0ed08: => 0x7ffff7f0ed08 <_ZNSo9_M_insertIlEERSoT_+8>:	push   %r13
+
+0x7ffff7f0ed0a: => 0x7ffff7f0ed0a <_ZNSo9_M_insertIlEERSoT_+10>:	push   %r12
+
+0x7ffff7f0ed0c: => 0x7ffff7f0ed0c <_ZNSo9_M_insertIlEERSoT_+12>:	mov    %rdi,%r12
+
+0x7ffff7f0ed0f: => 0x7ffff7f0ed0f <_ZNSo9_M_insertIlEERSoT_+15>:	push   %rbp
+
+0x7ffff7f0ed10: => 0x7ffff7f0ed10 <_ZNSo9_M_insertIlEERSoT_+16>:	push   %rbx
+
+0x7ffff7f0ed11: => 0x7ffff7f0ed11 <_ZNSo9_M_insertIlEERSoT_+17>:	mov    %rsi,%rbx
+
+0x7ffff7f0ed14: => 0x7ffff7f0ed14 <_ZNSo9_M_insertIlEERSoT_+20>:	mov    %rdi,%rsi
+
+0x7ffff7f0ed17: => 0x7ffff7f0ed17 <_ZNSo9_M_insertIlEERSoT_+23>:	sub    $0x28,%rsp
+
+0x7ffff7f0ed1b: => 0x7ffff7f0ed1b <_ZNSo9_M_insertIlEERSoT_+27>:	mov    %fs:0x28,%rax
+
+0x7ffff7f0ed24: => 0x7ffff7f0ed24 <_ZNSo9_M_insertIlEERSoT_+36>:	mov    %rax,0x18(%rsp)
+
+0x7ffff7f0ed29: => 0x7ffff7f0ed29 <_ZNSo9_M_insertIlEERSoT_+41>:	xor    %eax,%eax
+
+0x7ffff7f0ed2b: => 0x7ffff7f0ed2b <_ZNSo9_M_insertIlEERSoT_+43>:	mov    %rsp,%r14
+
+0x7ffff7f0ed2e: => 0x7ffff7f0ed2e <_ZNSo9_M_insertIlEERSoT_+46>:	mov    %r14,%rdi
+
+0x7ffff7f0ed31: => 0x7ffff7f0ed31 <_ZNSo9_M_insertIlEERSoT_+49>:	callq  0x7ffff7e78ef0 <_ZNSo6sentryC1ERSo@plt>
+
+0x7ffff7f0ed36: => 0x7ffff7f0ed36 <_ZNSo9_M_insertIlEERSoT_+54>:	cmpb   $0x0,(%rsp)
+
+0x7ffff7f0ed3a: => 0x7ffff7f0ed3a <_ZNSo9_M_insertIlEERSoT_+58>:	je     0x7ffff7f0eda9 <_ZNSo9_M_insertIlEERSoT_+169>
+
+0x7ffff7f0ed3c: => 0x7ffff7f0ed3c <_ZNSo9_M_insertIlEERSoT_+60>:	mov    (%r12),%rax
+
+0x7ffff7f0ed40: => 0x7ffff7f0ed40 <_ZNSo9_M_insertIlEERSoT_+64>:	mov    -0x18(%rax),%r13
+
+0x7ffff7f0ed44: => 0x7ffff7f0ed44 <_ZNSo9_M_insertIlEERSoT_+68>:	add    %r12,%r13
+
+0x7ffff7f0ed47: => 0x7ffff7f0ed47 <_ZNSo9_M_insertIlEERSoT_+71>:	mov    0xf8(%r13),%rbp
+
+0x7ffff7f0ed4e: => 0x7ffff7f0ed4e <_ZNSo9_M_insertIlEERSoT_+78>:	test   %rbp,%rbp
+
+0x7ffff7f0ed51: => 0x7ffff7f0ed51 <_ZNSo9_M_insertIlEERSoT_+81>:	je     0x7ffff7f0eea9 <_ZNSo9_M_insertIlEERSoT_+425>
+
+0x7ffff7f0ed57: => 0x7ffff7f0ed57 <_ZNSo9_M_insertIlEERSoT_+87>:	cmpb   $0x0,0xe1(%r13)
+
+0x7ffff7f0ed5f: => 0x7ffff7f0ed5f <_ZNSo9_M_insertIlEERSoT_+95>:	je     0x7ffff7f0ee10 <_ZNSo9_M_insertIlEERSoT_+272>
+
+0x7ffff7f0ee10: => 0x7ffff7f0ee10 <_ZNSo9_M_insertIlEERSoT_+272>:	mov    0xf0(%r13),%r15
+
+0x7ffff7f0ee17: => 0x7ffff7f0ee17 <_ZNSo9_M_insertIlEERSoT_+279>:	test   %r15,%r15
+
+0x7ffff7f0ee1a: => 0x7ffff7f0ee1a <_ZNSo9_M_insertIlEERSoT_+282>:	je     0x7ffff7f0eeae <_ZNSo9_M_insertIlEERSoT_+430>
+
+0x7ffff7f0ee20: => 0x7ffff7f0ee20 <_ZNSo9_M_insertIlEERSoT_+288>:	cmpb   $0x0,0x38(%r15)
+
+0x7ffff7f0ee25: => 0x7ffff7f0ee25 <_ZNSo9_M_insertIlEERSoT_+293>:	je     0x7ffff7f0ee50 <_ZNSo9_M_insertIlEERSoT_+336>
+
+0x7ffff7f0ee50: => 0x7ffff7f0ee50 <_ZNSo9_M_insertIlEERSoT_+336>:	mov    %r15,%rdi
+
+0x7ffff7f0ee53: => 0x7ffff7f0ee53 <_ZNSo9_M_insertIlEERSoT_+339>:	callq  0x7ffff7e76cc0 <_ZNKSt5ctypeIcE13_M_widen_initEv@plt>
+
+0x7ffff7f0ee58: => 0x7ffff7f0ee58 <_ZNSo9_M_insertIlEERSoT_+344>:	mov    (%r15),%rax
+
+0x7ffff7f0ee5b: => 0x7ffff7f0ee5b <_ZNSo9_M_insertIlEERSoT_+347>:	mov    $0x20,%r8d
+
+0x7ffff7f0ee61: => 0x7ffff7f0ee61 <_ZNSo9_M_insertIlEERSoT_+353>:	mov    0x30(%rax),%rdx
+
+0x7ffff7f0ee65: => 0x7ffff7f0ee65 <_ZNSo9_M_insertIlEERSoT_+357>:	cmp    0xa8124(%rip),%rdx        # 0x7ffff7fb6f90
+
+0x7ffff7f0ee6c: => 0x7ffff7f0ee6c <_ZNSo9_M_insertIlEERSoT_+364>:	mov    $0x20,%eax
+
+0x7ffff7f0ee71: => 0x7ffff7f0ee71 <_ZNSo9_M_insertIlEERSoT_+369>:	je     0x7ffff7f0ee2f <_ZNSo9_M_insertIlEERSoT_+303>
+
+0x7ffff7f0ee2f: => 0x7ffff7f0ee2f <_ZNSo9_M_insertIlEERSoT_+303>:	mov    %al,0xe0(%r13)
+
+0x7ffff7f0ee36: => 0x7ffff7f0ee36 <_ZNSo9_M_insertIlEERSoT_+310>:	mov    (%r12),%rax
+
+0x7ffff7f0ee3a: => 0x7ffff7f0ee3a <_ZNSo9_M_insertIlEERSoT_+314>:	movb   $0x1,0xe1(%r13)
+
+0x7ffff7f0ee42: => 0x7ffff7f0ee42 <_ZNSo9_M_insertIlEERSoT_+322>:	mov    -0x18(%rax),%r13
+
+0x7ffff7f0ee46: => 0x7ffff7f0ee46 <_ZNSo9_M_insertIlEERSoT_+326>:	add    %r12,%r13
+
+0x7ffff7f0ee49: => 0x7ffff7f0ee49 <_ZNSo9_M_insertIlEERSoT_+329>:	jmpq   0x7ffff7f0ed6d <_ZNSo9_M_insertIlEERSoT_+109>
+
+0x7ffff7f0ed6d: => 0x7ffff7f0ed6d <_ZNSo9_M_insertIlEERSoT_+109>:	mov    0xe8(%r13),%rsi
+
+0x7ffff7f0ed74: => 0x7ffff7f0ed74 <_ZNSo9_M_insertIlEERSoT_+116>:	mov    %rbx,%r9
+
+0x7ffff7f0ed77: => 0x7ffff7f0ed77 <_ZNSo9_M_insertIlEERSoT_+119>:	mov    %r13,%rcx
+
+0x7ffff7f0ed7a: => 0x7ffff7f0ed7a <_ZNSo9_M_insertIlEERSoT_+122>:	mov    %rbp,%rdi
+
+0x7ffff7f0ed7d: => 0x7ffff7f0ed7d <_ZNSo9_M_insertIlEERSoT_+125>:	mov    0x0(%rbp),%rax
+
+0x7ffff7f0ed81: => 0x7ffff7f0ed81 <_ZNSo9_M_insertIlEERSoT_+129>:	mov    $0x0,%edx
+
+0x7ffff7f0ed86: => 0x7ffff7f0ed86 <_ZNSo9_M_insertIlEERSoT_+134>:	test   %rsi,%rsi
+
+0x7ffff7f0ed89: => 0x7ffff7f0ed89 <_ZNSo9_M_insertIlEERSoT_+137>:	sete   %dl
+
+0x7ffff7f0ed8c: => 0x7ffff7f0ed8c <_ZNSo9_M_insertIlEERSoT_+140>:	callq  *0x18(%rax)
+
+0x7ffff7f0ed8f: => 0x7ffff7f0ed8f <_ZNSo9_M_insertIlEERSoT_+143>:	test   %dl,%dl
+
+0x7ffff7f0ed91: => 0x7ffff7f0ed91 <_ZNSo9_M_insertIlEERSoT_+145>:	je     0x7ffff7f0eda9 <_ZNSo9_M_insertIlEERSoT_+169>
+
+0x7ffff7f0eda9: => 0x7ffff7f0eda9 <_ZNSo9_M_insertIlEERSoT_+169>:	mov    0x8(%rsp),%rax
+
+0x7ffff7f0edae: => 0x7ffff7f0edae <_ZNSo9_M_insertIlEERSoT_+174>:	mov    (%rax),%rdx
+
+0x7ffff7f0edb1: => 0x7ffff7f0edb1 <_ZNSo9_M_insertIlEERSoT_+177>:	add    -0x18(%rdx),%rax
+
+0x7ffff7f0edb5: => 0x7ffff7f0edb5 <_ZNSo9_M_insertIlEERSoT_+181>:	mov    %rax,%rbx
+
+0x7ffff7f0edb8: => 0x7ffff7f0edb8 <_ZNSo9_M_insertIlEERSoT_+184>:	testb  $0x20,0x19(%rax)
+
+0x7ffff7f0edbc: => 0x7ffff7f0edbc <_ZNSo9_M_insertIlEERSoT_+188>:	je     0x7ffff7f0ede8 <_ZNSo9_M_insertIlEERSoT_+232>
+
+0x7ffff7f0ede8: => 0x7ffff7f0ede8 <_ZNSo9_M_insertIlEERSoT_+232>:	mov    0x18(%rsp),%rax
+
+0x7ffff7f0eded: => 0x7ffff7f0eded <_ZNSo9_M_insertIlEERSoT_+237>:	sub    %fs:0x28,%rax
+
+0x7ffff7f0edf6: => 0x7ffff7f0edf6 <_ZNSo9_M_insertIlEERSoT_+246>:	jne    0x7ffff7f0eea4 <_ZNSo9_M_insertIlEERSoT_+420>
+
+0x7ffff7f0edfc: => 0x7ffff7f0edfc <_ZNSo9_M_insertIlEERSoT_+252>:	add    $0x28,%rsp
+
+0x7ffff7f0ee00: => 0x7ffff7f0ee00 <_ZNSo9_M_insertIlEERSoT_+256>:	mov    %r12,%rax
+
+0x7ffff7f0ee03: => 0x7ffff7f0ee03 <_ZNSo9_M_insertIlEERSoT_+259>:	pop    %rbx
+
+0x7ffff7f0ee04: => 0x7ffff7f0ee04 <_ZNSo9_M_insertIlEERSoT_+260>:	pop    %rbp
+
+0x7ffff7f0ee05: => 0x7ffff7f0ee05 <_ZNSo9_M_insertIlEERSoT_+261>:	pop    %r12
+
+0x7ffff7f0ee07: => 0x7ffff7f0ee07 <_ZNSo9_M_insertIlEERSoT_+263>:	pop    %r13
+
+0x7ffff7f0ee09: => 0x7ffff7f0ee09 <_ZNSo9_M_insertIlEERSoT_+265>:	pop    %r14
+
+0x7ffff7f0ee0b: => 0x7ffff7f0ee0b <_ZNSo9_M_insertIlEERSoT_+267>:	pop    %r15
+
+0x7ffff7f0ee0d: => 0x7ffff7f0ee0d <_ZNSo9_M_insertIlEERSoT_+269>:	retq   
+
+0x5555555552e2: => 0x5555555552e2 <main+166>:	lea    0xd1c(%rip),%rsi        # 0x555555556005
+
+0x5555555552e9: => 0x5555555552e9 <main+173>:	mov    %rax,%rdi
+
+0x5555555552ec: => 0x5555555552ec <main+176>:	callq  0x5555555550b0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+
+0x5555555552f1: => 0x5555555552f1 <main+181>:	mov    -0x28(%rbp),%rax
+
+0x5555555552f5: => 0x5555555552f5 <main+185>:	mov    0x8(%rax),%rax
+
+0x5555555552f9: => 0x5555555552f9 <main+189>:	mov    %rax,-0x28(%rbp)
+
+0x5555555552fd: => 0x5555555552fd <main+193>:	jmp    0x5555555552c7 <main+139>
+
+0x5555555552c7: => 0x5555555552c7 <main+139>:	cmpq   $0x0,-0x28(%rbp)
+
+0x5555555552cc: => 0x5555555552cc <main+144>:	je     0x5555555552ff <main+195>
+
+0x5555555552ce: => 0x5555555552ce <main+146>:	mov    -0x28(%rbp),%rax
+
+0x5555555552d2: => 0x5555555552d2 <main+150>:	mov    (%rax),%eax
+
+0x5555555552d4: => 0x5555555552d4 <main+152>:	mov    %eax,%esi
+
+0x5555555552d6: => 0x5555555552d6 <main+154>:	lea    0x2d63(%rip),%rdi        # 0x555555558040 <_ZSt4cout@@GLIBCXX_3.4>
+
+0x5555555552dd: => 0x5555555552dd <main+161>:	callq  0x5555555550f0 <_ZNSolsEi@plt>
+
+0x5555555550f0: => 0x5555555550f0 <_ZNSolsEi@plt>:	endbr64 
+
+0x5555555550f4: => 0x5555555550f4 <_ZNSolsEi@plt+4>:	bnd jmpq *0x2ec5(%rip)        # 0x555555557fc0 <_ZNSolsEi@got.plt>
+
+0x7ffff7f0ef80: => 0x7ffff7f0ef80 <_ZNSolsEi>:	endbr64 
+
+0x7ffff7f0ef84: => 0x7ffff7f0ef84 <_ZNSolsEi+4>:	mov    (%rdi),%rax
+
+0x7ffff7f0ef87: => 0x7ffff7f0ef87 <_ZNSolsEi+7>:	mov    -0x18(%rax),%rax
+
+0x7ffff7f0ef8b: => 0x7ffff7f0ef8b <_ZNSolsEi+11>:	mov    0x18(%rdi,%rax,1),%eax
+
+0x7ffff7f0ef8f: => 0x7ffff7f0ef8f <_ZNSolsEi+15>:	and    $0x4a,%eax
+
+0x7ffff7f0ef92: => 0x7ffff7f0ef92 <_ZNSolsEi+18>:	cmp    $0x40,%eax
+
+0x7ffff7f0ef95: => 0x7ffff7f0ef95 <_ZNSolsEi+21>:	je     0x7ffff7f0efa8 <_ZNSolsEi+40>
+
+0x7ffff7f0ef97: => 0x7ffff7f0ef97 <_ZNSolsEi+23>:	cmp    $0x8,%eax
+
+0x7ffff7f0ef9a: => 0x7ffff7f0ef9a <_ZNSolsEi+26>:	je     0x7ffff7f0efa8 <_ZNSolsEi+40>
+
+0x7ffff7f0ef9c: => 0x7ffff7f0ef9c <_ZNSolsEi+28>:	movslq %esi,%rsi
+
+0x7ffff7f0ef9f: => 0x7ffff7f0ef9f <_ZNSolsEi+31>:	jmpq   0x7ffff7e76180 <_ZNSo9_M_insertIlEERSoT_@plt>
+
+0x7ffff7e76180: => 0x7ffff7e76180 <_ZNSo9_M_insertIlEERSoT_@plt>:	endbr64 
+
+0x7ffff7e76184: => 0x7ffff7e76184 <_ZNSo9_M_insertIlEERSoT_@plt+4>:	bnd jmpq *0x141695(%rip)        # 0x7ffff7fb7820 <_ZNSo9_M_insertIlEERSoT_@got.plt>
+
+0x7ffff7f0ed00: => 0x7ffff7f0ed00 <_ZNSo9_M_insertIlEERSoT_>:	endbr64 
+
+0x7ffff7f0ed04: => 0x7ffff7f0ed04 <_ZNSo9_M_insertIlEERSoT_+4>:	push   %r15
+
+0x7ffff7f0ed06: => 0x7ffff7f0ed06 <_ZNSo9_M_insertIlEERSoT_+6>:	push   %r14
+
+0x7ffff7f0ed08: => 0x7ffff7f0ed08 <_ZNSo9_M_insertIlEERSoT_+8>:	push   %r13
+
+0x7ffff7f0ed0a: => 0x7ffff7f0ed0a <_ZNSo9_M_insertIlEERSoT_+10>:	push   %r12
+
+0x7ffff7f0ed0c: => 0x7ffff7f0ed0c <_ZNSo9_M_insertIlEERSoT_+12>:	mov    %rdi,%r12
+
+0x7ffff7f0ed0f: => 0x7ffff7f0ed0f <_ZNSo9_M_insertIlEERSoT_+15>:	push   %rbp
+
+0x7ffff7f0ed10: => 0x7ffff7f0ed10 <_ZNSo9_M_insertIlEERSoT_+16>:	push   %rbx
+
+0x7ffff7f0ed11: => 0x7ffff7f0ed11 <_ZNSo9_M_insertIlEERSoT_+17>:	mov    %rsi,%rbx
+
+0x7ffff7f0ed14: => 0x7ffff7f0ed14 <_ZNSo9_M_insertIlEERSoT_+20>:	mov    %rdi,%rsi
+
+0x7ffff7f0ed17: => 0x7ffff7f0ed17 <_ZNSo9_M_insertIlEERSoT_+23>:	sub    $0x28,%rsp
+
+0x7ffff7f0ed1b: => 0x7ffff7f0ed1b <_ZNSo9_M_insertIlEERSoT_+27>:	mov    %fs:0x28,%rax
+
+0x7ffff7f0ed24: => 0x7ffff7f0ed24 <_ZNSo9_M_insertIlEERSoT_+36>:	mov    %rax,0x18(%rsp)
+
+0x7ffff7f0ed29: => 0x7ffff7f0ed29 <_ZNSo9_M_insertIlEERSoT_+41>:	xor    %eax,%eax
+
+0x7ffff7f0ed2b: => 0x7ffff7f0ed2b <_ZNSo9_M_insertIlEERSoT_+43>:	mov    %rsp,%r14
+
+0x7ffff7f0ed2e: => 0x7ffff7f0ed2e <_ZNSo9_M_insertIlEERSoT_+46>:	mov    %r14,%rdi
+
+0x7ffff7f0ed31: => 0x7ffff7f0ed31 <_ZNSo9_M_insertIlEERSoT_+49>:	callq  0x7ffff7e78ef0 <_ZNSo6sentryC1ERSo@plt>
+
+0x7ffff7f0ed36: => 0x7ffff7f0ed36 <_ZNSo9_M_insertIlEERSoT_+54>:	cmpb   $0x0,(%rsp)
+
+0x7ffff7f0ed3a: => 0x7ffff7f0ed3a <_ZNSo9_M_insertIlEERSoT_+58>:	je     0x7ffff7f0eda9 <_ZNSo9_M_insertIlEERSoT_+169>
+
+0x7ffff7f0ed3c: => 0x7ffff7f0ed3c <_ZNSo9_M_insertIlEERSoT_+60>:	mov    (%r12),%rax
+
+0x7ffff7f0ed40: => 0x7ffff7f0ed40 <_ZNSo9_M_insertIlEERSoT_+64>:	mov    -0x18(%rax),%r13
+
+0x7ffff7f0ed44: => 0x7ffff7f0ed44 <_ZNSo9_M_insertIlEERSoT_+68>:	add    %r12,%r13
+
+0x7ffff7f0ed47: => 0x7ffff7f0ed47 <_ZNSo9_M_insertIlEERSoT_+71>:	mov    0xf8(%r13),%rbp
+
+0x7ffff7f0ed4e: => 0x7ffff7f0ed4e <_ZNSo9_M_insertIlEERSoT_+78>:	test   %rbp,%rbp
+
+0x7ffff7f0ed51: => 0x7ffff7f0ed51 <_ZNSo9_M_insertIlEERSoT_+81>:	je     0x7ffff7f0eea9 <_ZNSo9_M_insertIlEERSoT_+425>
+
+0x7ffff7f0ed57: => 0x7ffff7f0ed57 <_ZNSo9_M_insertIlEERSoT_+87>:	cmpb   $0x0,0xe1(%r13)
+
+0x7ffff7f0ed5f: => 0x7ffff7f0ed5f <_ZNSo9_M_insertIlEERSoT_+95>:	je     0x7ffff7f0ee10 <_ZNSo9_M_insertIlEERSoT_+272>
+
+0x7ffff7f0ed65: => 0x7ffff7f0ed65 <_ZNSo9_M_insertIlEERSoT_+101>:	movsbl 0xe0(%r13),%r8d
+
+0x7ffff7f0ed6d: => 0x7ffff7f0ed6d <_ZNSo9_M_insertIlEERSoT_+109>:	mov    0xe8(%r13),%rsi
+
+0x7ffff7f0ed74: => 0x7ffff7f0ed74 <_ZNSo9_M_insertIlEERSoT_+116>:	mov    %rbx,%r9
+
+0x7ffff7f0ed77: => 0x7ffff7f0ed77 <_ZNSo9_M_insertIlEERSoT_+119>:	mov    %r13,%rcx
+
+0x7ffff7f0ed7a: => 0x7ffff7f0ed7a <_ZNSo9_M_insertIlEERSoT_+122>:	mov    %rbp,%rdi
+
+0x7ffff7f0ed7d: => 0x7ffff7f0ed7d <_ZNSo9_M_insertIlEERSoT_+125>:	mov    0x0(%rbp),%rax
+
+0x7ffff7f0ed81: => 0x7ffff7f0ed81 <_ZNSo9_M_insertIlEERSoT_+129>:	mov    $0x0,%edx
+
+0x7ffff7f0ed86: => 0x7ffff7f0ed86 <_ZNSo9_M_insertIlEERSoT_+134>:	test   %rsi,%rsi
+
+0x7ffff7f0ed89: => 0x7ffff7f0ed89 <_ZNSo9_M_insertIlEERSoT_+137>:	sete   %dl
+
+0x7ffff7f0ed8c: => 0x7ffff7f0ed8c <_ZNSo9_M_insertIlEERSoT_+140>:	callq  *0x18(%rax)
+
+0x7ffff7f0ed8f: => 0x7ffff7f0ed8f <_ZNSo9_M_insertIlEERSoT_+143>:	test   %dl,%dl
+
+0x7ffff7f0ed91: => 0x7ffff7f0ed91 <_ZNSo9_M_insertIlEERSoT_+145>:	je     0x7ffff7f0eda9 <_ZNSo9_M_insertIlEERSoT_+169>
+
+0x7ffff7f0eda9: => 0x7ffff7f0eda9 <_ZNSo9_M_insertIlEERSoT_+169>:	mov    0x8(%rsp),%rax
+
+0x7ffff7f0edae: => 0x7ffff7f0edae <_ZNSo9_M_insertIlEERSoT_+174>:	mov    (%rax),%rdx
+
+0x7ffff7f0edb1: => 0x7ffff7f0edb1 <_ZNSo9_M_insertIlEERSoT_+177>:	add    -0x18(%rdx),%rax
+
+0x7ffff7f0edb5: => 0x7ffff7f0edb5 <_ZNSo9_M_insertIlEERSoT_+181>:	mov    %rax,%rbx
+
+0x7ffff7f0edb8: => 0x7ffff7f0edb8 <_ZNSo9_M_insertIlEERSoT_+184>:	testb  $0x20,0x19(%rax)
+
+0x7ffff7f0edbc: => 0x7ffff7f0edbc <_ZNSo9_M_insertIlEERSoT_+188>:	je     0x7ffff7f0ede8 <_ZNSo9_M_insertIlEERSoT_+232>
+
+0x7ffff7f0ede8: => 0x7ffff7f0ede8 <_ZNSo9_M_insertIlEERSoT_+232>:	mov    0x18(%rsp),%rax
+
+0x7ffff7f0eded: => 0x7ffff7f0eded <_ZNSo9_M_insertIlEERSoT_+237>:	sub    %fs:0x28,%rax
+
+0x7ffff7f0edf6: => 0x7ffff7f0edf6 <_ZNSo9_M_insertIlEERSoT_+246>:	jne    0x7ffff7f0eea4 <_ZNSo9_M_insertIlEERSoT_+420>
+
+0x7ffff7f0edfc: => 0x7ffff7f0edfc <_ZNSo9_M_insertIlEERSoT_+252>:	add    $0x28,%rsp
+
+0x7ffff7f0ee00: => 0x7ffff7f0ee00 <_ZNSo9_M_insertIlEERSoT_+256>:	mov    %r12,%rax
+
+0x7ffff7f0ee03: => 0x7ffff7f0ee03 <_ZNSo9_M_insertIlEERSoT_+259>:	pop    %rbx
+
+0x7ffff7f0ee04: => 0x7ffff7f0ee04 <_ZNSo9_M_insertIlEERSoT_+260>:	pop    %rbp
+
+0x7ffff7f0ee05: => 0x7ffff7f0ee05 <_ZNSo9_M_insertIlEERSoT_+261>:	pop    %r12
+
+0x7ffff7f0ee07: => 0x7ffff7f0ee07 <_ZNSo9_M_insertIlEERSoT_+263>:	pop    %r13
+
+0x7ffff7f0ee09: => 0x7ffff7f0ee09 <_ZNSo9_M_insertIlEERSoT_+265>:	pop    %r14
+
+0x7ffff7f0ee0b: => 0x7ffff7f0ee0b <_ZNSo9_M_insertIlEERSoT_+267>:	pop    %r15
+
+0x7ffff7f0ee0d: => 0x7ffff7f0ee0d <_ZNSo9_M_insertIlEERSoT_+269>:	retq   
+
+0x5555555552e2: => 0x5555555552e2 <main+166>:	lea    0xd1c(%rip),%rsi        # 0x555555556005
+
+0x5555555552e9: => 0x5555555552e9 <main+173>:	mov    %rax,%rdi
+
+0x5555555552ec: => 0x5555555552ec <main+176>:	callq  0x5555555550b0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+
+0x5555555552f1: => 0x5555555552f1 <main+181>:	mov    -0x28(%rbp),%rax
+
+0x5555555552f5: => 0x5555555552f5 <main+185>:	mov    0x8(%rax),%rax
+
+0x5555555552f9: => 0x5555555552f9 <main+189>:	mov    %rax,-0x28(%rbp)
+
+0x5555555552fd: => 0x5555555552fd <main+193>:	jmp    0x5555555552c7 <main+139>
+
+0x5555555552c7: => 0x5555555552c7 <main+139>:	cmpq   $0x0,-0x28(%rbp)
+
+0x5555555552cc: => 0x5555555552cc <main+144>:	je     0x5555555552ff <main+195>
+
+0x5555555552ce: => 0x5555555552ce <main+146>:	mov    -0x28(%rbp),%rax
+
+0x5555555552d2: => 0x5555555552d2 <main+150>:	mov    (%rax),%eax
+
+0x5555555552d4: => 0x5555555552d4 <main+152>:	mov    %eax,%esi
+
+0x5555555552d6: => 0x5555555552d6 <main+154>:	lea    0x2d63(%rip),%rdi        # 0x555555558040 <_ZSt4cout@@GLIBCXX_3.4>
+
+0x5555555552dd: => 0x5555555552dd <main+161>:	callq  0x5555555550f0 <_ZNSolsEi@plt>
+
+0x5555555552e2: => 0x5555555552e2 <main+166>:	lea    0xd1c(%rip),%rsi        # 0x555555556005
+
+0x5555555552e9: => 0x5555555552e9 <main+173>:	mov    %rax,%rdi
+
+0x5555555552ec: => 0x5555555552ec <main+176>:	callq  0x5555555550b0 <_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc@plt>
+
+0x5555555552f1: => 0x5555555552f1 <main+181>:	mov    -0x28(%rbp),%rax
+
+0x5555555552f5: => 0x5555555552f5 <main+185>:	mov    0x8(%rax),%rax
+
+0x5555555552f9: => 0x5555555552f9 <main+189>:	mov    %rax,-0x28(%rbp)
+
+0x5555555552fd: => 0x5555555552fd <main+193>:	jmp    0x5555555552c7 <main+139>
+
+0x5555555552c7: => 0x5555555552c7 <main+139>:	cmpq   $0x0,-0x28(%rbp)
+
+0x5555555552cc: => 0x5555555552cc <main+144>:	je     0x5555555552ff <main+195>
+
+0x5555555552ff: => 0x5555555552ff <main+195>:	mov    0x2cca(%rip),%rax        # 0x555555557fd0
+
+0x555555555306: => 0x555555555306 <main+202>:	mov    %rax,%rsi
+
+0x555555555309: => 0x555555555309 <main+205>:	lea    0x2d30(%rip),%rdi        # 0x555555558040 <_ZSt4cout@@GLIBCXX_3.4>
+
+0x555555555310: => 0x555555555310 <main+212>:	callq  0x5555555550d0 <_ZNSolsEPFRSoS_E@plt>
+
+0x555555555315: => 0x555555555315 <main+217>:	mov    $0x0,%eax
+
+0x55555555531a: => 0x55555555531a <main+222>:	add    $0x28,%rsp
+
+0x55555555531e: => 0x55555555531e <main+226>:	pop    %rbx
+
+0x55555555531f: => 0x55555555531f <main+227>:	pop    %rbp
+
+0x555555555320: => 0x555555555320 <main+228>:	retq   
+
+0x7ffff7c0d083: => 0x7ffff7c0d083 <__libc_start_main+243>:	mov    %eax,%edi
+
+0x7ffff7c0d085: => 0x7ffff7c0d085 <__libc_start_main+245>:	callq  0x7ffff7c2fa40 <__GI_exit>
+
+0x7ffff7c2fa40: => 0x7ffff7c2fa40 <__GI_exit>:	endbr64 
+
+0x7ffff7c2fa44: => 0x7ffff7c2fa44 <__GI_exit+4>:	push   %rax
+
+0x7ffff7c2fa45: => 0x7ffff7c2fa45 <__GI_exit+5>:	pop    %rax
+
+0x7ffff7c2fa46: => 0x7ffff7c2fa46 <__GI_exit+6>:	mov    $0x1,%ecx
+
+0x7ffff7c2fa4b: => 0x7ffff7c2fa4b <__GI_exit+11>:	mov    $0x1,%edx
+
+0x7ffff7c2fa50: => 0x7ffff7c2fa50 <__GI_exit+16>:	lea    0x1a5cc1(%rip),%rsi        # 0x7ffff7dd5718 <__exit_funcs>
+
+0x7ffff7c2fa57: => 0x7ffff7c2fa57 <__GI_exit+23>:	sub    $0x8,%rsp
+
+0x7ffff7c2fa5b: => 0x7ffff7c2fa5b <__GI_exit+27>:	callq  0x7ffff7c2f7b0 <__run_exit_handlers>
+

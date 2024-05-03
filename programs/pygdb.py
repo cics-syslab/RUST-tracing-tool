@@ -9,7 +9,7 @@ max_stuck_time = 10  # Adjust this value as needed
 
 si = 0
 
-max_si = 100
+max_si = 1000
 
 def log_asm_event(event):
     pc = int(gdb.parse_and_eval("$pc"))
