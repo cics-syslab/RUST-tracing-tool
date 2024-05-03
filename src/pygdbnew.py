@@ -28,10 +28,10 @@ while True:
     if si < max_si:
         gdb.execute("si")
         si += 1
-    else:
+    elif start_time > max_stuck_time:
         gdb.execute("ni")
     
     # Reset timer if execution is not stuck
     start_time = time.time()  
-    
+    si = 0
     time.sleep(0.001)  # Add a small delay to avoid consuming too much CPU

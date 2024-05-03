@@ -1,0 +1,93 @@
+0x401241: => 0x401241 <main+1>:	mov    %rsp,%rbp
+
+0x401244: => 0x401244 <main+4>:	sub    $0x10,%rsp
+
+0x401248: => 0x401248 <main+8>:	movl   $0x0,-0x4(%rbp)
+
+0x40124f: => 0x40124f <main+15>:	mov    %edi,-0x8(%rbp)
+
+0x401252: => 0x401252 <main+18>:	mov    %rsi,-0x10(%rbp)
+
+0x401256: => 0x401256 <main+22>:	mov    -0x8(%rbp),%edi
+
+0x401259: => 0x401259 <main+25>:	mov    -0x10(%rbp),%rsi
+
+0x40125d: => 0x40125d <main+29>:	callq  0x401270 <_main>
+
+0x401270: => 0x401270 <_main>:	push   %rbp
+
+0x401271: => 0x401271 <_main+1>:	mov    %rsp,%rbp
+
+0x401274: => 0x401274 <_main+4>:	sub    $0x30,%rsp
+
+0x401278: => 0x401278 <_main+8>:	mov    %edi,-0x4(%rbp)
+
+0x40127b: => 0x40127b <_main+11>:	mov    %rsi,-0x10(%rbp)
+
+0x40127f: => 0x40127f <_main+15>:	movl   $0x0,-0x14(%rbp)
+
+0x401286: => 0x401286 <_main+22>:	movl   $0x0,-0x18(%rbp)
+
+0x40128d: => 0x40128d <_main+29>:	movl   $0x0,-0x1c(%rbp)
+
+0x401294: => 0x401294 <_main+36>:	movl   $0x1,-0x20(%rbp)
+
+0x40129b: => 0x40129b <_main+43>:	mov    -0x20(%rbp),%eax
+
+0x40129e: => 0x40129e <_main+46>:	cmp    -0x4(%rbp),%eax
+
+0x4012a1: => 0x4012a1 <_main+49>:	jge    0x401370 <_main+256>
+
+0x401370: => 0x401370 <_main+256>:	movl   $0x1,-0x24(%rbp)
+
+0x401377: => 0x401377 <_main+263>:	mov    -0x24(%rbp),%eax
+
+0x40137a: => 0x40137a <_main+266>:	cmp    -0x4(%rbp),%eax
+
+0x40137d: => 0x40137d <_main+269>:	jge    0x4013b8 <_main+328>
+
+0x4013b8: => 0x4013b8 <_main+328>:	cmpl   $0x1,-0x4(%rbp)
+
+0x4013bc: => 0x4013bc <_main+332>:	jne    0x4013d6 <_main+358>
+
+0x4013be: => 0x4013be <_main+334>:	mov    -0x14(%rbp),%esi
+
+0x4013c1: => 0x4013c1 <_main+337>:	mov    -0x18(%rbp),%edx
+
+0x4013c4: => 0x4013c4 <_main+340>:	mov    -0x1c(%rbp),%ecx
+
+0x4013c7: => 0x4013c7 <_main+343>:	movabs $0x402015,%rdi
+
+0x4013d1: => 0x4013d1 <_main+353>:	callq  0x4013e0 <list_directory>
+
+0x4013e0: => 0x4013e0 <list_directory>:	push   %rbp
+
+0x4013e1: => 0x4013e1 <list_directory+1>:	mov    %rsp,%rbp
+
+0x4013e4: => 0x4013e4 <list_directory+4>:	sub    $0x70,%rsp
+
+0x4013e8: => 0x4013e8 <list_directory+8>:	mov    %rdi,-0x8(%rbp)
+
+0x4013ec: => 0x4013ec <list_directory+12>:	mov    %esi,-0xc(%rbp)
+
+0x4013ef: => 0x4013ef <list_directory+15>:	mov    %edx,-0x10(%rbp)
+
+0x4013f2: => 0x4013f2 <list_directory+18>:	mov    %ecx,-0x14(%rbp)
+
+0x4013f5: => 0x4013f5 <list_directory+21>:	mov    -0x8(%rbp),%rdi
+
+0x4013f9: => 0x4013f9 <list_directory+25>:	callq  0x401060 <opendir@plt>
+
+0x401060: => 0x401060 <opendir@plt>:	jmpq   *0x2fca(%rip)        # 0x404030 <opendir@got.plt>
+
+0x401066: => 0x401066 <opendir@plt+6>:	pushq  $0x3
+
+0x40106b: => 0x40106b <opendir@plt+11>:	jmpq   0x401020
+
+0x401020: => 0x401020:	pushq  0x2fe2(%rip)        # 0x404008
+
+0x401026: => 0x401026:	jmpq   *0x2fe4(%rip)        # 0x404010
+
+0x7ffff7fe7bc0: => 0x7ffff7fe7bc0 <_dl_runtime_resolve_xsavec>:	endbr64 
+
+

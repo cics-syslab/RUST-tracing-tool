@@ -1,0 +1,71 @@
+0x408311: => 0x408311 <main+1>:	mov    %rsi,%rdx
+
+0x408314: => 0x408314 <main+4>:	movslq %edi,%rsi
+
+0x408317: => 0x408317 <main+7>:	lea    -0x77e(%rip),%rdi        # 0x407ba0 <_ZN2ls4main17h4402054c32fbd4e8E>
+
+0x40831e: => 0x40831e <main+14>:	xor    %ecx,%ecx
+
+0x408320: => 0x408320 <main+16>:	callq  0x402dc0 <_ZN3std2rt10lang_start17h03bf1326ed387a58E>
+
+0x402dc0: => 0x402dc0 <_ZN3std2rt10lang_start17h03bf1326ed387a58E>:	sub    $0x18,%rsp
+
+0x402dc4: => 0x402dc4 <_ZN3std2rt10lang_start17h03bf1326ed387a58E+4>:	mov    %ecx,%eax
+
+0x402dc6: => 0x402dc6 <_ZN3std2rt10lang_start17h03bf1326ed387a58E+6>:	mov    %rdx,%rcx
+
+0x402dc9: => 0x402dc9 <_ZN3std2rt10lang_start17h03bf1326ed387a58E+9>:	mov    %rsi,%rdx
+
+0x402dcc: => 0x402dcc <_ZN3std2rt10lang_start17h03bf1326ed387a58E+12>:	mov    %rdi,0x10(%rsp)
+
+0x402dd1: => 0x402dd1 <_ZN3std2rt10lang_start17h03bf1326ed387a58E+17>:	lea    0x10(%rsp),%rdi
+
+0x402dd6: => 0x402dd6 <_ZN3std2rt10lang_start17h03bf1326ed387a58E+22>:	lea    0x9c4b(%rip),%rsi        # 0x40ca28
+
+0x402ddd: => 0x402ddd <_ZN3std2rt10lang_start17h03bf1326ed387a58E+29>:	movzbl %al,%r8d
+
+0x402de1: => 0x402de1 <_ZN3std2rt10lang_start17h03bf1326ed387a58E+33>:	callq  *0xa181(%rip)        # 0x40cf68
+
+0x7ffff7f364e0: => 0x7ffff7f364e0 <std::rt::lang_start_internal>:	push   %rbp
+
+0x7ffff7f364e1: => 0x7ffff7f364e1 <std::rt::lang_start_internal+1>:	push   %r15
+
+0x7ffff7f364e3: => 0x7ffff7f364e3 <std::rt::lang_start_internal+3>:	push   %r14
+
+0x7ffff7f364e5: => 0x7ffff7f364e5 <std::rt::lang_start_internal+5>:	push   %r13
+
+0x7ffff7f364e7: => 0x7ffff7f364e7 <std::rt::lang_start_internal+7>:	push   %r12
+
+0x7ffff7f364e9: => 0x7ffff7f364e9 <std::rt::lang_start_internal+9>:	push   %rbx
+
+0x7ffff7f364ea: => 0x7ffff7f364ea <std::rt::lang_start_internal+10>:	sub    $0x118,%rsp
+
+0x7ffff7f364f1: => 0x7ffff7f364f1 <std::rt::lang_start_internal+17>:	mov    %r8d,%ebp
+
+0x7ffff7f364f4: => 0x7ffff7f364f4 <std::rt::lang_start_internal+20>:	mov    %rsi,%rbx
+
+0x7ffff7f364f7: => 0x7ffff7f364f7 <std::rt::lang_start_internal+23>:	mov    %rdi,%r14
+
+0x7ffff7f364fa: => 0x7ffff7f364fa <std::rt::lang_start_internal+26>:	movq   $0x0,0x70(%rsp)
+
+0x7ffff7f36503: => 0x7ffff7f36503 <std::rt::lang_start_internal+35>:	movaps -0x5787a(%rip),%xmm0        # 0x7ffff7edec90
+
+0x7ffff7f3650a: => 0x7ffff7f3650a <std::rt::lang_start_internal+42>:	movups %xmm0,0x78(%rsp)
+
+0x7ffff7f3650f: => 0x7ffff7f3650f <std::rt::lang_start_internal+47>:	lea    0x70(%rsp),%r15
+
+0x7ffff7f36514: => 0x7ffff7f36514 <std::rt::lang_start_internal+52>:	mov    0x8ee15(%rip),%r12        # 0x7ffff7fc5330
+
+0x7ffff7f3651b: => 0x7ffff7f3651b <std::rt::lang_start_internal+59>:	mov    0x8ee16(%rip),%r13        # 0x7ffff7fc5338
+
+0x7ffff7f36522: => 0x7ffff7f36522 <std::rt::lang_start_internal+66>:	data16 data16 data16 data16 nopw %cs:0x0(%rax,%rax,1)
+
+0x7ffff7f36530: => 0x7ffff7f36530 <std::rt::lang_start_internal+80>:	mov    $0x3,%esi
+
+0x7ffff7f36535: => 0x7ffff7f36535 <std::rt::lang_start_internal+85>:	mov    %r15,%rdi
+
+0x7ffff7f36538: => 0x7ffff7f36538 <std::rt::lang_start_internal+88>:	xor    %edx,%edx
+
+0x7ffff7f3653a: => 0x7ffff7f3653a <std::rt::lang_start_internal+90>:	callq  *%r12
+
+
