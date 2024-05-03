@@ -1,0 +1,292 @@
+
+@online{karlsen_how_2017,
+	title = {How do I obtain {CPU} cycle count in Win32?},
+	url = {https://stackoverflow.com/q/138932},
+	titleaddon = {Stack Overflow},
+	author = {Karlsen, Lasse V.},
+	urldate = {2024-02-16},
+	date = {2017-05-23},
+}
+
+@online{beeonrope_answer_2017,
+	title = {Answer to "How many {CPU} cycles are needed for each assembly instruction?"},
+	url = {https://stackoverflow.com/a/44980899},
+	shorttitle = {Answer to "How many {CPU} cycles are needed for each assembly instruction?},
+	titleaddon = {Stack Overflow},
+	author = {{BeeOnRope}},
+	urldate = {2024-02-16},
+	date = {2017-07-07},
+}
+
+@online{george2_how_2020,
+	title = {How many {CPU} cycles are needed for each assembly instruction?},
+	url = {https://stackoverflow.com/q/692718},
+	titleaddon = {Stack Overflow},
+	author = {{George2}},
+	urldate = {2024-02-16},
+	date = {2020-09-24},
+}
+
+@inreference{noauthor_instruction_2023,
+	title = {Instruction cycle},
+	rights = {Creative Commons Attribution-{ShareAlike} License},
+	url = {https://en.wikipedia.org/w/index.php?title=Instruction_cycle&oldid=1179831924},
+	abstract = {The instruction cycle (also known as the fetch–decode–execute cycle, or simply the fetch-execute cycle) is the cycle that the central processing unit ({CPU}) follows from boot-up until the computer has shut down in order to process instructions. It is composed of three main stages: the fetch stage, the decode stage, and the execute stage. 
+
+In simpler {CPUs}, the instruction cycle is executed sequentially, each instruction being processed before the next one is started. In most modern {CPUs}, the instruction cycles are instead executed concurrently, and often in parallel, through an instruction pipeline: the next instruction starts being processed before the previous instruction has finished, which is possible because the cycle is broken up into separate steps.},
+	booktitle = {Wikipedia},
+	urldate = {2024-02-16},
+	date = {2023-10-12},
+	langid = {english},
+	note = {Page Version {ID}: 1179831924},
+	keywords = {Cycles, asm},
+}
+
+@misc{fog_software_2022,
+	title = {Software Optimization Resources},
+	url = {https://www.agner.org/optimize/#manual_instr_tab},
+	author = {Fog, Agner},
+	urldate = {2024-02-16},
+	date = {2022-11},
+	keywords = {Cycles, asm},
+}
+
+@inreference{noauthor_cycles_2023,
+	title = {Cycles per instruction},
+	rights = {Creative Commons Attribution-{ShareAlike} License},
+	url = {https://en.wikipedia.org/w/index.php?title=Cycles_per_instruction&oldid=1182877292},
+	abstract = {In computer architecture, cycles per instruction (aka clock cycles per instruction, clocks per instruction, or {CPI}) is one aspect of a processor's performance: the average number of clock cycles per instruction for a program or program fragment.  It is the multiplicative inverse of instructions per cycle.},
+	booktitle = {Wikipedia},
+	urldate = {2024-02-16},
+	date = {2023-10-31},
+	langid = {english},
+	note = {Page Version {ID}: 1182877292},
+	keywords = {Cycles, asm},
+}
+
+@online{energy_innovation_policy__technology_llc_how_2020,
+	title = {How Much Energy do Data Centers Actually Use?},
+	url = {https://energyinnovation.org/2020/03/17/how-much-energy-do-data-centers-really-use/},
+	abstract = {Data centers can be thought of as the “brains” of the internet. Their role is to process, store, and communicate the data behind the myriad information services we rely upon every day, whether it be streaming video, email, social media, online collaboration, or scientific computing. Data centers utilize different information technology ({IT}) devices to provide these services, all of which are powered by electricity. Servers provide computations and logic in response to information requests, while storage drives house the files and data needed to meet those requests. Network devices connect the data center to the internet, enabling incoming and outgoing data flows. The electricity used by these {IT} devices is ultimately converted into heat, which must be removed from the data center by cooling equipment that also runs on electricity.},
+	author = {{Energy Innovation: Policy \& Technology LLC}},
+	date = {2020-03},
+	keywords = {Report, Web Article, Why (Environmentally)},
+}
+
+@online{felix_cloutier_x86_2023,
+	title = {x86 and amd64 instruction reference},
+	url = {https://www.felixcloutier.com/x86/},
+	abstract = {Derived from the March 2023 version of the Intel® 64 and {IA}-32 Architectures Software Developer’s Manual. Last updated 2023-05-26. {THIS} {REFERENCE} {IS} {NOT} {PERFECT}. It's been mechanically separated into distinct files by a dumb script. It may be enough to replace the official documentation on your weekend reverse engineering project, but for anything where money is at stake, go get the official and freely available documentation.},
+	author = {{Felix Cloutier}},
+	date = {2023-05},
+	keywords = {Documentation, Guide},
+}
+
+@software{the_llvm_compiler_infrastructure_developers_llvm_nodate,
+	title = {The {LLVM} Compiler Infrastructure Documentation: Low Level Virtual Machine},
+	url = {https://llvm.org},
+	abstract = {The {LLVM} Project is a collection of modular and reusable compiler and toolchain technologies. Despite its name, {LLVM} has little to do with traditional virtual machines. The name "{LLVM}" itself is not an acronym; it is the full name of the project. {LLVM} began as a research project at the University of Illinois, with the goal of providing a modern, {SSA}-based compilation strategy capable of supporting both static and dynamic compilation of arbitrary programming languages. Since then, {LLVM} has grown to be an umbrella project consisting of a number of subprojects, many of which are being used in production by a wide variety of commercial and open source projects as well as being widely used in academic research. Code in the {LLVM} project is licensed under the "Apache 2.0 License with {LLVM} exceptions" The primary sub-projects of {LLVM} are: The {LLVM} Core libraries provide a modern source- and target-independent optimizer, along with code generation support for many popular {CPUs} (as well as some less common ones!) These libraries are built around a well specified code representation known as the {LLVM} intermediate representation ("{LLVM} {IR}"). The {LLVM} Core libraries are well documented, and it is particularly easy to invent your own language (or port an existing compiler) to use {LLVM} as an optimizer and code generator. Clang is an "{LLVM} native" C/C++/Objective-C compiler, which aims to deliver amazingly fast compiles, extremely useful error and warning messages and to provide a platform for building great source level tools. The Clang Static Analyzer and clang-tidy are tools that automatically find bugs in your code, and are great examples of the sort of tools that can be built using the Clang frontend as a library to parse C/C++ code. The {LLDB} project builds on libraries provided by {LLVM} and Clang to provide a great native debugger. It uses the Clang {ASTs} and expression parser, {LLVM} {JIT}, {LLVM} disassembler, etc so that it provides an experience that "just works". It is also blazing fast and much more memory efficient than {GDB} at loading symbols. The libc++ and libc++ {ABI} projects provide a standard conformant and high-performance implementation of the C++ Standard Library, including full support for C++11 and C++14. The compiler-rt project provides highly tuned implementations of the low-level code generator support routines like "\_\_fixunsdfdi" and other calls generated when a target doesn't have a short sequence of native instructions to implement a core {IR} operation. It also provides implementations of run-time libraries for dynamic testing tools such as {AddressSanitizer}, {ThreadSanitizer}, {MemorySanitizer}, and {DataFlowSanitizer}. The {MLIR} subproject is a novel approach to building reusable and extensible compiler infrastructure. {MLIR} aims to address software fragmentation, improve compilation for heterogeneous hardware, significantly reduce the cost of building domain specific compilers, and aid in connecting existing compilers together. The {OpenMP} subproject provides an {OpenMP} runtime for use with the {OpenMP} implementation in Clang. The polly project implements a suite of cache-locality optimizations as well as auto-parallelism and vectorization using a polyhedral model. The libclc project aims to implement the {OpenCL} standard library. The klee project implements a "symbolic virtual machine" which uses a theorem prover to try to evaluate all dynamic paths through a program in an effort to find bugs and to prove properties of functions. A major feature of klee is that it can produce a testcase in the event that it detects a bug. The {LLD} project is a new linker. That is a drop-in replacement for system linkers and runs much faster. The {BOLT} project is a post-link optimizer. It achieves the improvements by optimizing application's code layout based on execution profile gathered by sampling profiler. In addition to official subprojects of {LLVM}, there are a broad variety of other projects that use components of {LLVM} for various tasks. Through these external projects you can use {LLVM} to compile Ruby, Python, Haskell, Rust, D, {PHP}, Pure, Lua, Julia, and a number of other languages. A major strength of {LLVM} is its versatility, flexibility, and reusability, which is why it is being used for such a wide variety of different tasks: everything from doing light-weight {JIT} compiles of embedded languages like Lua to compiling Fortran code for massive super computers. As much as everything else, {LLVM} has a broad and friendly community of people who are interested in building great low-level tools. If you are interested in getting involved, a good first place is to skim the {LLVM} Blog and join {LLVM} Discourse. For information on how to send in a patch, get commit access, and copyright and license topics, please see the {LLVM} Developer Policy.},
+	author = {{The LLVM Compiler Infrastructure Developers}},
+	keywords = {Documentation},
+}
+
+@software{the_rust_compiler_developer_team_rust_nodate,
+	title = {{RUST} Compiler Developer Guide: The {RUST} Programming Language},
+	url = {https://rustc-dev-guide.rust-lang.org/},
+	abstract = {This guide is meant to help document how rustc – the Rust compiler – works, as well as to help new contributors get involved in rustc development. There are seven parts to this guide: Building rustc: Contains information that should be useful no matter how you are contributing, about building, debugging, profiling, etc. Contributing to rustc: Contains information that should be useful no matter how you are contributing, about procedures for contribution, using git and Github, stabilizing features, etc. High-Level Compiler Architecture: Discusses the high-level architecture of the compiler and stages of the compile process. Source Code Representation: Describes the process of taking raw source code from the user and transforming it into various forms that the compiler can work with easily. Analysis: discusses the analyses that the compiler uses to check various properties of the code and inform later stages of the compile process (e.g., type checking). From {MIR} to Binaries: How linked executable machine code is generated. Appendices at the end with useful reference information. There are a few of these with different information, including a glossary.},
+	author = {{The RUST Compiler Developer Team}},
+	keywords = {Crucial Notes, Documentation},
+}
+
+@misc{various_authors_list_2023,
+	title = {List of Countries by Electricity Consumption: Wikipedia, the Free Encyclopedia},
+	url = {https://en.wikipedia.org/wiki/List_of_countries_by_electricity_consumption},
+	abstract = {This list of countries by electric energy consumption is mostly based on the Energy Information Administration.[2] Several non-sovereign entities are also included for information purposes, with their parent state noted. The per capita data for many countries may be slightly inaccurate as population data may not be for the same year as the consumption data. Population data were obtained mainly from the {IMF}[3] in 2021 with some exceptions, in which case they were obtained from the Wikipedia pages for the corresponding countries/territories. Average power per capita was calculated according to the formula:[a] Electric energy per capita [ in watt-hour ] = Total population electricity consumption [in {kW}·h/yr] × 1,000 /population. Electric power per capita [ in watt ] = Total population electricity consumption [in {kW}·h/yr] × 0.114077116 /population. 1 {kW}·h/yr = 1,000 Wh/(365.25 × 24) h = 0.11408 Watt},
+	number = {Country/Region},
+	author = {{Various Authors}},
+	date = {2023-12-11},
+	keywords = {Wiki},
+}
+
+@misc{intel_intel_2023,
+	title = {Intel® 64 and {IA}-32 Architectures Software Developer Manuals: Intel Developer Guides},
+	url = {https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html},
+	abstract = {These manuals describe the architecture and programming environment of the Intel® 64 and {IA}-32 architectures. Electronic versions of these documents allow you to quickly get to the information you need and print only the pages you want. The Intel® 64 and {IA}-32 architectures software developer's manuals are now available for download via one combined volume, a four volume set or a ten volume set. All content is identical in each set; see details below. At present, downloadable {PDFs} of all volumes are at version 081. The downloadable {PDF} of the Intel® 64 and {IA}-32 Architectures Optimization Reference Manual Volume 1 is at version 048, and Volume 2 is at version 001. Additional related specifications, application notes, and technical papers are also available for download. Note If you would like to be notified of updates to the Intel® 64 and {IA}-32 architectures software developer's manuals, you may utilize a third-party service, such as Visualping* to be notified of changes to this page (please reference 1 below). Note We are no longer offering the Intel® 64 and {IA}-32 architectures software developer’s manuals on {CD}-{ROM}. Hard copy versions of the manual are available for purchase via a print-on-demand fulfillment model through a third-party vendor, Lulu (please reference 1 and 2 below): http://www.lulu.com/spotlight/{IntelSDM}. Terms of use The order price of each volume is set by the print vendor; Intel uploads the finalized master with zero royalty.},
+	publisher = {Intel},
+	author = {{Intel}},
+	date = {2023-12},
+	keywords = {Documentation},
+}
+
+@misc{python_software_foundation_documentation_nodate,
+	title = {Documentation for {GNU} {GDB} Support for Python Programs: The Python Programming Language Developer's Guide},
+	url = {https://devguide.python.org/development-tools/gdb/},
+	abstract = {If you experience low-level problems such as crashes or deadlocks (e.g. when tinkering with parts of {CPython} which are written in C), it can be convenient to use a low-level debugger such as gdb in order to diagnose and fix the issue. By default, however, gdb (or any of its front-ends) doesn’t know about high-level information specific to the {CPython} interpreter, such as which Python function is currently executing, or what type or value has a given Python object represented by a standard {PyObject} * pointer. We hereafter present two ways to overcome this limitation.},
+	author = {{Python Software Foundation}},
+	keywords = {Documentation},
+}
+
+@software{the_clang_team_clang_nodate,
+	title = {Clang Compiler User Manual: {LLVM} Documentation},
+	url = {https://clang.llvm.org/docs/UsersManual.html},
+	abstract = {The Clang Compiler is an open-source compiler for the C family of programming languages, aiming to be the best in class implementation of these languages. Clang builds on the {LLVM} optimizer and code generator, allowing it to provide high-quality optimization and code generation support for many targets. For more general information, please see the Clang Web Site or the {LLVM} Web Site. This document describes important notes about using Clang as a compiler for an end-user, documenting the supported features, command line options, etc. If you are interested in using Clang to build a tool that processes code, please see “Clang” {CFE} Internals Manual. If you are interested in the Clang Static Analyzer, please see its web page.},
+	author = {{The Clang Team}},
+	keywords = {Documentation},
+}
+
+@inproceedings{black_emumaker86_2013,
+	location = {Denver Colorado {USA}},
+	title = {Emumaker86: a hardware simulator for teaching {CPU} design},
+	isbn = {9781450318686},
+	url = {https://dl.acm.org/doi/10.1145/2445196.2445294},
+	doi = {10.1145/2445196.2445294},
+	shorttitle = {Emumaker86},
+	eventtitle = {{SIGCSE} '13: The 44th {ACM} Technical Symposium on Computer Science Education},
+	pages = {323--328},
+	publisher = {{ACM}},
+	author = {Black, Michael and Waggoner, Nathaniel},
+	urldate = {2023-12-30},
+	date = {2013-03-06},
+	langid = {english},
+}
+
+@book{duntemann_assembly_2009,
+	location = {Indianapolis, Ind.},
+	edition = {3rd ed},
+	title = {Assembly language step-by-step: programming with Linux},
+	isbn = {9780470580035},
+	shorttitle = {Assembly language step-by-step},
+	abstract = {"The long-awaited third edition of this bestselling introduction to assembly language has been completely rewritten to focus on 32-bit protected-mode Linux and the free {NASM} assembler. Assembly is the fundamental language bridging human ideas and the pure silicon hearts of computers, and popular author Jeff Dunteman retains his distinctive lighthearted style as he presents a step-by-step approach to this difficult technical discipline. He starts at the very beginning, explaining the basic ideas of programmable computing, the binary and hexadecimal number systems, the Intel x86 computer architecture, and the process of software development under Linux. From that foundation he systematically treats the x86 instruction set, memory addressing, procedures, macros, and interface to the C-language code libraries upon which Linux itself is built"--Resource description page},
+	publisher = {Wiley Pub.},
+	author = {Duntemann, Jeff},
+	date = {2009},
+	note = {{OCLC}: 608494208},
+}
+
+@inproceedings{black_full_2011,
+	location = {Dallas {TX} {USA}},
+	title = {A full system x86 simulator for teaching computer organization},
+	isbn = {9781450305006},
+	url = {https://dl.acm.org/doi/10.1145/1953163.1953272},
+	doi = {10.1145/1953163.1953272},
+	eventtitle = {{SIGCSE} '11: The 42nd {ACM} Technical Symposium on Computer Science Education},
+	pages = {365--370},
+	publisher = {{ACM}},
+	author = {Black, Michael David and Komala, Priyadarshini},
+	urldate = {2023-12-30},
+	date = {2011-03-09},
+	langid = {english},
+}
+
+@book{stallman_debugging_2023,
+	location = {Boston, Massachusetts},
+	edition = {10},
+	title = {Debugging with {GDB}: The {GNU} Source-Level Debugger},
+	isbn = {1-882114-77-9},
+	url = {https://sourceware.org/gdb/current/onlinedocs/gdb.html/},
+	abstract = {This file documents the {GNU} debugger {GDB}. This is the Tenth Edition, of Debugging with {GDB}: the {GNU} Source-Level Debugger for {GDB} ({GDB}) Version 15.0.50.20231226-git. Copyright © 1988-2023 Free Software Foundation, Inc. Permission is granted to copy, distribute and/or modify this document under the terms of the {GNU} Free Documentation License, Version 1.3 or any later version published by the Free Software Foundation; with the Invariant Sections being “Free Software” and “Free Software Needs Free Documentation”, with the Front-Cover Texts being “A {GNU} Manual,” and with the Back-Cover Texts as in (a) below. (a) The {FSF}’s Back-Cover Text is: “You are free to copy and modify this {GNU} Manual. Buying copies from {GNU} Press supports the {FSF} in developing {GNU} and promoting software freedom.” Next: Summary [Contents][Index]},
+	pagetotal = {535},
+	publisher = {Free Software Foundation},
+	author = {Stallman, Richard and Pesch, Roland and Shebs, Stan},
+	date = {2023},
+	keywords = {Assembly Software, C++, Guide, asm, gcc, gdb},
+}
+
+@unpublished{srivastava_comparing_2023,
+	location = {Amherst},
+	title = {Comparing C++ and {RUST} Performance Metrics: Progress Report: Hons 499T Proposal},
+	url = {https://github.com/cics-syslab/RUST-Tracing-Tool},
+	abstract = {The following Research Proposal draws inspiration from the paper, "Real-Time Program-Specific Phase Change Detection for Java Programs", authored by Prof. Meng-Chieh Chiu, Prof. Eliot Moss, and Prof. Benjamin Marlin. I use similar methodology described in the paper to aid in the comparison of performance metrics between {RUST} and C++, in a hardware-agnostic manner. During the compilation of a program in each programming language, the program goes through different phases, such as: initialization, parsing, semantic analysis, optimization, and code generation. At the end of this process, the Compiler generates a file known as Assembly, which essentially contains the logic of the code in a way that a {CPU} can parse through and execute. Assembly consists of a set of specific instructions known to the {CPU}, and any program in the world can be written as a combination of these instructions. The {CPU} then goes sequentially through these instructions, and uses a certain amount of resources to execute each of them. These resources, also known as Clock Cycles, determine the performance of a program at the lowest level possible in the hierarchy of computation. Crucially, it is to be noted that different combinations of these instructions can be used to achieve the same output. Therefore, to compare performance metrics between two different programming languages, we can notice how each of them generate their respective Assembly files, which is then executed by the {CPU}. By writing the same program on these two languages, if we were to extract their respective Assembly files and analyze them, we can gain insights into how each language approaches code execution based on their respective logic. For example, if we write the same program on {RUST} and C++, and the {RUST} version of the program has 5 lesser instructions in the Assembly for the {CPU} to execute while achieving the same output, we can say that {RUST} performs better than C++ in this specific case. Executing and analyzing multiple files such as this may give a comprehensive view of how optimized each Programming Language is. Moreover, this approach also circumvents potential issues such as hardware requirements, operating systems, and configuration of the machine or the state the program was run on, and instead focuses solely on the logic of each of the programming languages in use. I plan to conduct this research on the x86 Architecture, popularized by Intel in consumer machines. The x86 Architecture uses a version of Assembly that consists of a set of 81 instructions, and 6 registers. This architecture has seen immense development in both C++ and {RUST}, and the hardware has matured to a stable point. Unlike novel architectures as {ARM}, I believe that the x86 Architecture would minimize potential setbacks to conduct such an experiment. For example, Apple’s {ARM} Architecture, popularized in the M1 Processors and above, rely on a lot of x86 Architecture virtualization. That is, these chips run x86 programs in a software-defined x86 environment, thus potentially leading to false numbers. However, I believe that the approach and tooling developed as part of this research can be extended to other architectures as well, such as {RISC}-V or {ARM}, given certain precautions are taken.},
+	type = {Progress Report},
+	howpublished = {Progress Report},
+	author = {Srivastava, Kushagra},
+	date = {2023},
+	note = {Publisher: University of Massachusetts},
+	keywords = {{CHC}, Report, Self},
+}
+
+@report{srivastava_comparing_2023-1,
+	title = {Comparing and Contrasting Performance Metrics for {RUST} and C/C++, by Detecting and Analyzing Phase Change Metrics.: Honors 499Y Project Proposal},
+	abstract = {The following Research Proposal draws inspiration from and is used as an extension of the paper, "Real-Time Program-Specific Phase Change Detection for Java Programs", authored by Prof. Meng-Chieh Chiu, Prof. Eliot Moss, and Prof. Benjamin Marlin. During the compilation of a program in a given programming language, the program goes through different phases, such as: initialization, parsing, semantic analysis, optimization, and code generation. By analyzing phase changes in different programming languages, we can notably infer how quick and robust a given programming language can be in these stages. This data may help us in comparing performance metrics between different programming languages, as well as provide tools for other developers or researchers for further implementations. The main idea behind this project would be to detect Real-time Phase Changes in the compilation and execution of different programming languages in different languages. Notably, we plan to target newer programming languages ({RUST}, in our case), and compare their performance against established System Programming languages like C/C++, to infer their performance across different metrics of code compilation and code execution. The following research is divided into two main segments. The first part is building tracing tools for x86 Assembly, and a tracing tool for the {RUST} version of assembly, to compare performance between C and {RUST}. This part mainly gives an insight on how refactoring legacy C-based systems to {RUST} may be more efficient and beneficial on a large scale, especially since logically the exact same code would be tested on two different compilers. The second part is to build a Phase Change Detection tool for {RUST} to dive deeper into the code compilation process to understand how efficient {RUST} can be for the purposes of developing newer systems level software, such as operating systems. We gain a better perspective on compiler level operations, thus providing a more holistic view of the {RUST} compilation process, and how systems can benefit from migrating to {RUST}. For the first phase, we plan to derive the performance metrics of C and {RUST} through generating a trace of the x86 Assembly output of similar programs written in both languages. After similar programs are written across the different programming languages, we generate the Assembly output from the two languages, and create breakpoints at certain places to trace the compilation process. Generating the trace will give an insight on how much computationally intensive resources were used by each compiler, and how efficient each language is; essentially giving an in-depth look into how many resources were used and operations executed at the machine level to achieve the desired output. Thus, metrics on comparative performance and compiler efficiency can be derived in this manner. The second phase dives more into the actual compiler execution for {RUST}, and goes over each of the 5 different phases for compilation, starting with code and ending at producing the executable file. We plan to detect the real-time phase changes for each step of the compilation as discussed in the paper mentioned above (Chiu et. al), and follow a similar approach. We detect phase changes through recording various time intervals between different phases, and to cluster them based on the similarity of their feature vectors: the number of similar properties that specific phase consists of (which would tell how similar or different a given phase is). These metrics would then be analyzed using the Gaussian Mixture Model ({GMM}): which is a “probabilistic model generalizing k-means clustering to incorporate information about the covariance structure of the clusters.” (Chiu et al., 2016). The benchmarks which would be used under this project are still under consideration, but we believe that since we are dealing with a relatively newer language, there may exist a greater flexibility in terms of observable properties, thus leading to a better understanding and wider range of data collection. At best, we plan to reduce it to machine-level code, generating something akin to x86 Assembly with the {RUST} compiler, and tracing benchmark points before we calculate overall how better/worse each language performed with respect to each other, to achieve the same task. The following study would help us get a better picture on how newer languages may be better than older languages, especially when both languages are used for very specific and similar purposes (Systems Programming, in the case of this project). Both {RUST} and C offer a high degree of flexibility in terms of user control over processes, memory, and are very strongly typed. However, {RUST} benefits from the fact that it is relatively newer, has better memory management, and focuses explicitly on preventing memory leaks and minimizing user error. Thus, it may be interesting to see how a newly developed language performs, as compared to an older, established language. Such an insight would help programmers working in Systems gain a better understanding of the robustness of newer languages as compared to older ones, and may help in choosing the best fit for their use case. Moreover, this project would also act as a means of contributing valuable {RUST} tools for programmers and researchers.},
+	pages = {--},
+	number = {-},
+	type = {499Y Proposal},
+	author = {Srivastava, Kushagra},
+	date = {2023},
+	note = {Series: Bachelors w/ Honors},
+	keywords = {{CHC}, Self},
+}
+
+@report{ng_rust_2023,
+	location = {Kuala Lumpur, Malaysia},
+	title = {Rust vs. C++: a Battle of Speed and Efficiency: A research paper on the performance differences between Rust and C++ and answers which language is better for performance-based applications},
+	url = {https://www.researchgate.net/publication/370735143_Rust_vs_C_a_Battle_of_Speed_and_Efficiency},
+	abstract = {This study compares the performance of two excellent options for system-level development, theprogramming languages C++ and Rust. Through a series of tests and experiments using socketservers and various algorithms, this experiment analyses the speed and efﬁciency of code writtenin each language by looking at variables like memory management, and compilation times. Theﬁndings reveal that Rust has a number of advantages over C++, including quicker compilation times,improved memory safety, and in many situations equivalent or better performance. C++ still performsexceptionally well in several ﬁelds, nevertheless, such as low-level hardware programming andbackward compatibility. Overall, the results indicate that Rust is a strong candidate for systemsprogramming jobs, especially for new projects or those requiring a high level of performance andsecurity.},
+	pages = {--},
+	number = {-},
+	institution = {St. Joseph International School},
+	type = {Research Paper},
+	author = {Ng, Vincent},
+	date = {2023},
+	doi = {10.36227/techrxiv.22792553.v1},
+	keywords = {{RUST}, Report},
+}
+
+@thesis{costanzo_performance_2021,
+	location = {Argentina},
+	title = {Performance vs Programming Effort between Rust and C on Multicore Architectures: Case Study in N-Body},
+	url = {https://arxiv.org/abs/2107.11912},
+	abstract = {Historically, Fortran and C have been the default programming languages in High-Performance Computing ({HPC}). In both, programmers have primitives and functions available that allow manipulating system memory and interacting directly with the underlying hardware, resulting in efficient code in both response times and resource use. On the other hand, it is a real challenge to generate code that is maintainable and scalable over time in these types of languages. In 2010, Rust emerged as a new programming language designed for concurrent and secure applications, which adopts features of procedural, object-oriented and functional languages. Among its design principles, Rust is aimed at matching C in terms of efficiency, but with increased code security and productivity. This paper presents a comparative study between C and Rust in terms of performance and programming effort, selecting as a case study the simulation of N computational bodies (N-Body), a popular problem in the {HPC} community. Based on the experimental work, it was possible to establish that Rust is a language that reduces programming effort while maintaining acceptable performance levels, meaning that it is a possible alternative to C for {HPC}.},
+	pagetotal = {1–21},
+	institution = {Universidad Nacional de La Plata},
+	type = {Master's Thesis},
+	author = {Costanzo, Manuel and Rucci, Enzo and Naiouf, Marcelo and Giusti, Armando De},
+	date = {2021},
+	doi = {10.48550/arXiv.2107.11912},
+	note = {Issue: -
+Publication Title: Cornell University {arXiv} Labs
+Volume: -},
+	keywords = {C++, Fortran, {RUST}, Report, Thesis},
+}
+
+@thesis{chiu_run-time_2018,
+	location = {Amherst},
+	title = {{RUN}-{TIME} {PROGRAM} {PHASE} {CHANGE} {DETECTION} {AND} {PREDICTION}: A Dissertation Presented by Meng-Chieh Chiu},
+	url = {https://scholarworks.umass.edu/cgi/viewcontent.cgi?article=2422&context=dissertations_2},
+	abstract = {It is well-known that programs tend to have multiple phases in their execution. Because phases have impact on micro-architectural features such as caches and branch predictors, they are relevant to program performance (Xian et al., 2007; Roh et al., 2009; Gu and Verbrugge, 2008) and energy consumption. They are also relevant to detecting whether a program is executing as expected or is encountering unusual or exceptional conditions, a software engineering and program monitoring concern (Peleg and Mendelson, 2007; Singer and Kirkham, 2008; Pirzadeh et al., 2011; Benomar et al., 2014). We present methods for real-time phase change detection and phase prediction in Java, C, (etc.,) and Python programs. After applying a training protocol to a program of interest, our methods can detect and predict phase at run time for that program with good precision and recall (compared with a “ground truth” definition of phases) and with small performance impact. Furthermore, for concrete applications, we explore run-time energy-efficient clock frequency adjustment for statically compiled executables.},
+	pagetotal = {1–110},
+	institution = {University of Massachusetts},
+	type = {phdthesis},
+	author = {Chiu, Meng-Chieh},
+	date = {2018},
+	doi = {10.7275/12585689},
+	note = {Publication Title: University of Massachusetts Amherst Graduate School},
+	keywords = {Advisor, Thesis},
+}
+
+@misc{srivastava_x86_2023,
+	title = {x86 Assembly Tracer Documentation: Kushagra Srivastava {\textbar} {CHC} Thesis},
+	url = {https://github.com/cics-syslab/RUST-Tracing-Tool},
+	abstract = {This project mainly compares and contrasts between the {RUST} Programming Language, and the C++ Programming Language. We focus on the Cargo and Clang Compilers respectively, since they are both based on the {LLVM} Architecture. Thus, the low-level assembly generated by the {LLVM} compiler remains uniform between the two languages, and comparisons can be made. We focus on {RUST} and C++ as they are both languages which are used in low-level systems programming. While the low-level {LLVM} compiler supports virtually any language, and currently is used for R, Python, Swift, and countless others; {RUST} and C++ insights give data for low-level programs, i.e. the layer on top of which all other programs are run.},
+	publisher = {Kushagra Srivastava},
+	author = {Srivastava, Kushagra},
+	date = {2023},
+	note = {Edition: 0.3
+Place: Amherst, Massachusetts
+Published: {ResourceField}2},
+	keywords = {Assembly Software, C++, Documentation, {RUST}, Self},
+}
+
+@software{godbolt_compiler_2023,
+	location = {Illinois},
+	title = {Compiler Explorer},
+	url = {https://godbolt.org},
+	abstract = {Compiler Explorer Is an interactive compiler exploration website. Edit code in C, C++, C\#, F\#, Rust, Go, D, Haskell, Swift, Pascal, ispc, Python, Java, or any of the other 30+ supported languages components, and see how that code looks after being compiled in real time. Bug Report · Compiler Request · Feature Request · Language Request · Library Request · Report Vulnerability Overview Multiple compilers are supported for each language, many different tools and visualizations are available, and the {UI} layout is configurable (thanks to {GoldenLayout}). Try out at godbolt.org, or run your own local instance. An overview of what the site lets you achieve, why it's useful, and how to use it is available here. Compiler Explorer follows a Code of Conduct which aims to foster an open and welcoming environment. Compiler Explorer was started in 2012 to show how C++ constructs are translated to assembly code. It started as a tmux session with vi running in one pane and watch gcc -S foo.cc -o - running in the other. Since then, it has become a public website serving over 3,000,000 compilations per week. You can financially support this project on Patreon, {GitHub}, Paypal, or by buying cool gear on the Compiler Explorer store. Using Compiler Explorer {FAQ} There is now a {FAQ} section in the repository wiki. If your question is not present, please contact us as described below, so we can help you. If you find that the {FAQ} is lacking some important point, please feel free to contribute to it and/or ask us to clarify it. Videos Several videos showcase some features of Compiler Explorer: Presentation for {CppCon} 2019 about the project Older 2 part series of videos which go into a bit more detail into the more obscure features. Just Enough Assembly for Compiler Explorer: Practical introduction to Assembly with a focus on the usage of Compiler Explorer, from {CppCon} 2021. Playlist: Compiler Explorer: A collection of videos discussing Compiler Explorer; using it, installing it, what it's for, etc. A Road map is available which gives a little insight into the future plans for Compiler Explorer. Developing Compiler Explorer is written in {TypeScript}, on Node.js. Assuming you have a compatible version of node installed, on Linux simply running make ought to get you up and running with an Explorer running on port 10240 on your local machine: http://localhost:10240/. If this doesn't work for you, please contact us, as we consider it important you can quickly and easily get running. Currently, Compiler Explorer requires node 20 installed, either on the path or at {NODE}\_DIR (an environment variable or make parameter). Running with make {EXTRA}\_ARGS='–language {LANG}' will allow you to load {LANG} exclusively, where {LANG} is one for the language ids/aliases defined in lib/languages.ts. For example, to only run Compiler Explorer with C++ support, you'd run make {EXTRA}\_ARGS='–language c++'. The Makefile will automatically install all the third-party libraries needed to run; using npm to install server-side and client-side components. For development, we suggest using make dev to enable some useful features, such as automatic reloading on file changes and shorter startup times. You can also use npm run dev to run if make dev doesn't work on your machine. Some languages need extra tools to demangle them, e.g. rust, d, or haskell. Such tools are kept separately in the tools repo. Configuring compiler explorer is achieved via configuration files in the etc/config directory. Values are key=value. Options in a type.local.properties file (where type is c++ or similar) override anything in the type.defaults.properties file. There is a .gitignore file to ignore *.local.* files, so these won't be checked into git, and you won't find yourself fighting with updated versions when you git pull. For more information see Adding a Compiler. Check {CONTRIBUTING}.md for detailed information about how you can contribute to Compiler Explorer, and the docs folder for specific details regarding various things you might want to do, such as how to add new compilers or languages to the site. Running a local instance If you want to point it at your own {GCC} or similar binaries, either edit the etc/config/{LANG}.defaults.properties or else make a new one with the name {LANG}.local.properties, substituting {LANG} as needed. *.local.properties files have the highest priority when loading properties. If you want to support multiple compilers and languages like godbolt.org, you can use the bin/ce\_install install compilers command in the infra project to install all or some of the compilers. Compilers installed in this way can be loaded through the configuration in etc/config/*.amazon.properties. If you need to deploy in a completely offline environment, you may need to remove some parts of the configuration that are pulled from www.godbolt.ms@443. When running in a corporate setting the {URL} shortening service can be replaced by an internal one if the default storage driver isn't appropriate for your environment. To do this, add a new module in lib/shortener/myservice.js and set the {urlShortenService} variable in configuration. This module should export a single function, see the tinyurl module for an example. {RESTful} {API} There's a simple restful {API} that can be used to do compiles to asm and to list compilers. You can find the {API} documentation here. Contact us We run a Compiler Explorer Discord, which is a place to discuss using or developing Compiler Explorer. We also have a presence on the cpplang Slack channel \#compiler\_explorer and we have a public mailing list. There's a development channel on the discord, and also a development mailing list. Feel free to raise an issue on github or email Matt directly for more help. Credits Compiler Explorer is maintained by the awesome people listed in the {AUTHORS} file. We would like to thank the contributors listed in the {CONTRIBUTORS} file, who have helped shape Compiler Explorer. We would also like to specially thank these people for their contributions to Compiler Explorer: Gabriel Devillers (while working for Kalray) Johan Engelen Joshua Sheard Andrew Pardoe Many amazing sponsors, both individuals and companies, have helped fund and promote Compiler Explorer.},
+	version = {13.2},
+	author = {Godbolt, Matt},
+	date = {2023},
+	note = {Edition: 13.2
+Place: Illinois, United States
+Published: {ResourceField}2},
+	keywords = {Assembly Software, Documentation},
+}
