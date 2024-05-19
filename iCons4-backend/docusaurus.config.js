@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'LLVM Compilation Performance Metrics',
-  tagline: 'Kush Srivastava | Fall 2023 iCons 4 | CHC Honors Thesis',
+  title: 'tra86: The Asembly Tracer Toolchain',
+  tagline: 'Website Under Construction | ETA 05/25/2023',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -54,7 +54,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'LLVM Metrics',
+        title: 'RUST & C++ Metrics',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
