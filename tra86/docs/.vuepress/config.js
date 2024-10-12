@@ -11,7 +11,7 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: "",
 
-    navbar: ["/", "/intro"],
+    navbar: ["/", "/intro", "/glance"],
   }),
 
   bundler: viteBundler(),
