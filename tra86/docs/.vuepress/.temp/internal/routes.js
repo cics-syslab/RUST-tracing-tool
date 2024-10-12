@@ -9,20 +9,3 @@ export const routes = Object.fromEntries([
   ["/thesis/syslab.html", { loader: () => import(/* webpackChunkName: "thesis_syslab.html" */"/Users/kushagrasrivastava/Documents/RUST-Tracing-Tool/tra86/docs/.vuepress/.temp/pages/thesis/syslab.html.js"), meta: {"title":"Semester 0: CICS Syslab"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/Users/kushagrasrivastava/Documents/RUST-Tracing-Tool/tra86/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
 ]);
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updateRoutes) {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-  }
-  if (__VUE_HMR_RUNTIME__.updateRedirects) {
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ routes, redirects }) => {
-    __VUE_HMR_RUNTIME__.updateRoutes(routes)
-    __VUE_HMR_RUNTIME__.updateRedirects(redirects)
-  })
-}
