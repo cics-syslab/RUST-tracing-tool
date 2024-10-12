@@ -1,0 +1,16 @@
+import comp from "/Users/kushagrasrivastava/Documents/RUST-Tracing-Tool/tra86/docs/.vuepress/.temp/pages/intro.html.vue"
+const data = JSON.parse("{\"path\":\"/intro.html\",\"title\":\"Introduction\",\"lang\":\"en-US\",\"frontmatter\":{},\"headers\":[{\"level\":2,\"title\":\"Before we begin: a definition of terms\",\"slug\":\"before-we-begin-a-definition-of-terms\",\"link\":\"#before-we-begin-a-definition-of-terms\",\"children\":[{\"level\":3,\"title\":\"RUST\",\"slug\":\"rust\",\"link\":\"#rust\",\"children\":[]},{\"level\":3,\"title\":\"C++\",\"slug\":\"c\",\"link\":\"#c\",\"children\":[]},{\"level\":3,\"title\":\"Functions\",\"slug\":\"functions-1\",\"link\":\"#functions-1\",\"children\":[]},{\"level\":3,\"title\":\"LLVM (Low-Level Virtual Machine)\",\"slug\":\"llvm-low-level-virtual-machine\",\"link\":\"#llvm-low-level-virtual-machine\",\"children\":[]},{\"level\":3,\"title\":\"x86 Assembly Language\",\"slug\":\"x86-assembly-language\",\"link\":\"#x86-assembly-language\",\"children\":[]}]}],\"git\":{\"updatedTime\":null,\"contributors\":[]},\"filePathRelative\":\"intro.md\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

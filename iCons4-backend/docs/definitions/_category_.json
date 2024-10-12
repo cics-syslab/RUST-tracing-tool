@@ -1,8 +1,0 @@
-{
-  "label": "Definitions",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "Tools of the trade, i.e. a complete primer on all technologies that we are using nin this project, with documentation included. This section will get you up to speed on what a basic low-level architecture looks like."
-  }
-}
