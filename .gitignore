@@ -1,0 +1,64 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# Typescript
+*.tsbuildinfo
+
+# Production
+dist/
+build/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.out
+*.o
+*.so
+*.a
+*.dylib
+
+# Rust
+/target/
+
+# RPM files
+*.rpm
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*~
+
+# Environment variables and secrets
+.env
+.env.*.local
+
+# Coverage
+coverage/
+*.lcov

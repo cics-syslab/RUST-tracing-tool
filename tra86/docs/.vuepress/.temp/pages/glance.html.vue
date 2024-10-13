@@ -1,10 +1,22 @@
 <template><div><h1 id="thesis" tabindex="-1"><a class="header-anchor" href="#thesis"><span>Thesis</span></a></h1>
-<h1 id="comparing-rust-and-c-performance-metrics" tabindex="-1"><a class="header-anchor" href="#comparing-rust-and-c-performance-metrics"><span>Comparing RUST and C++ Performance Metrics</span></a></h1>
+<p>The following is an overview of the Honors Thesis that tra86 was created as a part of. It only includes the parts of the thesis that the software stack concerns itself with. The full document contains additional information on alternate approaches, pitfalls, and the reasonings behind honing down to the specific approach described herein. The full document is also linked in the website, and is published in the UMass Amherst Libraries.</p>
+<p>This is <strong>not</strong> the complete thesis which discusses every single aspect, approach, and finding. This is a concise version, which is edited and presented to communicate the usage and purpose for the tra86 toolchain.</p>
+<p>The full version also discusses the reasoning behind why RUST exists, how RUST is better than C++ in other aspects, and why this work matters. I would highly encourage and be obliged if you can read the same.</p>
+<p>Thank you for checking my work out.</p>
+<h2 id="update" tabindex="-1"><a class="header-anchor" href="#update"><span>Update</span></a></h2>
+<p>A Better version of tra86 is almost ready for deployment, with JIT compatibility, ARM architecture compatibility, and interfacing with LLDB. More information will be published here soon. This work is the earlier version of tra86, which is based on the x86 architecture and interfaces with GNU/GDB.</p>
+<h2 id="complete-texts" tabindex="-1"><a class="header-anchor" href="#complete-texts"><span>Complete Texts</span></a></h2>
+<p>The complete version of the thesis is currently published in the corpus of Honors Thesis at the UMass W.E.B. Du Boid Library.</p>
+<p>Alternatively, a version of the same can be accessed <a href="https://github.com/cics-syslab/RUST-tracing-tool/blob/main/manuscript/docx/Comparing%20RUST%20and%20C%2B%2B%20Performance%20Metrics%20-%20Kush%20S.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<h1 id="comparing-rust-and-c-performance-metrics-an-overview" tabindex="-1"><a class="header-anchor" href="#comparing-rust-and-c-performance-metrics-an-overview"><span>Comparing RUST and C++ Performance Metrics: An Overview</span></a></h1>
 <p><strong>Kushagra Srivastava, Prof. Meng-Chieh Chiu</strong>
 <strong>Manning College of Information &amp; Computer Sciences, UMass Amherst</strong>
 <strong>iCons Program</strong></p>
 <h2 id="introduction" tabindex="-1"><a class="header-anchor" href="#introduction"><span>Introduction</span></a></h2>
 <ul>
+<li>
+<p><strong>Overview</strong>: This Honors Thesis attempts to compare between two low-level programming languages: RUST and C+. These are both languages that were made during different eras, yet are widely utilized in low-level systems programming.</p>
+</li>
 <li>
 <p><strong>RUST and C++</strong>: These are two of the most widely-used systems programming languages today. <strong>C++</strong> has been a staple for several decades, being integral to many low-level systems like operating systems, embedded systems, and performance-critical applications. On the other hand, <strong>RUST</strong> is a more recent language that has rapidly gained popularity due to its focus on safety, especially around memory management and concurrency.</p>
 </li>
@@ -15,7 +27,7 @@
 <p><strong>History of C++</strong>: Introduced in the 1970s, <strong>C++</strong> has seen constant evolution, including support for object-oriented programming, template metaprogramming, and low-level memory manipulation. However, its design has also led to notorious issues around <strong>security</strong>, primarily due to manual memory management and lack of built-in safety features.</p>
 </li>
 <li>
-<p><strong>The Rise of RUST</strong>: <strong>RUST</strong> was released in <strong>2013</strong> by Mozilla Research, and it was designed to address common problems in C++ by providing modern solutions to <strong>memory safety</strong> and <strong>thread safety</strong>, without sacrificing performance. The key feature of RUST is its <strong>borrow checker</strong>, which ensures memory access without the need for a garbage collector.</p>
+<p><strong>The Rise of RUST</strong>: <strong>RUST</strong> was released in <strong>2013</strong> by Mozilla Research, and it was designed to address common problems in C++ by providing modern solutions to <strong>memory safety</strong> and <strong>thread safety</strong>, without sacrificing performance. The key feature of RUST is its <strong>borrow checker</strong>, which ensures memory access without the need for a garbage collector. RUST prioritizes Code Safety, Security, and Optimization. On the other hand, C++ gives the user complete freedom and control over their code, even if it comes at a risk of breaking the system.</p>
 </li>
 <li>
 <p><strong>Performance and Debugging Comparison</strong>: With <strong>fewer runtime errors</strong>, <strong>better debugging tools</strong>, and a focus on <strong>memory safety</strong>, RUST is expected to reduce many of the issues that typically plague C++ programs, such as segmentation faults or dangling pointers. This research aims to determine if these advantages also lead to better <strong>performance metrics</strong> when comparing the two languages.</p>
@@ -23,13 +35,16 @@
 <li>
 <p><strong>Research Objective</strong>: The main objective of this research is to assess whether RUST can outperform C++ in systems-level programming tasks, particularly in terms of resource usage like <strong>clock cycles</strong>, <strong>memory consumption</strong>, and overall <strong>execution speed</strong>. The underlying hypothesis is that newer programming paradigms introduced by RUST should lead to <strong>better performance</strong> and fewer critical errors in practical applications.</p>
 </li>
+<li>
+<p>The motivation to compare the two programming languages lies in my interest to understand if RUST, being a newer low-level programming language, is an overall better option to use compared to C++ when it comes to low-level systems programming. The decades of contributions that have gone into C++ since release has made it the primary systems programming language. Thus, if an undertaking should be made to shift most of the code from C++ to RUST, the results of this thesis would give developers an adequate, hardware-agnostic idea of the performance benefits that RUST provides for their specific use case.</p>
+</li>
 </ul>
 <h2 id="methods" tabindex="-1"><a class="header-anchor" href="#methods"><span>Methods</span></a></h2>
-<p>This study uses the <strong>x86 architecture</strong> to perform a side-by-side comparison of <strong>RUST</strong> and <strong>C++</strong> performance. The research methodology revolves around two key approaches: <strong>Tracing</strong> and <strong>Analyzing</strong>.</p>
+<p>This study uses the <strong>Intel x86 architecture</strong> to perform a side-by-side comparison of <strong>RUST</strong> and <strong>C++</strong> performance. The research methodology revolves around two key approaches: <strong>Tracing</strong> and <strong>Analyzing</strong>.</p>
 <h3 id="tracing" tabindex="-1"><a class="header-anchor" href="#tracing"><span>Tracing:</span></a></h3>
 <ul>
 <li>
-<p><strong>Trace Runtime of Programs</strong>: The study involves running identical programs written in <strong>RUST</strong> and <strong>C++</strong> and tracking their behavior at the lowest level. The <strong>trace</strong> refers to recording the <strong>execution path</strong> of each program, capturing every operation that the CPU performs.</p>
+<p><strong>Trace Runtime of Programs</strong>: The study involves running identical programs written in <strong>RUST</strong> and <strong>C++</strong> and tracking their behavior at the lowest level. In our case, this lowest level is Assembly. Taking the x86 CPU architecture and instruction set as a baseline, the same program is written on both languages and the execution is traced by recording the machine instructions executed. The <strong>trace</strong> refers to recording the <strong>execution of instructions in the Assembly during the runtime</strong> of each program, capturing every operation that the CPU performs.</p>
 </li>
 <li>
 <p><strong>Decompile to Assembly</strong>: All <strong>high-level code</strong> from both RUST and C++ is decompiled into <strong>x86 assembly</strong> code, which is the machine-level language that the CPU understands. This ensures that we are evaluating the actual instructions the processor is executing, regardless of how high-level syntax differs between the two languages.</p>
@@ -37,28 +52,55 @@
 <li>
 <p><strong>Track Multiple Program Runs</strong>: To ensure accurate and representative data, multiple program runs are traced for each language. This is necessary due to factors such as cache usage and different optimization paths taken by the compiler.</p>
 </li>
+<li>
+<p>Example: For the same program on the two languages, ensuring that the logic and complexity is uniform, if we were to trace the Assembly instructions executed by the CPU during the run time, and:</p>
+</li>
 </ul>
+<p>RUST was able to execute this program with 17 instructions, 25 total clock cycles</p>
+<p>C++ was able to execute this program with 19 instructions, 32 total clock cycles.</p>
+<p>Then RUST was more efficient than C++ in executing the same program, with the same logic, using lesser CPU resources.</p>
 <h3 id="analyzing" tabindex="-1"><a class="header-anchor" href="#analyzing"><span>Analyzing:</span></a></h3>
 <ul>
 <li>
 <p><strong>Mapping Instructions to CPU Clock Cycles</strong>: Each assembly instruction is mapped to the <strong>number of CPU clock cycles</strong> it consumes. The goal is to determine how efficiently each language uses the CPU to execute identical tasks, as more clock cycles typically indicate inefficiency.</p>
 </li>
 <li>
-<p><strong>Comparing Code Logic</strong>: By analyzing the <strong>assembly instructions</strong>, we can get a clear understanding of how the <strong>code logic</strong> differs between RUST and C++. This includes operations such as <strong>loops</strong>, <strong>function calls</strong>, and <strong>memory access patterns</strong>.</p>
+<p>The data on the number of CPU Clock Cycles required per instruction was taken from the Intel IA32 and IA64 Reference Manuals, as well as Agner Fog's Instruction Tables (which consisted of a set of experiments to deduce the clock cycles for various x86 Intel Processors).</p>
 </li>
 <li>
-<p><strong>Identifying Performance Bottlenecks</strong>: Special focus is placed on pinpointing areas where <strong>C++</strong> may cause performance issues, such as <strong>memory allocation</strong>, <strong>pointer dereferencing</strong>, and <strong>cache misses</strong>, while evaluating if RUST's <strong>ownership model</strong> and strict memory management rules result in fewer bottlenecks.</p>
+<p><strong>Comparing Code Logic</strong>: By analyzing the <strong>assembly instructions</strong>, we can get a clear understanding of how the <strong>code logic</strong> differs between RUST and C++. This includes operations such as <strong>loops</strong>, <strong>function calls</strong>, and <strong>memory access patterns</strong>. A persistent effort was taken to keep the logic and behavior of the code for a given program equal across the two programming languages. This gives us the best comparisons of which programming language's compiler better optimizes code to run on the processors.</p>
+</li>
+<li>
+<p><strong>Identifying Performance Bottlenecks</strong>: Special focus is placed on pinpointing areas where <strong>C++</strong> may cause performance issues, such as <strong>memory allocation</strong>, <strong>pointer dereferencing</strong>, and <strong>cache misses</strong>, while evaluating if RUST's <strong>ownership model</strong> and strict memory management rules result in fewer bottlenecks. Various try-catch errors, and frameworks to maintain a cohesive log in the case of a <strong>Segmentation Fault</strong> or <strong>Memory Leak</strong> were put in place, such that we could still retain this information for analyzing.</p>
 </li>
 </ul>
 <h2 id="programs" tabindex="-1"><a class="header-anchor" href="#programs"><span>Programs</span></a></h2>
 <p>The programs used for the comparison consist of various <strong>benchmarking tasks</strong> designed to evaluate key performance characteristics, such as <strong>instruction throughput</strong>, <strong>memory usage</strong>, and <strong>execution time</strong>. These tasks range from simple computational operations to more complex algorithms with higher memory and CPU demands.</p>
+<p>More information for each software is provided under this website.</p>
 <h3 id="x86-assembly-tracer" tabindex="-1"><a class="header-anchor" href="#x86-assembly-tracer"><span>X86 Assembly Tracer</span></a></h3>
+<p><img src="@source/1.png" alt="Assembly Tracer"></p>
 <ul>
 <li>
 <p><strong>Purpose</strong>: The <strong>x86 Assembly Tracer</strong> is a tool specifically designed for this study to capture <strong>every instruction</strong> executed by the CPU during program runtime. This provides granular visibility into the low-level operations performed by RUST and C++ programs.</p>
 </li>
 <li>
-<p><strong>Captured Metadata</strong>: The tracer logs a variety of metadata for each instruction, such as:</p>
+<p>The tool uses a debugging approach to tracing. The program has to be compiled manually, and stop at the assembly level. At the Assembly level, debugging flags are passed to get a linker object. After which, header files are linked, and an executable is produced. While in a regular run, all of this is handled by the compiler itself: we need to do this process manually to ensure that debugging files are passed to the Assembly file generated, and not to the source code.</p>
+</li>
+<li>
+<p>These instructions vary slightly for RUST and C++. I suggest to use the <code v-pre>clang</code> compilers as a baseline, since that ensures a LLVM backend. Once an assembly file is generated by <code v-pre>rustc</code>, it is recommended to invoke Clang for the linking process. RUST includes a bunch more header files, which have to also be manually 1) looked into the system, and 2) linked using clang.</p>
+</li>
+<li>
+<p>The x86 Tracer latches onto GNU/GDB using the Python API, and steps into each assembly instruction. As it does that (and the program is executed), it logs each instruction executed, along with metadata pertaining to each. The whole process is automated. The user only needs to:</p>
+</li>
+</ul>
+<ol>
+<li>Start GDB</li>
+<li>Stage the program on GDB</li>
+<li>Stage the Python script that steps into + records asm instructions from GDB as GDB goes through and executes the program (automated).</li>
+<li>Run the program.</li>
+</ol>
+<ul>
+<li><strong>Captured Metadata</strong>: The tracer logs a variety of metadata for each instruction, such as:
 <ul>
 <li><strong>Instruction Type</strong>: The exact operation being performed (e.g., <code v-pre>add</code>, <code v-pre>mul</code>, <code v-pre>mov</code>, <code v-pre>jmp</code>).</li>
 <li><strong>Memory Locations</strong>: Information about the memory addresses being read from or written to.</li>
@@ -69,7 +111,11 @@
 </ul>
 </li>
 </ul>
+<p>An example output looks like such:</p>
+<p><img src="@source/3.png" alt="Snippet of a trace file"></p>
+<p>(A usual trace can be hundreds of thousands of lines of this data).</p>
 <h3 id="analyzer" tabindex="-1"><a class="header-anchor" href="#analyzer"><span>Analyzer</span></a></h3>
+<p><img src="@source/2.png" alt="Analyzer"></p>
 <ul>
 <li>
 <p><strong>Input &amp; Processing</strong>: The <strong>Analyzer</strong> takes in the trace file generated by the X86 Assembly Tracer and analyzes it to compute various performance metrics. These include:</p>
@@ -87,15 +133,26 @@
 <li><strong>Error Handling</strong>: Scenarios like <strong>SegFaults</strong> or <strong>Core Dumps</strong> are also included, as these can have a significant impact on overall performance.</li>
 </ul>
 </li>
+<li>
+<p>The stats will be provided for any valid Assembly trace file generated from the above script.</p>
+</li>
 </ul>
 <h2 id="results" tabindex="-1"><a class="header-anchor" href="#results"><span>Results</span></a></h2>
 <p>The key performance results are presented below in two primary forms:</p>
 <h3 id="cumulative-clock-cycles" tabindex="-1"><a class="header-anchor" href="#cumulative-clock-cycles"><span>Cumulative Clock Cycles</span></a></h3>
+<p>For the analysis of RUST and C++, I ran the tracer
+analyzer toolchain (herein referred to as tra86), on the same program across RUST and C++, with minor tweaks for each runtime. The programs run can be divided into two main
+segments:</p>
+<ul>
+<li>Linux System Programs and Commands</li>
+<li>Self-written Programs to test constraints.</li>
+</ul>
 <ul>
 <li>
 <p><strong>RUST vs C++ Clock Cycles</strong>: The number of clock cycles used by the CPU to execute programs in RUST versus C++ is displayed across a variety of tasks.</p>
 <ul>
-<li><strong>Placeholder for Bar Graph: Cumulative Clock Cycles</strong>
+<li><img src="@source/4.png" alt="Graph"></li>
+<li><img src="@source/7.png" alt="Graph">
 This graph shows the total number of cycles consumed by the CPU for each program written in RUST and C++. Fewer clock cycles mean better efficiency.</li>
 </ul>
 </li>
@@ -112,7 +169,8 @@ This graph shows the total number of cycles consumed by the CPU for each program
 <li>
 <p><strong>Cycles Per Instruction</strong>: This metric provides insight into the <strong>efficiency</strong> of each instruction executed by the CPU.</p>
 <ul>
-<li><strong>Placeholder for Graph: Cycles Per Instruction Comparison</strong>
+<li><img src="@source/5.png" alt="Graph"></li>
+<li><img src="@source/8.png" alt="Graph">
 This graph compares the average number of cycles per instruction for both languages across identical programs.</li>
 </ul>
 </li>
@@ -129,7 +187,7 @@ This graph compares the average number of cycles per instruction for both langua
 <li>
 <p><strong>Complexity vs. Performance</strong>: The performance of both RUST and C++ is analyzed as program complexity increases.</p>
 <ul>
-<li><strong>Placeholder for Line Graph: Performance in Increasing Complexity Programs</strong>
+<li><img src="@source/6.png" alt="Graph">
 This graph tracks how each language handles the same program logic as its complexity scales.</li>
 </ul>
 </li>
@@ -137,6 +195,12 @@ This graph tracks how each language handles the same program logic as its comple
 <p><strong>Insights</strong>:</p>
 <ul>
 <li>As <strong>program complexity rises</strong>, RUST scales more efficiently compared to C++. The <strong>ownership model</strong> in RUST ensures that memory is managed dynamically, resulting in fewer <strong>resource leaks</strong> or <strong>overhead</strong>.</li>
+<li>I speculate that one of the results for this effect is the fact that RUST uses more obscure x86 instructions than C++ for compilation, which result in more clock cycles used per
+instruction. The Instruction Tables I am using [3] contain many variations of the same instructions with different operands, as well as contain complex instructions that are
+combinations of multiple simple instructions (such as mov and movq2d2), which may use higher number of clock cycles per instruction.</li>
+<li><img src="@source/9.png" alt="Example instructions">
+Example snippets of RUST (left) and C++ (right)
+analyzer outputs. RUST uses more complex forms of the “mov” instruction, thus maybe resulting in more Cycles Per Instruction.</li>
 </ul>
 </li>
 </ul>
@@ -153,22 +217,6 @@ This graph tracks how each language handles the same program logic as its comple
 </li>
 <li>
 <p><strong>Future Work</strong>: Further research will focus on optimizing <strong>RUST’s debugging features</strong>, as well as exploring its applications in larger-scale systems with even more complex performance requirements.</p>
-</li>
-</ul>
-<h2 id="software-documentation" tabindex="-1"><a class="header-anchor" href="#software-documentation"><span>Software &amp; Documentation</span></a></h2>
-<ul>
-<li><strong>Software Tools</strong>:
-<ul>
-<li>The tools used for <strong>tracing</strong> and <strong>analyzing</strong> the programs are available for public access and can be adapted for further research in low-level performance analysis</li>
-</ul>
-</li>
-</ul>
-<p>.</p>
-<ul>
-<li><strong>Download Links</strong>:
-<ul>
-<li>Placeholder: Provide download links for software tools, data, and source code used in this research.</li>
-</ul>
 </li>
 </ul>
 </div></template>
